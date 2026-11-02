@@ -1,0 +1,26 @@
+{
+  "name": "tanggal-baik-nikah",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --filter @tanggal-baik/core build && pnpm --filter web dev",
+    "typecheck": "pnpm -r --parallel run typecheck",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "build": "pnpm --filter @tanggal-baik/core build && pnpm --filter web build",
+    "start": "pnpm --filter web start",
+    "e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@playwright/test": "^1.64.1",
+    "eslint": "^9.20.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "prettier": "^3.5.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.0",
+    "vitest": "^3.0.5"
+  }
+}

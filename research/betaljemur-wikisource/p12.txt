@@ -1,0 +1,49 @@
+﻿<noinclude><pagequality level="4" user="Kriita" /></noinclude>{{c|'''No. 12. Anggaraksih'''}}
+{{gap}}Sasi kang ora ana dinané Anggarakasih (Selasa Kliwon) ora kena kanggo ngijabaké pangantèn lan liya-liyané.
+{|class="wikitable"
+|- style="text-align: center;"
+| Tahun || Sasi kang ora ana dinane Anggarakasih
+|-
+| Alip || Jumadilakir, Besar
+|-
+| Ehé || Rejeb
+|-
+| Jimawal || Sura, Ruwah
+|-
+| Jé || Sapar, Ruwah
+|-
+| Dal || Mulud, Pasa
+|-
+| Bé || Rabingulakir
+|-
+| Wawu || Rabingulakir, Dulkaidah
+|- 
+| Jimakir || Jumadilawal
+|}
+<br>
+{{rule|width=4em}}
+<br>
+{{c|'''No. 13. Larangan sasi.'''<br>
+Ora kena nganggo ngijabaké pangantèn lan liya-liyané}}
+{|class="wikitable"
+|- style="text-align: center;"
+| Tahun || Sasi || Bakal nemu
+|-
+| Alip || Jumadilakir, Dulkaidah || Sinung lara klebon wisa
+|-
+| Ehé || Rabingulawal, Pasa || Sinung lawa bebalung
+|-
+| Jimawal || Mulud, Besar || Bilal, keli ing kali
+|-
+| Jé || Sura, Sawal || Sinung lara barah
+|-
+| Dal || Ruwah || Sinung lara rumab
+|-
+| Bé || Sapar, Rejeb || Kena prakara gedhé
+|-
+| Wawu || Jumadilawal || Sinung lara sirah
+|-
+| Jimakir || Sura, Dulkaidah || Sinung lara édan
+|}
+<br>
+{{rule|width=4em}}<noinclude>{{rh|||11}}</noinclude>

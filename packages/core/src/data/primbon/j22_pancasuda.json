@@ -1,0 +1,44 @@
+{
+  "1": {
+    "name": "Pisang Pinanggel",
+    "meaningJv": "gethingan, kerep pasulayan",
+    "verdict": "fail",
+    "meaningId": "rentan timbul perselisihan atau saling mengeluh"
+  },
+  "2": {
+    "name": "Tebu Manteb",
+    "meaningJv": "mantep lan mantheng atiné, rahayu",
+    "verdict": "pass",
+    "meaningId": "mantap hatinya, rukun, dan sejahtera"
+  },
+  "3": {
+    "name": "Gedhang Ditumpangi",
+    "meaningJv": "nemu susah lan rubéda",
+    "verdict": "fail",
+    "meaningId": "menghadapi cobaan dan kesulitan hidup"
+  },
+  "4": {
+    "name": "Rondha Keli",
+    "meaningJv": "kerep ngalami kapitunan",
+    "verdict": "fail",
+    "meaningId": "sering mengalami kerugian"
+  },
+  "5": {
+    "name": "Semut Ngusung Gula",
+    "meaningJv": "nemu rejeki lumintu lan karukunan",
+    "verdict": "pass",
+    "meaningId": "rezeki mengalir lancar dan hidup rukun"
+  },
+  "6": {
+    "name": "Tunggak Gugur",
+    "meaningJv": "nemu cilaka",
+    "verdict": "fail",
+    "meaningId": "memperoleh kemuliaan dan kesejahteraan"
+  },
+  "0": {
+    "name": "Bale Kedhawang",
+    "meaningJv": "nemu kamulyan lan karaharjan",
+    "verdict": "pass",
+    "meaningId": "selamat, tenteram, dan sejahtera"
+  }
+}

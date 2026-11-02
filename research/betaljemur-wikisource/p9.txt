@@ -1,0 +1,39 @@
+﻿<noinclude><pagequality level="4" user="Nerissa Lyra" /></noinclude><div style='text-align: justify;'>
+{{c|'''No. 5. Dina taliwangké'''}}
+{{gap}}Taliwangké, iku dina sengkala. Ing sajroné wuku 30, ana dinane taliwangké 6, prayoga disirik ing samubarangawé kang perlu.
+{|class="wikitable"
+|- style="text-align: center;"
+| Ing wuku || Arané dina taliwangké || Karepé ngarani dina || Lambangé
+|-
+| 1. Wuyé || Somayé || Senèn Kliwon || Pasangan manuk
+|-
+| 2. Wayang || Anggarayang || Slasa Legi || Téja lumaku patiné andaka wana
+|-
+| 3. Landep || Bodanep || Rebo Paing || Iwak pringga mati
+|-
+| 4. Warigalit || Warigamis || Kemis Pon || Jalma mati 
+|-
+| 5. Kuningan || Sukraingan || Jumuah Wagé || Tuwuhan gagar
+|-
+| Kuruwelut || Tumpakloté || Setu Kliwon || Kapas agring
+|}
+<br>
+{{rule|width=4em}}
+<br>
+{{c|'''No. 6. Dina Samparwangké'''}}
+{{gap}}Samparwangké, iku uga dina sengkala. Ing sajrone wuku 30, ana dinané samparwangké 5, kang kabener tiba ringkel Aryang, tegesé apesing jalma, prayogo disirik ing samubaranggawé kang perlu.
+{|class="wikitable"
+|- style="text-align: center;"
+| Ing wuku || Dina
+|-
+| 1. Warigalit || Senèn Kliwon 
+|-
+| 2. Bala || Senèn Legi
+|-
+| 3. Langkir || Senèn Paing
+|-
+| 4. Sinta || Senèn Pon
+|-
+| 5. Tambir || Senèn Wagé
+|}
+{{rule|width=4em}}<noinclude>{{rh|8}}</noinclude>

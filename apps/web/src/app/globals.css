@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-prada-50: #FDFBF7;
+  --color-prada-100: #FBF6EC;
+  --color-prada-200: #F4E7CA;
+  --color-prada-300: #EBD49F;
+  --color-prada-400: #DEC071;
+  --color-prada-500: #C5A059;
+  --color-prada-600: #A6803F;
+  --color-prada-700: #85622C;
+  --color-prada-800: #63471E;
+  --color-prada-900: #453013;
+  --color-prada-950: #2C1E0A;
+
+  --color-emerald-50: #F0FDF4;
+  --color-emerald-100: #DCFCE7;
+  --color-emerald-200: #BBF7D0;
+  --color-emerald-300: #86EFAC;
+  --color-emerald-400: #4ADE80;
+  --color-emerald-500: #10B981;
+  --color-emerald-600: #059669;
+  --color-emerald-700: #047857;
+  --color-emerald-800: #065F46;
+  --color-emerald-900: #064E3B;
+  --color-emerald-950: #022C22;
+
+  --color-sand-50: #FAF9F5;
+  --color-sand-100: #F5F3EC;
+  --color-sand-200: #EBE7DC;
+  --color-sand-300: #DDD7C8;
+  --color-sand-400: #C5BDAA;
+  --color-sand-500: #A89F8B;
+  --color-sand-600: #8A816E;
+  --color-sand-700: #6A6353;
+  --color-sand-800: #3D382E;
+  --color-sand-850: #1D1A15;
+  --color-sand-900: #24211A;
+  --color-sand-950: #14120E;
+
+  --color-obsidian-700: #232731;
+  --color-obsidian-750: #1F222B;
+  --color-obsidian-800: #1A1D24;
+  --color-obsidian-850: #161920;
+  --color-obsidian-900: #111318;
+  --color-obsidian-950: #0B0C0F;
+
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-plus-jakarta), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), monospace;
+  --font-royal: var(--font-cinzel), Georgia, serif;
+}
+
+/* Enforce Upright Lining Numerals Globally (WCAG & Aesthetic Standard) */
+*, html, body, h1, h2, h3, h4, h5, h6, span, p, div, input, select, button {
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "lnum" 1, "tnum" 1;
+}
+
+/* Dark mode native element styling */
+.dark {
+  color-scheme: dark;
+}
+
+/* Subtle Batik Truntum & Kawung Pattern Overlays */
+.bg-batik-pattern {
+  background-image: radial-gradient(rgba(197, 160, 89, 0.08) 1px, transparent 1px),
+                    radial-gradient(rgba(197, 160, 89, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+.dark .bg-batik-pattern {
+  background-image: radial-gradient(rgba(222, 192, 113, 0.09) 1px, transparent 1px),
+                    radial-gradient(rgba(197, 160, 89, 0.04) 1px, transparent 1px);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #DEC071 0%, #C5A059 50%, #85622C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Stately Print Stylesheet (Phase 6.4 — Clean Physical / PDF Output) */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm 15mm;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+  }
+
+  /* Hide screen elements */
+  nav,
+  header,
+  footer,
+  aside,
+  form,
+  button,
+  .no-print,
+  .screen-only {
+    display: none !important;
+  }
+
+  .print-avoid-break {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}

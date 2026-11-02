@@ -1,0 +1,60 @@
+﻿<noinclude><pagequality level="4" user="Nerissa Lyra" /></noinclude><div style='text-align: justify;'>
+{{c|'''No. 9. Sasi rahayu'''<br>
+Becik kanggo samubaranggawe kang perlu}}
+{|class="wikitable"
+|- style="text-align: center;"
+| Sasi || Dina
+|-
+| Besar, Sura, Sapar, || Rebo, Kemis,
+|-
+| Mulud, Rabingulakir, Jumadilawal, || Jumuah,
+|-
+| Jumadilakir, Rejeb, Ruwah, || Setu, Akad,
+|-
+| Pasa, Sawal, Dulkaidah. || Senèn, Selasa,
+|}
+<br>
+{{rule|width=4em}}
+<br>
+{{c|'''No. 10. Sasi Sarju'''<br>
+Sedheng kanggo samubaranggawé kang perlu}}
+{|class="wikitable"
+|- style="text-align: center;"
+| Sasi || Dina
+|-
+| Besar, Sura, Sapar, || Jumuah 
+|-
+| Mulud, Rabingulakir, Jumadilawal, || Setu, Akad
+|-
+| Jumadilakir, Rejeb, Ruwah, || Senèn, Selasa,
+|-
+| Pasa, Sawal, Dulkaidah. || Rebo, Kemis
+|}
+<br>
+{{rule|width=4em}}
+<br>
+{{c|'''No. 11. Pati uriping sasi'''}}
+{{gap}}Yèn duwé gawé mantu lan sapadhané, katibakna ing sasi kang becik, lan nyingkirana sasi kang ala, ing ngisor iki pratélané sasi kang becik lan kang ala. Déné sasi kang sedheng ora kasebutaké.
+{|class="wikitable"
+|- style="text-align: center;"
+| Tahun || Sasi kang becik || Sasi kang ala
+|-
+| Alip || 1. || 9. 11.
+|- 
+| Ehé || 1. 2. 6. 7. 8. 10 || 4. 9. 11. 12.
+|-
+| Jimawal || 7. 8. 10. || 1. 2. 3. 5. 12
+|-
+| Jé || 4. 5. 6. 7. 8. 9. 12. || 1. 2. 3. 10. 11
+|-
+| Dal || 6. 7. 9. 10. || 2. 3. 8. 11.
+|-
+| Bé || 6. 12. || 1. 2. 7.
+|-
+| Wawu || 2. 3. 4. 5. 9. || 1. 10. 11. 12.
+|-
+| Jimakir || 3. 5. 7. 8. 10. 12. || 1. 11.
+|}
+<small>Katrangan : Tegesé angka 1 = Sura, 2 = Sapar, 3 = Mulud lan sabanjuré</small>
+<br>
+{{rule|width=4em}}<noinclude>{{rh|10}}</noinclude>

@@ -1,0 +1,41 @@
+﻿<noinclude><pagequality level="4" user="Nerissa Lyra" /></noinclude><div style='text-align: justify;'>
+{{c|<big>'''DUWÉ GAWÉ MANTU.</big><br>No. 38 Tarub.'''}}
+{{gap}}Yèn wis kurang 3, 2 utawa 1 dina karo temuning pengantèn, ing dina kang kapétung tiba becik, banjur tarub, saubenging pandhapa, ing papan gamelan sarta sangareping pawon kataruban betépé, yaiku anaman blarak, saka pring wulung utawa pucang, direnggo janur kuning, didedeki cengkir legi lan cengkir gadhing, gedhang tundunan, tebu, pari, otèk, lan sapanunggalané. Mangkono ugo ing sajabaning kori régol kapasangan rerengan sapantesé, ora ana papan kang kaliwatan. Kabeh ditarubi (betépé). Apadéné nyemplungaké ing sumur utawa kulah krambil 2 sataboné (sasepeté) kagandhèng.
+<br>
+{{rule|width=4em}}
+<br>
+{{c|'''No. 39. Pamilihing dina becik kanggo tarub.'''}}
+{{gap}}Miturut gunggungé neptuné dina lan pasaran.<br>
+{|
+|-
+| Neptu || 7 || utawa || 13, || ayem tentrem, becik.
+|-
+| {{c|"}} || 8 || {{c|"}} || 14, || sèluman lanang, ala.
+|-
+| {{c|"}} || 9 || {{c|"}} || 15, || dodok acung, ala.
+|-
+| {{c|"}} || 10 || {{c|"}} || 16, || temen lan luhur, becik.
+|-
+| {{c|"}} || 11 || {{c|"}} || 17, || sèluman wadon, ala.
+|-
+| {{c|"}} || 12 || {{c|"}} || 18, || bencana, ala.
+|}
+<small>{{gap}}Katrangan : Upama miwiti tarub dina Jumuah Pon, neptuné 6 + 7 = 13 iku becik.</small>
+<br>
+<br>
+{{c|'''No. 40. Pamilihing dina becik kanggo tarub.'''<br>Wawaton tibaning tanggal 1 tumeka 30}}
+{|class="wikitable"
+|- style="text-align: center;"
+| colspan=6 | Tanggal || Wahanané
+|- 
+| 1 || 6 || 11 || 16 || 21 || 26 || Kagunganing ratu, adat ginanggu sétan semarabumi, kakarepané ora kesembadan.
+|- 
+| 2 || 7 || 12 || 17 || 22 || 27 || Nyèluman lanang, tansah nandhang kemlaratan, kerep kélangan.
+|- 
+| 3 ||8 || 13 || 18 || 23 || 28 || Nyèluman wadon, tansah nandhang kemlaratan, kerep kélangan.
+|- 
+| 4 || 9 || 14 || 19 || 24 || 29 || Slamet lan sempulur rejekiné.
+|- 
+| 5 || 10 || 15 || 20 || 25 || 30 || Sampyuh, pati lanang pati wadon.
+|}
+<small>Kang becik : tanggal 4, 9, 14, 19, 24 lan 29.</small><noinclude>{{rh|26}}</noinclude>

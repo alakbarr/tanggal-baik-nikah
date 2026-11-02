@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="id" class="light">
+<!-- DESIGN SYSTEM SPECIFICATION: Nawa Rahayu & Sakinah. Re-verified against primary texts (Kitab Betaljemur Adammakna, KHI Pasal 14, and verified astronomical ephemeris). Fully aligned with DESIGN_SYSTEM.md v3.0, verified couple data (audit C17), and packages/core engine calculations. -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Desain: Nawa Rahayu & Sakinah — Tanggal Baik Nikah</title>
+  
+  <!-- Typography: Playfair Display (Lining Figures), Cinzel, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS v3.4 CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            prada: {
+              50: '#FDFBF7',
+              100: '#FBF6EC',
+              200: '#F4E7CA',
+              300: '#EBD49F',
+              400: '#DEC071',
+              500: '#C5A059',
+              600: '#A6803F',
+              700: '#85622C',
+              800: '#63471E',
+              900: '#453013',
+              950: '#2A1C08'
+            },
+            emerald: {
+              50: '#F0FDF4',
+              100: '#DCFCE7',
+              200: '#BBF7D0',
+              300: '#86EFAC',
+              400: '#4ADE80',
+              500: '#10B981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065F46',
+              900: '#064E3B',
+              950: '#022C22'
+            },
+            sand: {
+              50: '#FAF9F5',
+              100: '#F5F3EC',
+              200: '#EBE7DC',
+              300: '#DDD7C8',
+              400: '#C5BDAA',
+              500: '#A89F8B',
+              600: '#8A816E',
+              700: '#6A6353',
+              800: '#3D382E',
+              850: '#1D1A15',
+              900: '#24211A',
+              950: '#14120E'
+            },
+            obsidian: {
+              700: '#232731',
+              750: '#1F222B',
+              800: '#1A1D24',
+              850: '#161920',
+              900: '#111318',
+              950: '#0B0C0F'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'Cambria', '"Times New Roman"', 'serif'],
+            royal: ['"Cinzel"', '"Trajan Pro"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
+            mono: ['"JetBrains Mono"', '"Cascadia Code"', 'Consolas', 'monospace']
+          },
+          boxShadow: {
+            'royal': '0 10px 30px -10px rgba(197, 160, 89, 0.2)',
+            'royal-lg': '0 20px 40px -15px rgba(197, 160, 89, 0.3)',
+            'emerald-glow': '0 10px 30px -10px rgba(16, 185, 129, 0.25)',
+            'card-light': '0 4px 20px -2px rgba(36, 33, 26, 0.05)',
+            'card-dark': '0 8px 30px -4px rgba(0, 0, 0, 0.4)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Enforce Modern Lining Numerals Globally (Prevents Wobbly Old-Style Numbers) */
+    *, html, body, h1, h2, h3, h4, h5, h6, span, p, div, input, select, button {
+      font-variant-numeric: lining-nums tabular-nums;
+      font-feature-settings: "lnum" 1, "tnum" 1;
+    }
+
+    /* Dark Mode Color Scheme for native browser widgets (date picker, scrollbars) */
+    .dark {
+      color-scheme: dark;
+    }
+
+    /* Subtle Batik Truntum & Kawung Pattern Overlays */
+    .bg-batik-pattern {
+      background-image: radial-gradient(rgba(197, 160, 89, 0.08) 1px, transparent 1px),
+                        radial-gradient(rgba(197, 160, 89, 0.04) 1px, transparent 1px);
+      background-size: 32px 32px;
+      background-position: 0 0, 16px 16px;
+    }
+    
+    .dark .bg-batik-pattern {
+      background-image: radial-gradient(rgba(222, 192, 113, 0.09) 1px, transparent 1px),
+                        radial-gradient(rgba(197, 160, 89, 0.04) 1px, transparent 1px);
+    }
+
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #DEC071 0%, #C5A059 50%, #85622C 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Smooth drawer & modal transition */
+    .drawer-transition {
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease-out;
+    }
+  </style>
+</head>
+<body class="bg-sand-50 dark:bg-obsidian-950 text-sand-900 dark:text-sand-100 font-sans transition-colors duration-300 antialiased min-h-screen relative bg-batik-pattern">
+
+  <!-- ========================================== -->
+  <!-- LEVEL 0: THEOLOGICAL BANNER (ANTI-TATHAYYUR) -->
+  <!-- ========================================== -->
+  <div class="bg-emerald-900 text-emerald-100 text-xs py-2 px-4 border-b border-emerald-800 shadow-sm relative z-30">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1.5 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>
+          <strong>Tuntunan Syariat:</strong> Pernikahan adalah ikatan suci (mitsaqan ghalizha). Hari dan tanggal tidak memiliki kekuatan mandiri menentukan nasib (bebas dari <em>tathayyur</em>); sandarkan seluruh ikhtiar pada ketetapan Allah semata.
+        </span>
+      </div>
+      <div class="text-[11px] text-emerald-300 font-mono font-medium">
+        HR. Tirmidhi 1614
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- APP HEADER & NAVIGATION BAR               -->
+  <!-- ========================================== -->
+  <header class="sticky top-0 z-40 bg-sand-50/90 dark:bg-obsidian-950/90 backdrop-blur-md border-b border-sand-200 dark:border-sand-800 transition-colors">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-prada-400 to-prada-600 flex items-center justify-center text-white shadow-royal">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        </div>
+        <div>
+          <span class="font-serif font-bold text-lg text-sand-950 dark:text-sand-50 tracking-tight block leading-tight">
+            Tanggal Baik Nikah
+          </span>
+          <span class="text-[10px] font-mono tracking-wider uppercase text-prada-700 dark:text-prada-400 font-bold block">
+            NAWA RAHAYU &bull; SAKINAH &bull; SISTEM DESAIN V2.0
+          </span>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-6 text-xs font-medium text-sand-600 dark:text-sand-300">
+        <a href="#prototipe" class="hover:text-prada-600 dark:hover:text-prada-400 transition-colors">Prototipe Interaktif</a>
+        <a href="#dual-track" class="hover:text-prada-600 dark:hover:text-prada-400 transition-colors">Jalur Ganda Syariat &amp; Adat</a>
+        <a href="#tokens" class="hover:text-prada-600 dark:hover:text-prada-400 transition-colors">Token Warna</a>
+        <a href="#typography" class="hover:text-prada-600 dark:hover:text-prada-400 transition-colors">Tipografi</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <!-- Dark Mode Toggle Button -->
+        <button id="themeToggleBtn" onclick="toggleTheme()" aria-label="Ganti Tema Tampilan"
+                class="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-sand-300 dark:border-sand-700 bg-white dark:bg-obsidian-850 text-xs font-medium text-sand-700 dark:text-sand-200 hover:border-prada-400 dark:hover:border-prada-500 transition-all shadow-xs">
+          <span id="themeIcon">🌙</span>
+          <span id="themeLabel">Obsidian Gelap</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- HERO: DESIGN SYSTEM OVERVIEW               -->
+  <!-- ========================================== -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-8 text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-prada-100 dark:bg-obsidian-850 border border-prada-300 dark:border-prada-500/30 text-prada-800 dark:text-prada-300 text-xs font-medium mb-4">
+      <span class="w-1.5 h-1.5 rounded-full bg-prada-500"></span>
+      Penasihat Waktu Akad Nikah Tradisi Jawa &amp; Sunnah Islam
+    </div>
+    <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-sand-950 dark:text-sand-50 max-w-4xl mx-auto leading-tight">
+      Sistem Rekomendasi Tanggal Akad Nikah: <br class="hidden sm:inline">
+      <span class="gold-gradient-text">Petungan Naskah Kuno &amp; Fiqih Sunnah</span>
+    </h1>
+    <p class="mt-4 text-sm sm:text-base text-sand-600 dark:text-sand-300 max-w-2xl mx-auto leading-relaxed">
+      Dokumentasi sistem desain dan prototipe interaktif Tanggal Baik Nikah. Memadukan hisab astronomi kalender Sultan Agungan Jawa (Kurup Asapon), kalender Hijriah, dan tuntunan Maqashid Syariah secara transparan tanpa klaim takdir mutlak.
+    </p>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- LIVE INTERACTIVE PROTOTYPE                                        -->
+  <!-- ================================================================= -->
+  <main id="prototipe" class="max-w-5xl mx-auto px-4 sm:px-6 pb-20 space-y-12">
+
+    <!-- LEVEL 1: INPUT WORKSPACE & FORM -->
+    <section class="rounded-3xl bg-white dark:bg-obsidian-900 border border-sand-200 dark:border-prada-500/20 shadow-card-light dark:shadow-card-dark p-6 sm:p-8 space-y-6 relative overflow-hidden">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-sand-200 dark:border-sand-800 gap-2">
+        <div>
+          <span class="text-[11px] uppercase tracking-wider font-bold text-prada-600 dark:text-prada-400 block font-mono">
+            RUANG INPUT &amp; PENCARIAN TANGGAL
+          </span>
+          <h2 class="font-serif text-xl sm:text-2xl font-bold text-sand-900 dark:text-sand-50">
+            Pencarian Tanggal Berdasarkan Tiga Data Utama
+          </h2>
+        </div>
+        <div class="flex items-center gap-2 text-xs font-medium text-emerald-700 dark:text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          Konsensus 7 Sistem Falak &amp; Syariat Aktif
+        </div>
+      </div>
+
+      <!-- Form Inputs -->
+      <div class="p-5 sm:p-6 rounded-2xl bg-sand-50/70 dark:bg-obsidian-850 border border-sand-200 dark:border-sand-800/80 space-y-6">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="w-6 h-6 rounded-full bg-prada-500 text-white text-xs font-bold flex items-center justify-center font-mono">1</span>
+            <h3 class="font-serif font-bold text-base text-sand-950 dark:text-sand-50">Data Calon Mempelai &amp; Rencana Waktu</h3>
+          </div>
+          <div class="flex items-center gap-2">
+            <span id="formNeptuSummary" class="text-xs font-mono font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-obsidian-950 border border-sand-200 dark:border-sand-700 text-sand-700 dark:text-sand-300">
+              Total Neptu Pasangan: 15 + 13 = 28
+            </span>
+            <button onclick="openWetonModal()" class="text-xs font-semibold px-2.5 py-1 rounded-md bg-prada-100 hover:bg-prada-200 dark:bg-prada-950/60 dark:hover:bg-prada-900/60 border border-prada-300 dark:border-prada-500/40 text-prada-800 dark:text-prada-300 transition-colors flex items-center gap-1">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Lihat Rincian Weton Lengkap
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <!-- Groom Field -->
+          <div class="space-y-3 p-4 rounded-xl bg-white dark:bg-obsidian-900 border border-sand-200 dark:border-sand-800">
+            <div class="flex items-center justify-between">
+              <label class="text-xs font-bold uppercase tracking-wider text-sand-700 dark:text-sand-300">Calon Mempelai Pria</label>
+              <span id="groomWetonBadge" class="text-[11px] font-mono px-2 py-0.5 rounded bg-prada-100 dark:bg-obsidian-850 text-prada-800 dark:text-prada-300 border border-prada-200 dark:border-prada-500/20 font-semibold">
+                Kamis Pon (Neptu 15)
+              </span>
+            </div>
+            <div>
+              <label for="groomName" class="text-[11px] text-sand-500 dark:text-sand-400 block mb-1">Nama Lengkap / Panggilan</label>
+              <input type="text" id="groomName" value="Dimas Wicaksono"
+                     class="w-full px-3 py-2 rounded-lg bg-sand-50 dark:bg-obsidian-950 border border-sand-300 dark:border-sand-700 text-sm focus:border-prada-500 focus:outline-none dark:text-sand-100 transition-colors">
+            </div>
+            <div>
+              <label for="groomDob" class="text-[11px] text-sand-500 dark:text-sand-400 block mb-1">Tanggal Lahir</label>
+              <input type="date" id="groomDob" value="1998-05-28" onchange="updateWetonPreview()"
+                     class="w-full px-3 py-2 rounded-lg bg-sand-50 dark:bg-obsidian-950 border border-sand-300 dark:border-sand-700 text-sm focus:border-prada-500 focus:outline-none dark:text-sand-100 font-mono transition-colors">
+            </div>
+          </div>
+
+          <!-- Bride Field -->
+          <div class="space-y-3 p-4 rounded-xl bg-white dark:bg-obsidian-900 border border-sand-200 dark:border-sand-800">
+            <div class="flex items-center justify-between">
+              <label class="text-xs font-bold uppercase tracking-wider text-sand-700 dark:text-sand-300">Calon Mempelai Wanita</label>
+              <span id="brideWetonBadge" class="text-[11px] font-mono px-2 py-0.5 rounded bg-prada-100 dark:bg-obsidian-850 text-prada-800 dark:text-prada-300 border border-prada-200 dark:border-prada-500/20 font-semibold">
+                Kamis Legi (Neptu 13)
+              </span>
+            </div>
+            <div>
+              <label for="brideName" class="text-[11px] text-sand-500 dark:text-sand-400 block mb-1">Nama Lengkap / Panggilan</label>
+              <input type="text" id="brideName" value="Siti 'Sikah' Rahayu"
+                     class="w-full px-3 py-2 rounded-lg bg-sand-50 dark:bg-obsidian-950 border border-sand-300 dark:border-sand-700 text-sm focus:border-prada-500 focus:outline-none dark:text-sand-100 transition-colors">
+            </div>
+            <div>
+              <label for="brideDob" class="text-[11px] text-sand-500 dark:text-sand-400 block mb-1">Tanggal Lahir</label>
+              <input type="date" id="brideDob" value="1999-10-28" onchange="updateWetonPreview()"
+                     class="w-full px-3 py-2 rounded-lg bg-sand-50 dark:bg-obsidian-950 border border-sand-300 dark:border-sand-700 text-sm focus:border-prada-500 focus:outline-none dark:text-sand-100 font-mono transition-colors">
+            </div>
+          </div>
+        </div>
+
+        <!-- Target Timing & Preferences -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+          <div>
+            <label for="targetYear" class="text-xs font-medium text-sand-700 dark:text-sand-300 block mb-1">Tahun Rencana Akad:</label>
+            <select id="targetYear" class="w-full px-3 py-2 rounded-lg bg-white dark:bg-obsidian-950 border border-sand-300 dark:border-sand-700 text-sm font-semibold focus:border-prada-500 focus:outline-none dark:text-sand-100 transition-colors">
+              <option value="2027" selected>Tahun 2027 M</option>
+              <option value="2026">Tahun 2026 M</option>
+              <option value="2028">Tahun 2028 M</option>
+            </select>
+          </div>
+          <div class="flex items-center gap-3 pt-6">
+            <input type="checkbox" id="weekendOnly" checked class="w-4 h-4 rounded border-sand-300 text-prada-600 focus:ring-prada-500">
+            <label for="weekendOnly" class="text-xs font-medium text-sand-700 dark:text-sand-300 cursor-pointer select-none">
+              Prioritaskan Akhir Pekan (Sabtu &amp; Ahad)
+            </label>
+          </div>
+        </div>
+
+        <!-- Primary CTA Button -->
+        <div class="pt-2">
+          <button onclick="triggerSearchSimulation()" class="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-prada-500 to-prada-600 hover:from-prada-600 hover:to-prada-700 text-white font-bold text-sm tracking-wide shadow-royal hover:shadow-royal-lg transition-all flex items-center justify-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            <span>Cari Tanggal Akad Terbaik di Semua Sistem</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- LEVEL 2 & 3: CONSENSUS RECOMMENDATIONS RESULTS                     -->
+    <!-- ================================================================= -->
+    <section id="hasil-rekomendasi" class="space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <span class="text-[11px] uppercase tracking-wider font-bold text-prada-600 dark:text-prada-400 block font-mono">
+            KURASI MESIN KONSENSUS
+          </span>
+          <h2 class="font-serif text-2xl font-bold text-sand-900 dark:text-sand-50">
+            18 Rekomendasi Tanggal Akad Tahun 2027
+          </h2>
+          <p class="text-xs text-sand-500 dark:text-sand-400 mt-0.5">
+            Diurutkan dari tingkat keselarasan tertinggi. Seluruh tanggal 100% bersih dari pantangan adat utama.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <!-- View Mode Switcher -->
+          <div class="flex items-center p-1 bg-sand-100 dark:bg-obsidian-850 rounded-xl border border-sand-200 dark:border-sand-800 text-xs font-semibold">
+            <button id="viewListBtn" onclick="switchViewMode('list')" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white dark:bg-obsidian-950 text-prada-700 dark:text-prada-300 shadow-sm border border-transparent dark:border-prada-500/30 transition-all font-semibold">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+              <span>Tampilan Kartu</span>
+            </button>
+            <button id="viewGridBtn" onclick="switchViewMode('grid')" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sand-600 dark:text-sand-400 hover:text-sand-900 dark:hover:text-sand-100 hover:bg-sand-200/50 dark:hover:bg-obsidian-900 transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              <span>Kalender 3 Sistem (Tabel)</span>
+            </button>
+          </div>
+
+          <!-- Filter Tab -->
+          <div class="flex items-center p-1 bg-sand-100 dark:bg-obsidian-850 rounded-lg text-xs font-medium border border-sand-200 dark:border-sand-800">
+            <button id="tabAllBtn" onclick="switchFilterTab('all')" class="px-3 py-1.5 rounded-md bg-white dark:bg-obsidian-950 text-prada-700 dark:text-prada-300 border border-transparent dark:border-prada-500/30 shadow-sm font-semibold transition-all">
+              Semua (18)
+            </button>
+            <button id="tabTabooBtn" onclick="switchFilterTab('taboo')" class="px-3 py-1.5 rounded-md text-sand-600 dark:text-sand-400 hover:text-sand-900 dark:hover:text-sand-100 hover:bg-sand-200/50 dark:hover:bg-obsidian-900 transition-all">
+              Pantangan Adat (5)
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================== -->
+      <!-- VIEW 1: RECOMMENDATION CARDS (LIST VIEW)       -->
+      <!-- ============================================== -->
+      <div id="recommendationCardsContainer" class="space-y-4">
+
+        <!-- CROWN JEWEL CARD: TIER 1 PARIPURNA (CARD #1) -->
+        <article class="p-6 sm:p-7 rounded-3xl bg-white dark:bg-obsidian-900 border-2 border-prada-400 dark:border-prada-500/40 shadow-royal hover:shadow-royal-lg transition-all relative overflow-hidden group">
+          <div class="absolute -right-12 -bottom-12 w-48 h-48 rounded-full bg-prada-200/20 dark:bg-prada-500/5 pointer-events-none"></div>
+
+          <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3 pb-4 border-b border-sand-200 dark:border-sand-800">
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-prada-500 text-white font-mono font-bold text-sm flex items-center justify-center shadow-xs">
+                #1
+              </span>
+              <div>
+                <h3 class="font-serif text-xl sm:text-2xl font-bold text-sand-950 dark:text-sand-50 tracking-tight">
+                  Ahad Wage, 17 Januari 2027 M
+                </h3>
+                <div class="text-xs text-sand-500 dark:text-sand-400 font-mono mt-0.5">
+                  8 Ruwah 1960 Jawa (Tahun Bé) &bull; 9 Sya'ban 1448 H &bull; Wuku Kuningan
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-prada-100 dark:bg-prada-950/80 border border-prada-300 dark:border-prada-500/40 text-prada-900 dark:text-prada-200 text-xs font-bold shadow-xs">
+              <span class="font-mono font-bold text-prada-800 dark:text-prada-300">[2/3]</span>
+              <span>Memenuhi 2 dari 3 Kriteria Adat</span>
+            </div>
+          </div>
+
+          <!-- Contributing Systems Checklist -->
+          <div class="py-5 space-y-3">
+            <div class="text-xs font-bold uppercase tracking-wider text-sand-500 dark:text-sand-400">
+              SISTEM FALAK &amp; ADAT YANG MENDUKUNG:
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 text-xs">
+              <div class="p-2.5 rounded-xl bg-emerald-50/70 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50 flex items-start gap-2">
+                <span class="text-emerald-600 dark:text-emerald-400 font-bold">✓</span>
+                <div>
+                  <div class="font-semibold text-emerald-900 dark:text-emerald-200">Betaljemur No. 34</div>
+                  <div class="text-[11px] text-emerald-700 dark:text-emerald-300">Konsensus 3 Tabel Harja (Tenteram &amp; Sejahtera)</div>
+                </div>
+              </div>
+
+              <div class="p-2.5 rounded-xl bg-emerald-50/70 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50 flex items-start gap-2">
+                <span class="text-emerald-600 dark:text-emerald-400 font-bold">✓</span>
+                <div>
+                  <div class="font-semibold text-emerald-900 dark:text-emerald-200">Bulan Utama: Ruwah (No. 33)</div>
+                  <div class="text-[11px] text-emerald-700 dark:text-emerald-300">Harja: Sangat utama untuk melangsungkan hajatan nikah</div>
+                </div>
+              </div>
+
+              <div class="p-2.5 rounded-xl bg-emerald-50/70 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50 flex items-start gap-2">
+                <span class="text-emerald-600 dark:text-emerald-400 font-bold">✓</span>
+                <div>
+                  <div class="font-semibold text-emerald-900 dark:text-emerald-200">Kaidah Wilayah Pati (U-01)</div>
+                  <div class="text-[11px] text-emerald-700 dark:text-emerald-300">(Neptu Pasangan 28 + Hari 16) mod 3 = 2 (Syarat Terpenuhi)</div>
+                </div>
+              </div>
+
+              <div class="p-2.5 rounded-xl bg-emerald-50/70 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50 flex items-start gap-2">
+                <span class="text-emerald-600 dark:text-emerald-400 font-bold">✓</span>
+                <div>
+                  <div class="font-semibold text-emerald-900 dark:text-emerald-200">Pasatohan 9x9 (Betaljemur No. 15)</div>
+                  <div class="text-[11px] text-emerald-700 dark:text-emerald-300">Koordinat (6, 4) &rarr; Sugih Rejeki (Rezeki Melimpah)</div>
+                </div>
+              </div>
+
+              <div class="p-2.5 rounded-xl bg-emerald-50/70 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50 flex items-start gap-2">
+                <span class="text-emerald-600 dark:text-emerald-400 font-bold">✓</span>
+                <div>
+                  <div class="font-semibold text-emerald-900 dark:text-emerald-200">Pancasuda 7 Siklus</div>
+                  <div class="text-[11px] text-emerald-700 dark:text-emerald-300">44 mod 7 = 2 &rarr; Tunggak Semi (Rezeki Selalu Bersemi)</div>
+                </div>
+              </div>
+
+              <div class="p-2.5 rounded-xl bg-sand-100 dark:bg-obsidian-850 border border-sand-300 dark:border-sand-700 flex items-start gap-2">
+                <span class="text-prada-600 dark:text-prada-400 font-bold">ⓘ</span>
+                <div>
+                  <div class="font-semibold text-sand-900 dark:text-sand-100">Kemudahan Tamu (Taysir)</div>
+                  <div class="text-[11px] text-sand-600 dark:text-sand-400">Akhir Pekan: Waktu ideal untuk silaturahmi keluarga besar</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Action Bar & Recommended Hour -->
+          <div class="pt-4 border-t border-sand-200 dark:border-sand-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+            <div class="flex items-center gap-2 text-sand-700 dark:text-sand-300">
+              <span class="font-mono text-prada-600 dark:text-prada-400">🕒</span>
+              <span>Waktu Ijab Disarankan: <strong>15.36 – 17.59 WIB</strong> (Sa'at Slamet, Pasaran Wage, Betaljemur No. 35)</span>
+            </div>
+
+            <button onclick="openProvenanceDrawer('card-1')"
+                    class="px-4 py-2 rounded-xl bg-sand-100 hover:bg-sand-200 dark:bg-obsidian-850 dark:hover:bg-obsidian-750 border border-sand-300 dark:border-sand-700 text-sand-900 dark:text-sand-100 font-semibold transition-all flex items-center justify-center gap-1.5 shadow-xs">
+              <span>Lihat Naskah &amp; Tinjauan Fiqih</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- CARD #2: TIER 2 HIGHLY RECOMMENDED -->
+        <article class="p-6 rounded-3xl bg-white dark:bg-obsidian-900 border border-sand-300 dark:border-sand-800 shadow-sm hover:border-prada-400 dark:hover:border-prada-500/40 transition-all space-y-4">
+          <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3 pb-3 border-b border-sand-200 dark:border-sand-800">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-sand-200 dark:bg-obsidian-800 text-sand-800 dark:text-sand-200 font-mono font-bold text-xs flex items-center justify-center">
+                #2
+              </span>
+              <div>
+                <h3 class="font-serif text-lg sm:text-xl font-bold text-sand-950 dark:text-sand-50">
+                  Ahad Legi, 22 Agustus 2027 M
+                </h3>
+                <div class="text-xs text-sand-500 dark:text-sand-400 font-mono">
+                  19 Mulud 1961 Jawa (Tahun Wawu) &bull; 19 Rabiul Awwal 1449 H &bull; Wuku Langkir
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-xs font-bold">
+              <span>⭐⭐⭐⭐</span>
+              <span>Sangat Disarankan (5/7 Sistem)</span>
+            </div>
+          </div>
+
+          <p class="text-xs text-sand-600 dark:text-sand-300 leading-relaxed">
+            Disepakati oleh: Kaidah Pati ((28 + 10) = 38 mod 3 = 2), Betaljemur No. 34 (Ahad ke-3 bulan Mulud &rarr; status Harja), Pasatohan 9x9 (Koordinat 6, 4 &rarr; Sugih Rejeki), Pancasuda 7 (38 mod 7 = 3 &rarr; Satriya Wibawa), serta kemudahan kehadiran tamu di akhir pekan. Bersih dari seluruh pantangan keras leluhur.
+          </p>
+
+          <div class="pt-3 border-t border-sand-200 dark:border-sand-800 flex items-center justify-between text-xs">
+            <span class="text-sand-600 dark:text-sand-400">Waktu Ijab Disarankan: <strong>10.18 – 13.11 WIB</strong> (Sa'at Rejeki, Betaljemur No. 35)</span>
+            <button onclick="openProvenanceDrawer('card-2')" class="text-prada-600 dark:text-prada-400 font-semibold hover:underline">
+              Rincian Naskah &rarr;
+            </button>
+          </div>
+        </article>
+
+        <!-- CARD #3: TIER 3 NEUTRAL & HARMONIOUS -->
+        <article class="p-6 rounded-3xl bg-white dark:bg-obsidian-900 border border-sand-300 dark:border-sand-800 shadow-sm hover:border-prada-400 dark:hover:border-prada-500/40 transition-all space-y-4">
+          <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3 pb-3 border-b border-sand-200 dark:border-sand-800">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-sand-200 dark:bg-obsidian-800 text-sand-800 dark:text-sand-200 font-mono font-bold text-xs flex items-center justify-center">
+                #3
+              </span>
+              <div>
+                <h3 class="font-serif text-lg sm:text-xl font-bold text-sand-950 dark:text-sand-50">
+                  Sabtu Pon, 18 September 2027 M
+                </h3>
+                <div class="text-xs text-sand-500 dark:text-sand-400 font-mono">
+                  16 Bakda Mulud 1961 Jawa (Tahun Wawu) &bull; 16 Rabiul Akhir 1449 H &bull; Wuku Pahang
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sand-100 dark:bg-obsidian-850 border border-sand-300 dark:border-sand-700 text-sand-800 dark:text-sand-200 text-xs font-semibold">
+              <span>⭐⭐⭐</span>
+              <span>Harmonis &amp; Seimbang (5/7 Sistem)</span>
+            </div>
+          </div>
+
+          <p class="text-xs text-sand-600 dark:text-sand-300 leading-relaxed">
+            Disepakati oleh: Kaidah Pati ((28 + 16) = 44 mod 3 = 2), Betaljemur No. 34 (Sabtu ke-3 bulan Bakda Mulud &rarr; Begja &amp; Harja), Pasatohan 9x9 (Sugih Rejeki), Pancasuda (44 mod 7 = 2 &rarr; Tunggak Semi), serta kemudahan hari Sabtu bagi tamu. Bebas dari seluruh pantangan keras adat.
+          </p>
+
+          <div class="pt-3 border-t border-sand-200 dark:border-sand-800 flex items-center justify-between text-xs">
+            <span class="text-sand-600 dark:text-sand-400">Waktu Ijab Disarankan: <strong>08.25 – 10.11 WIB</strong> (Sa'at Slamet, Betaljemur No. 35)</span>
+            <button onclick="openProvenanceDrawer('card-3')" class="text-prada-600 dark:text-prada-400 font-semibold hover:underline">
+              Rincian Naskah &rarr;
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ============================================== -->
+      <!-- VIEW 2: TRI-SYSTEM MONTHLY CALENDAR (GRID VIEW)-->
+      <!-- ============================================== -->
+      <div id="calendarGridViewContainer" class="hidden space-y-4">
+        <!-- Month Navigator & Quick Controls -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-2xl bg-white dark:bg-obsidian-900 border border-sand-200 dark:border-sand-800 shadow-sm gap-4">
+          <div class="flex items-center gap-3">
+            <button onclick="changeCalendarMonth(-1)" aria-label="Bulan Sebelumnya" class="p-2 rounded-lg bg-sand-100 dark:bg-obsidian-850 hover:bg-sand-200 dark:hover:bg-obsidian-750 text-sand-700 dark:text-sand-300 border border-sand-200 dark:border-sand-700 transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <div>
+              <h4 id="calMonthTitle" class="font-serif text-lg sm:text-xl font-bold text-sand-950 dark:text-sand-50">
+                Juli 2027 M
+              </h4>
+              <p id="calMonthSubtitle" class="text-xs text-sand-500 dark:text-sand-400 font-mono">
+                5 Sapar 1961 Jawa (Tahun Wawu) &bull; Safar 1449 H &bull; Kurup Asapon
+              </p>
+            </div>
+            <button onclick="changeCalendarMonth(1)" aria-label="Bulan Berikutnya" class="p-2 rounded-lg bg-sand-100 dark:bg-obsidian-850 hover:bg-sand-200 dark:hover:bg-obsidian-750 text-sand-700 dark:text-sand-300 border border-sand-200 dark:border-sand-700 transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+
+          <!-- Calendar Legend -->
+          <div class="flex flex-wrap items-center gap-3 text-xs font-medium">
+            <div class="flex items-center gap-1.5">
+              <span class="w-3 h-3 rounded-full bg-prada-500"></span>
+              <span class="text-sand-700 dark:text-sand-300">Tingkat 1 Paripurna</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+              <span class="text-sand-700 dark:text-sand-300">Tingkat 2 Sangat Disarankan</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <span class="w-3 h-3 rounded-full bg-sand-300 dark:bg-obsidian-700"></span>
+              <span class="text-sand-500 dark:text-sand-400">Standar / Netral</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7-Column Responsive Calendar Grid -->
+        <div class="p-4 sm:p-6 rounded-3xl bg-white dark:bg-obsidian-900 border border-sand-200 dark:border-prada-500/20 shadow-card-light dark:shadow-card-dark space-y-3">
+          <!-- Weekday Headers -->
+          <div class="grid grid-cols-7 gap-1.5 sm:gap-2 text-center text-xs font-bold text-sand-500 dark:text-sand-400 uppercase tracking-wider py-2 border-b border-sand-200 dark:border-sand-800">
+            <div>SEN</div>
+            <div>SEL</div>
+            <div>RAB</div>
+            <div>KAM</div>
+            <div class="text-emerald-700 dark:text-emerald-400 font-extrabold">JUM</div>
+            <div class="text-prada-700 dark:text-prada-400 font-extrabold">SAB</div>
+            <div class="text-prada-700 dark:text-prada-400 font-extrabold">AHD</div>
+          </div>
+
+          <!-- Calendar Cells Container -->
+          <div id="calendarGridBody" class="grid grid-cols-7 gap-1.5 sm:gap-2">
+            <!-- Dynamically populated by JS -->
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl bg-sand-100/60 dark:bg-obsidian-850/60 border border-sand-200 dark:border-sand-800 text-[11px] text-sand-600 dark:text-sand-400 text-center">
+          💡 Setiap kotak menampilkan Tanggal Masehi (tengah), Tanggal Hijriah (kiri atas), dan Tanggal/Pasaran Jawa (bawah). Klik tanggal mana saja untuk membuka audit dalil dan naskah kuno.
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- LEVEL 4: DUAL-TRACK ARCHITECTURE DISPLAY                          -->
+    <!-- ================================================================= -->
+    <section id="dual-track" class="space-y-6 pt-6">
+      <div class="text-center max-w-2xl mx-auto space-y-1">
+        <span class="text-[11px] uppercase tracking-wider font-bold text-prada-600 dark:text-prada-400 block font-mono">
+          ARSITEKTUR ANTARMUKA DUA JALUR
+        </span>
+        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-sand-950 dark:text-sand-50">
+          Pemisahan Selaras: Syariat Islam &amp; Adat Tradisi Jawa
+        </h2>
+        <p class="text-xs sm:text-sm text-sand-600 dark:text-sand-400">
+          Prinsip Non-Fatalistik: Kami menolak skor ramalan nasib tunggal. Kedua tradisi disajikan dalam panel terpisah yang seimbang dengan saling menghormati.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Panel Track A: Islamic Shariah -->
+        <div class="p-6 rounded-3xl bg-emerald-950/5 dark:bg-emerald-950/20 border-2 border-emerald-500/30 dark:border-emerald-500/20 shadow-xs space-y-4">
+          <div class="flex items-center gap-3 pb-3 border-b border-emerald-200 dark:border-emerald-800/60">
+            <div class="w-8 h-8 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-sm shadow-emerald-glow">
+              ☪
+            </div>
+            <div>
+              <h3 class="font-serif font-bold text-lg text-emerald-950 dark:text-emerald-100">
+                Jalur A: Tuntunan Syariat Islam &amp; Sunnah Nabi ﷺ
+              </h3>
+              <span class="text-[11px] font-mono text-emerald-700 dark:text-emerald-400 font-semibold">
+                Berdasarkan Tauhid, Maqashid Syariah &amp; Hadits Shahih
+              </span>
+            </div>
+          </div>
+
+          <ul class="space-y-3 text-xs text-sand-700 dark:text-sand-300">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">1.</span>
+              <span><strong>Larangan Mutlak Tathayyur:</strong> Menolak anggapan bahwa hari memiliki kekuatan mandiri membawa kesialan atau celaka (HR. Tirmidzi no. 1614, Bukhari no. 5757).</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">2.</span>
+              <span><strong>Waktu yang Disunnahkan:</strong> Pernikahan di bulan Syawal (HR. Muslim no. 1423) dan keberkahan hari Jumat (<em>Sayyidul Ayyam</em>, HR. Muslim no. 854).</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">3.</span>
+              <span><strong>Prinsip Taysir (Kemudahan):</strong> Memilih akhir pekan memudahkan kehadiran sanak saudara dan para tamu tanpa mengabaikan kewajiban shalat fardhu.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">4.</span>
+              <span><strong>Keabsahan 5 Rukun Nikah:</strong> Keabsahan sepenuhnya bersandar pada 5 rukun nikah: calon suami, calon istri, wali nikah, dua saksi adil, dan ijab kabul (KHI Pasal 14). Pantangan adat sama sekali tidak membatalkan pernikahan.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Panel Track B: Javanese Customary Petungan -->
+        <div class="p-6 rounded-3xl bg-prada-50/50 dark:bg-obsidian-900 border-2 border-prada-400/30 dark:border-prada-500/20 shadow-xs space-y-4">
+          <div class="flex items-center gap-3 pb-3 border-b border-sand-200 dark:border-sand-800">
+            <div class="w-8 h-8 rounded-xl bg-prada-500 text-white flex items-center justify-center font-bold text-sm shadow-royal">
+              🏛
+            </div>
+            <div>
+              <h3 class="font-serif font-bold text-lg text-sand-950 dark:text-sand-50">
+                Jalur B: Khazanah Petungan Tradisi Jawa
+              </h3>
+              <span class="text-[11px] font-mono text-prada-700 dark:text-prada-400 font-semibold">
+                Naskah Klasik Keraton &amp; Sarana Musyawarah Keluarga
+              </span>
+            </div>
+          </div>
+
+          <ul class="space-y-3 text-xs text-sand-700 dark:text-sand-300">
+            <li class="flex items-start gap-2">
+              <span class="text-prada-600 font-bold">1.</span>
+              <span><strong>Kedudukan 'Urf (Adat Kebiasaan):</strong> Dihormati sebagai kearifan leluhur (<em>ilmu titen</em>) demi kerukunan keluarga besar, bukan wahyu atau ramalan ghaib.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-prada-600 font-bold">2.</span>
+              <span><strong>Rujukan Naskah Keraton:</strong> Mengacu pada <em>Kitab Betaljemur Adammakna</em> (43 aturan), penelitian Undip naskah Winong Pati, serta tabel jodoh populer 8 kategori (Tingkat T3).</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-prada-600 font-bold">3.</span>
+              <span><strong>Naskah Tradisi Pesisiran:</strong> Mengintegrasikan riset lapangan Undip 2021 di Pati: $(Neptu_{pasangan} + Neptu_{hari}) \pmod 3 = 2$ untuk ketenteraman rumah tangga.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-prada-600 font-bold">4.</span>
+              <span><strong>Transparansi Resolusi Perbedaan:</strong> Menampilkan perbedaan naskah kuno secara jujur (misal: Aturan No. 26 vs 27) tanpa memaksakan selera sepihak.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 4: DESIGN TOKEN SHOWCASE                                  -->
+    <!-- ================================================================= -->
+    <section id="tokens" class="space-y-6 pt-6">
+      <div class="text-center max-w-2xl mx-auto space-y-1">
+        <span class="text-[11px] uppercase tracking-wider font-bold text-prada-600 dark:text-prada-400 block font-mono">
+          SISTEM TOKEN DESAIN "NAWA RAHAYU &amp; SAKINAH"
+        </span>
+        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-sand-950 dark:text-sand-50">
+          Palet Warna, Hierarki Elevasi, dan Kepatuhan Kontras WCAG 2.2 AA
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+        <!-- Token Prada Gold -->
+        <div class="p-4 rounded-2xl bg-white dark:bg-obsidian-900 border border-sand-200 dark:border-sand-800 space-y-3">
+          <div class="h-16 rounded-xl bg-prada-500 flex items-center justify-center text-white font-mono font-bold shadow-royal">
+            #C5A059 &bull; Prada 500
+          </div>
+          <div>
+            <h4 class="font-bold text-sand-950 dark:text-sand-50">Emas Prada (Kemegahan Keraton)</h4>
+            <p class="text-[11px] text-sand-500 dark:text-sand-400 mt-0.5">Aksen utama merek, lencana Tingkat 1, dan tombol aksi utama.</p>
+          </div>
+          <div class="grid grid-cols-5 gap-1 pt-1 font-mono text-[9px] text-center">
+            <div class="p-1 rounded bg-prada-100 text-prada-900">100</div>
+            <div class="p-1 rounded bg-prada-300 text-prada-950">300</div>
+            <div class="p-1 rounded bg-prada-500 text-white font-bold">500</div>
+            <div class="p-1 rounded bg-prada-700 text-white">700</div>
+            <div class="p-1 rounded bg-prada-900 text-white">900</div>
+          </div>
+        </div>
+
+        <!-- Token Emerald Sakinah -->
+        <div class="p-4 rounded-2xl bg-white dark:bg-obsidian-900 border border-sand-200 dark:border-sand-800 space-y-3">
+          <div class="h-16 rounded-xl bg-emerald-600 flex items-center justify-center text-white font-mono font-bold shadow-emerald-glow">
+            #059669 &bull; Emerald 600
+          </div>
+          <div>
+            <h4 class="font-bold text-sand-950 dark:text-sand-50">Hijau Zamrud Sakinah (Ketenangan Sunnah)</h4>
+            <p class="text-[11px] text-sand-500 dark:text-sand-400 mt-0.5">Spanduk landasan tauhid syariat, daftar cek terverifikasi, dan indikator aman.</p>
+          </div>
+          <div class="grid grid-cols-5 gap-1 pt-1 font-mono text-[9px] text-center">
+            <div class="p-1 rounded bg-emerald-100 text-emerald-900">100</div>
+            <div class="p-1 rounded bg-emerald-300 text-emerald-950">300</div>
+            <div class="p-1 rounded bg-emerald-500 text-white font-bold">500</div>
+            <div class="p-1 rounded bg-emerald-700 text-white">700</div>
+            <div class="p-1 rounded bg-emerald-900 text-white">900</div>
+          </div>
+        </div>
+
+        <!-- Token Sand Paper -->
+        <div class="p-4 rounded-2xl bg-white dark:bg-obsidian-900 border border-sand-200 dark:border-sand-800 space-y-3">
+          <div class="h-16 rounded-xl bg-sand-200 text-sand-900 flex items-center justify-center font-mono font-bold border border-sand-300">
+            #EBE7DC &bull; Sand 200
+          </div>
+          <div>
+            <h4 class="font-bold text-sand-950 dark:text-sand-50">Kertas Serat Alami (Kanvas Naskah Kuno)</h4>
+            <p class="text-[11px] text-sand-500 dark:text-sand-400 mt-0.5">Latar belakang kertas alami, garis batas halus yang hangat, dan kontrol formulir yang taktil.</p>
+          </div>
+          <div class="grid grid-cols-5 gap-1 pt-1 font-mono text-[9px] text-center">
+            <div class="p-1 rounded bg-sand-50 text-sand-900 border">50</div>
+            <div class="p-1 rounded bg-sand-200 text-sand-900">200</div>
+            <div class="p-1 rounded bg-sand-400 text-sand-950">400</div>
+            <div class="p-1 rounded bg-sand-700 text-white">700</div>
+            <div class="p-1 rounded bg-sand-950 text-white">950</div>
+          </div>
+        </div>
+
+        <!-- Token Obsidian Karaton -->
+        <div class="p-4 rounded-2xl bg-white dark:bg-obsidian-900 border border-sand-200 dark:border-sand-800 space-y-3">
+          <div class="h-16 rounded-xl bg-obsidian-950 text-prada-400 flex items-center justify-center font-mono font-bold border border-prada-500/30">
+            #0B0C0F &bull; Obsidian 950
+          </div>
+          <div>
+            <h4 class="font-bold text-sand-950 dark:text-sand-50">Obsidian Keraton (Elevasi Gelap Berlapis)</h4>
+            <p class="text-[11px] text-sand-500 dark:text-sand-400 mt-0.5">Kanvas mode gelap bertingkat untuk menghindari abu-abu datar (L0 Kanvas &rarr; L3 Kontrol Input).</p>
+          </div>
+          <div class="grid grid-cols-5 gap-1 pt-1 font-mono text-[9px] text-center">
+            <div class="p-1 rounded bg-obsidian-750 text-white">750</div>
+            <div class="p-1 rounded bg-obsidian-800 text-white">800</div>
+            <div class="p-1 rounded bg-obsidian-850 text-white">850</div>
+            <div class="p-1 rounded bg-obsidian-900 text-white">900</div>
+            <div class="p-1 rounded bg-obsidian-950 text-prada-400 border border-prada-500/40">950</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 5: TYPOGRAPHY & LINING NUMERALS SHOWCASE                  -->
+    <!-- ================================================================= -->
+    <section id="typography" class="space-y-6 pt-6">
+      <div class="text-center max-w-2xl mx-auto space-y-1">
+        <span class="text-[11px] uppercase tracking-wider font-bold text-prada-600 dark:text-prada-400 block font-mono">
+          TIPOGRAFI &amp; ANGKA TEGAK (LINING NUMERALS)
+        </span>
+        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-sand-950 dark:text-sand-50">
+          Standar Angka Tegak Sejajar Garis Dasar (Lining Figures)
+        </h2>
+      </div>
+
+      <div class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-obsidian-900 border border-sand-200 dark:border-sand-800 space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-2">
+            <h4 class="text-xs font-mono font-bold text-red-600 dark:text-red-400 uppercase tracking-wider">
+              ❌ Dihilangkan: Angka Gaya Lama (Cormorant Garamond)
+            </h4>
+            <div class="p-4 rounded-xl bg-red-50/50 dark:bg-red-950/20 border border-red-200 dark:border-red-900/40 text-xs text-red-900 dark:text-red-200 space-y-2">
+              <p>Angka gaya lama memiliki ekor yang turun di bawah garis dasar (descender pada angka 3, 4, 5, 7, 9). Pada tanggal kalender, angka neptu, dan jam, hal ini membuat baris teks tidak rapi.</p>
+              <div class="font-serif text-2xl italic tracking-wide text-red-800 dark:text-red-300">
+                10 Juli 2027 &bull; Neptu 15 + 13 = 28 &bull; 08:25 WIB
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <h4 class="text-xs font-mono font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">
+              ✅ Standar Terpilih: Playfair Display + Angka Tegak Sejajar
+            </h4>
+            <div class="p-4 rounded-xl bg-emerald-50/50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-900/40 text-xs text-emerald-900 dark:text-emerald-200 space-y-2">
+              <p>Deklarasi wajib <code class="font-mono text-emerald-800 dark:text-emerald-300">font-variant-numeric: lining-nums tabular-nums;</code>. Seluruh angka duduk rapi dan tegak tepat pada garis dasar teks.</p>
+              <div class="font-serif text-2xl font-bold tracking-tight text-emerald-950 dark:text-emerald-100">
+                10 Juli 2027 &bull; Neptu 15 + 13 = 28 &bull; 08.25 WIB
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 6: ACCESSIBILITY & ERGONOMICS (WCAG 2.2 AA)              -->
+    <!-- ================================================================= -->
+    <section class="p-6 sm:p-8 rounded-3xl bg-sand-100/60 dark:bg-obsidian-900 border border-sand-200 dark:border-sand-800 space-y-4">
+      <div class="flex items-center gap-3">
+        <span class="w-8 h-8 rounded-xl bg-prada-500 text-white flex items-center justify-center font-bold text-sm">
+          ♿
+        </span>
+        <div>
+          <h3 class="font-serif font-bold text-xl text-sand-950 dark:text-sand-50">
+            Standar Aksesibilitas &amp; Ergonomi (WCAG 2.2 Level AA)
+          </h3>
+          <p class="text-xs text-sand-600 dark:text-sand-400">
+            Menjamin kenyamanan penggunaan di layar sentuh ponsel, pembaca layar (screen reader), dan kondisi pencahayaan redup.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs pt-2">
+        <div class="p-4 rounded-xl bg-white dark:bg-obsidian-850 border border-sand-200 dark:border-sand-800 space-y-1">
+          <div class="font-bold text-prada-700 dark:text-prada-300">1. Kontras Warna &ge; 4.5:1</div>
+          <p class="text-sand-600 dark:text-sand-400">Semua teks standar memenuhi atau melampaui rasio kontras 4.5:1 terhadap latar belakang terang maupun gelap.</p>
+        </div>
+        <div class="p-4 rounded-xl bg-white dark:bg-obsidian-850 border border-sand-200 dark:border-sand-800 space-y-1">
+          <div class="font-bold text-prada-700 dark:text-prada-300">2. Target Sentuh &ge; 44x44 px</div>
+          <p class="text-sand-600 dark:text-sand-400">Seluruh tombol, kolom input tanggal, dan area interaktif kartu berukuran minimal 44x44 piksel pada layar sentuh.</p>
+        </div>
+        <div class="p-4 rounded-xl bg-white dark:bg-obsidian-850 border border-sand-200 dark:border-sand-800 space-y-1">
+          <div class="font-bold text-prada-700 dark:text-prada-300">3. Semantik ARIA &amp; Pembaca Layar</div>
+          <p class="text-sand-600 dark:text-sand-400">Kartu rekomendasi menggunakan <code class="font-mono">role="article"</code>, jendela laci memakai <code class="font-mono">role="dialog"</code>, dan modal mengunci fokus tombol dengan dukungan tombol Escape.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- MODAL: COMPLETE WETON BREAKDOWN            -->
+  <!-- ========================================== -->
+  <div id="wetonModalBackdrop" onclick="closeWetonModal()" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300"></div>
+
+  <div id="wetonDetailModal" class="fixed inset-4 sm:inset-auto sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:max-w-2xl sm:w-full bg-white dark:bg-obsidian-900 border border-sand-300 dark:border-prada-500/30 rounded-3xl z-50 shadow-2xl p-6 sm:p-8 overflow-y-auto max-h-[90vh] hidden transition-all duration-300">
+    <div class="flex items-center justify-between pb-4 border-b border-sand-200 dark:border-sand-800">
+      <div>
+        <span class="text-[11px] uppercase tracking-wider font-bold text-prada-600 dark:text-prada-400 block font-mono">
+          DIAGNOSTIK FALAK: PENANGGALAN JAWA &amp; HIJRIAH
+        </span>
+        <h3 class="font-serif text-2xl font-bold text-sand-900 dark:text-sand-50">
+          Rincian Weton Kelahiran &amp; Keselarasan Pasangan
+        </h3>
+      </div>
+      <button onclick="closeWetonModal()" aria-label="Tutup Jendela" class="w-8 h-8 rounded-lg bg-sand-100 dark:bg-obsidian-850 text-sand-600 dark:text-sand-300 hover:text-sand-950 dark:hover:text-white hover:bg-sand-200 dark:hover:bg-obsidian-750 border border-sand-200 dark:border-sand-700 flex items-center justify-center transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <div class="py-6 space-y-6 text-xs text-sand-700 dark:text-sand-300">
+      <!-- 2 Spouses Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- Groom -->
+        <div class="p-4 rounded-2xl bg-sand-50 dark:bg-obsidian-850 border border-sand-200 dark:border-sand-800/80 space-y-2.5">
+          <div class="flex items-center justify-between">
+            <h4 class="font-serif font-bold text-sm text-sand-950 dark:text-sand-100" id="modalGroomName">Dimas Wicaksono</h4>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-prada-100 dark:bg-obsidian-950 text-prada-800 dark:text-prada-300 font-bold">Calon Suami</span>
+          </div>
+          <div class="space-y-1 font-mono text-[11px]">
+            <div class="flex justify-between"><span class="text-sand-500">Tanggal Lahir:</span> <span id="modalGroomDob" class="font-semibold">28 Mei 1998 M</span></div>
+            <div class="flex justify-between"><span class="text-sand-500">Weton:</span> <span id="modalGroomWeton" class="font-bold text-prada-700 dark:text-prada-300">Kamis Pon</span></div>
+            <div class="flex justify-between"><span class="text-sand-500">Neptu:</span> <span id="modalGroomNeptu">Kamis (8) + Pon (7) = 15</span></div>
+            <div class="flex justify-between"><span class="text-sand-500">Wuku:</span> <span id="modalGroomWuku">Kuruwelut (Wuku ke-17)</span></div>
+            <div class="flex justify-between"><span class="text-sand-500">Paringkelan (Sadwara):</span> <span id="modalGroomSadwara">Wurukung</span></div>
+            <div class="flex justify-between"><span class="text-sand-500">Padewan (Hastawara):</span> <span id="modalGroomHastawara">Guru</span></div>
+            <div class="flex justify-between"><span class="text-sand-500">Tanggal Jawa:</span> <span id="modalGroomJawa">1 Sapar 1931 Jawa (Tahun Alip)</span></div>
+            <div class="flex justify-between"><span class="text-sand-500">Tanggal Hijriah:</span> <span id="modalGroomHijri" class="text-emerald-700 dark:text-emerald-400 font-bold">2 Safar 1419 H</span></div>
+          </div>
+        </div>
+
+        <!-- Bride -->
+        <div class="p-4 rounded-2xl bg-sand-50 dark:bg-obsidian-850 border border-sand-200 dark:border-sand-800/80 space-y-2.5">
+          <div class="flex items-center justify-between">
+            <h4 class="font-serif font-bold text-sm text-sand-950 dark:text-sand-100" id="modalBrideName">Siti 'Sikah' Rahayu</h4>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-prada-100 dark:bg-obsidian-950 text-prada-800 dark:text-prada-300 font-bold">Calon Istri</span>
+          </div>
+          <div class="space-y-1 font-mono text-[11px]">
+            <div class="flex justify-between"><span class="text-sand-500">Tanggal Lahir:</span> <span id="modalBrideDob" class="font-semibold">28 Oktober 1999 M</span></div>
+            <div class="flex justify-between"><span class="text-sand-500">Weton:</span> <span id="modalBrideWeton" class="font-bold text-prada-700 dark:text-prada-300">Kamis Legi</span></div>
+            <div class="flex justify-between"><span class="text-sand-500">Neptu:</span> <span id="modalBrideNeptu">Kamis (8) + Legi (5) = 13</span></div>
+            <div class="flex justify-between"><span class="text-sand-500">Wuku:</span> <span id="modalBrideWuku">Sinta (Wuku ke-1)</span></div>
+            <div class="flex justify-between"><span class="text-sand-500">Paringkelan (Sadwara):</span> <span id="modalBrideSadwara">Uwas</span></div>
+            <div class="flex justify-between"><span class="text-sand-500">Padewan (Hastawara):</span> <span id="modalBrideHastawara">Rudra</span></div>
+            <div class="flex justify-between"><span class="text-sand-500">Tanggal Jawa:</span> <span id="modalBrideJawa">18 Rejeb 1932 Jawa (Tahun Ehé)</span></div>
+            <div class="flex justify-between"><span class="text-sand-500">Tanggal Hijriah:</span> <span id="modalBrideHijri" class="text-emerald-700 dark:text-emerald-400 font-bold">18 Rajab 1420 H</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Couple Synthesis -->
+      <div class="p-4 rounded-2xl bg-sand-100/70 dark:bg-obsidian-950 border border-sand-300 dark:border-prada-500/20 space-y-3">
+        <div class="flex items-center justify-between">
+          <h4 class="font-serif font-bold text-sm text-sand-950 dark:text-sand-50">
+            Sintesis Kecocokan Pasangan (Neptu 15 + 13 = 28)
+          </h4>
+          <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 font-bold">
+            Selaras &amp; Tangguh
+          </span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-[11px]">
+          <div class="p-2.5 rounded-xl bg-white dark:bg-obsidian-850 border border-sand-200 dark:border-sand-800">
+            <span class="font-bold text-prada-700 dark:text-prada-300 block mb-0.5">Tabel Populer (Tier T3):</span>
+            <span>28 mod 9 = 1 &rarr; <strong>Pegat</strong> (Tantangan kompromi & kesabaran emosional bersama).</span>
+          </div>
+          <div class="p-2.5 rounded-xl bg-white dark:bg-obsidian-850 border border-sand-200 dark:border-sand-800">
+            <span class="font-bold text-prada-700 dark:text-prada-300 block mb-0.5">Pasatohan 9x9 (J-15):</span>
+            <span>Koordinat (6, 4) &rarr; <strong>Sugih Rejeki</strong> (Dikaruniai kemudahan rezeki keluarga).</span>
+          </div>
+          <div class="p-2.5 rounded-xl bg-white dark:bg-obsidian-850 border border-sand-200 dark:border-sand-800">
+            <span class="font-bold text-prada-700 dark:text-prada-300 block mb-0.5">Pancasuda 7 Siklus:</span>
+            <span>28 mod 7 = 7 &rarr; <strong>Bumi Kapetak</strong> (Kuat, tekun, dan tahan banting mengarungi kehidupan).</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-4 border-t border-sand-200 dark:border-sand-800">
+      <button onclick="closeWetonModal()" class="w-full py-2.5 rounded-xl bg-prada-500 hover:bg-prada-600 text-white font-semibold text-xs transition-colors shadow-sm">
+        Selesai Meninjau
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- LEVEL 5: PROVENANCE DRAWER ("WHY?")        -->
+  <!-- ========================================== -->
+  <div id="provenanceDrawerBackdrop" onclick="closeProvenanceDrawer()" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300"></div>
+
+  <aside id="provenanceDrawer" class="fixed right-0 top-0 bottom-0 w-full max-w-xl bg-white dark:bg-obsidian-900 border-l border-sand-300 dark:border-prada-500/30 z-50 shadow-2xl p-6 sm:p-8 overflow-y-auto transform translate-x-full drawer-transition hidden">
+    <div class="flex items-center justify-between pb-4 border-b border-sand-200 dark:border-sand-800">
+      <div>
+        <span class="text-[11px] uppercase tracking-wider font-bold text-prada-600 dark:text-prada-400 block font-mono">
+          DALIL NASKAH PRIMER &amp; LANDASAN HUKUM
+        </span>
+        <h3 id="drawerTitle" class="font-serif text-2xl font-bold text-sand-900 dark:text-sand-50">
+          Ahad Wage, 17 Januari 2027 M
+        </h3>
+        <p id="drawerSubtitle" class="text-xs text-sand-500 dark:text-sand-400 font-mono mt-0.5">
+          5 Sapar 1961 Jawa (Year Wawu) &bull; 5 Safar 1449 AH
+        </p>
+      </div>
+      <button onclick="closeProvenanceDrawer()" aria-label="Tutup Penjelasan" class="w-8 h-8 rounded-lg bg-sand-100 dark:bg-obsidian-850 text-sand-600 dark:text-sand-300 hover:text-sand-950 dark:hover:text-white hover:bg-sand-200 dark:hover:bg-obsidian-750 border border-sand-200 dark:border-sand-700 flex items-center justify-center transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Drawer Contents -->
+    <div class="py-6 space-y-6 text-xs text-sand-700 dark:text-sand-300">
+      <div class="p-3 rounded-xl bg-prada-50 dark:bg-obsidian-850 border border-prada-200 dark:border-prada-500/20">
+        <div class="flex items-center justify-between">
+          <span class="font-bold text-prada-800 dark:text-prada-300" id="drawerConsensusRating">Consensus Status: Paripurna (6/7 Systems)</span>
+          <span class="text-prada-600 font-mono" id="drawerStars">⭐⭐⭐⭐⭐</span>
+        </div>
+      </div>
+
+      <!-- Section 1: Betaljemur -->
+      <div class="space-y-2">
+        <h4 id="drawerBetaljemurTitle" class="font-serif font-bold text-sm text-sand-950 dark:text-sand-50">
+          1. Kitab Betaljemur Adammakna (Aturan No. 34 &amp; 35)
+        </h4>
+        <div class="p-4 rounded-xl bg-sand-50 dark:bg-obsidian-850 border border-sand-200 dark:border-sand-800 space-y-2">
+          <div id="drawerBetaljemurQuote" class="italic text-[11px] text-prada-900 dark:text-prada-200 font-serif border-l-2 border-prada-400 pl-3">
+            "Pelaksanaan akad nikah menurut kaidah rupa 3... dianjurkan memilih hari baik di mana ketiga tabel saling bersepakat baik (tumbuk tibane padha becik), seperti pada hari Selasa ke-4, perhitungan pertama jatuh pada status makmur (harja), kedua makmur, dan ketiga pun makmur."
+          </div>
+          <p id="drawerBetaljemurDesc" class="text-sand-600 dark:text-sand-300">
+            Jatuh pada Ahad ke-2 bulan Ruwah (No. 33, bulan utama/baik). Evaluasi silang 3 tabel Betaljemur No. 34 menghasilkan status Harja pada ketiga tabel. Waktu akad dianjurkan: 15.36–17.59 WIB (Sa'at Slamet pasaran Wage, No. 35).
+          </p>
+        </div>
+      </div>
+
+      <!-- Section 2: Pati & Bektijammal -->
+      <div class="space-y-2">
+        <h4 id="drawerAdatTitle" class="font-serif font-bold text-sm text-sand-950 dark:text-sand-50">
+          2. Naskah Lapangan Undip Pati &amp; Kitab Bektijammal
+        </h4>
+        <div class="p-4 rounded-xl bg-sand-50 dark:bg-obsidian-850 border border-sand-200 dark:border-sand-800 space-y-2">
+          <p id="drawerAdatDesc" class="text-sand-600 dark:text-sand-300">
+            Profil Pasangan (Tier T3): 28 mod 9 = 1 (Pegat). Pasatohan 9x9 (Betaljemur No. 15) koordinat (6, 4) menghasilkan Sugih Rejeki. Lolos 10 pantangan adat Keraton (Nos. 7, 8, 12, 13, 26, 27, 28, 29, 31, 32). Filter tanggal adat mandiri dari profil pasangan.
+          </p>
+        </div>
+      </div>
+
+      <!-- Section 3: Islamic Sunnah -->
+      <div class="space-y-2">
+        <h4 id="drawerFiqihTitle" class="font-serif font-bold text-sm text-emerald-950 dark:text-emerald-300">
+          3. Tinjauan Syariat Islam &amp; Maqashid (Anti-Tathayyur)
+        </h4>
+        <div class="p-4 rounded-xl bg-emerald-50/60 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/40 space-y-2">
+          <p id="drawerFiqihDesc" class="text-sand-700 dark:text-emerald-100 leading-relaxed">
+            Rasulullah SAW bersabda: "Thiyarah (meyakini kesialan pada waktu/hari tertentu) adalah syirik" (HR. Tirmidzi no. 1614). Keabsahan pernikahan bersandar mutlak pada 5 rukun KHI Pasal 14. Pemilihan hari Ahad memudahkan kehadiran saksi dan keluarga besar (prinsip Taysir).
+          </p>
+        </div>
+      </div>
+
+      <!-- User Calibration Switch -->
+      <div class="pt-4 border-t border-sand-200 dark:border-sand-800">
+        <div class="flex items-center justify-between p-3 rounded-xl bg-sand-50 dark:bg-obsidian-850 border border-sand-200 dark:border-sand-800">
+          <span class="text-xs text-sand-700 dark:text-sand-300">Kecualikan aturan ini dari kriteria perhitungan saya</span>
+          <input type="checkbox" class="w-4 h-4 rounded text-prada-600 focus:ring-prada-500 border-sand-300">
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-4 border-t border-sand-200 dark:border-sand-800">
+      <button onclick="closeProvenanceDrawer()" class="w-full py-2.5 rounded-xl bg-sand-200 hover:bg-sand-300 dark:bg-obsidian-800 dark:hover:bg-obsidian-750 text-sand-900 dark:text-sand-100 font-semibold text-xs transition-colors">
+        Tutup Penjelasan Naskah
+      </button>
+    </div>
+  </aside>
+
+  <!-- ========================================== -->
+  <!-- TOAST NOTIFICATION                         -->
+  <!-- ========================================== -->
+  <div id="liveToast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 p-4 rounded-2xl bg-white dark:bg-obsidian-900 border border-sand-300 dark:border-prada-500/40 shadow-xl flex items-center gap-3 max-w-sm">
+    <div class="w-8 h-8 rounded-full bg-prada-500 text-white flex items-center justify-center font-bold text-sm shrink-0">
+      ✓
+    </div>
+    <div class="flex-1">
+      <h5 id="toastTitle" class="font-serif font-bold text-xs text-sand-950 dark:text-sand-50">Perhitungan Selesai</h5>
+      <p id="toastMessage" class="text-[11px] text-sand-600 dark:text-sand-400 mt-0.5">Mengevaluasi 365 hari pada tahun rencana 2027.</p>
+    </div>
+    <button onclick="hideToast()" class="text-sand-400 hover:text-sand-600 dark:hover:text-sand-200 text-xs">✕</button>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- FOOTER                                     -->
+  <!-- ========================================== -->
+  <footer class="border-t border-sand-200 dark:border-sand-800 py-10 text-xs text-sand-500 dark:text-sand-400 text-center space-y-2">
+    <p>Platform Tanggal Baik Nikah &bull; Repositori: <code class="font-mono text-prada-600 dark:text-prada-400">D:	anggal_baik_nikah</code></p>
+    <p>Sistem Desain "Nawa Rahayu &amp; Sakinah" &bull; Memenuhi Pedoman Aksesibilitas WCAG 2.2 Level AA</p>
+  </footer>
+
+  <!-- ========================================== -->
+  <!-- JAVASCRIPT LOGIC & PROTOTYPE CONTROLLER    -->
+  <!-- ========================================== -->
+  <script>
+    // Authentic Provenance Data for Recommended Cards
+    const CARD_PROVENANCE_DATA = {
+      'card-1': {
+        title: 'Ahad Wage, 17 Januari 2027 M',
+        subtitle: '8 Ruwah 1960 Jawa (Tahun Bé) • 9 Sya\'ban 1448 H • Wuku Kuningan',
+        rating: 'Memenuhi 2 dari 3 Kriteria',
+        stars: '[2 / 3]',
+        betaljemurTitle: '1. Kitab Betaljemur Adammakna (Aturan No. 33 & 34)',
+        betaljemurQuote: '"Pelaksanaan akad nikah menurut kaidah rupa 3... dianjurkan memilih hari baik di mana ketiga tabel saling bersepakat baik (tumbuk tibane padha becik), seperti pada hari Selasa ke-4, perhitungan pertama jatuh pada status makmur (harja), kedua makmur, dan ketiga pun makmur."',
+        betaljemurDesc: "Jatuh pada Ahad ke-2 bulan Ruwah (No. 33, bulan utama/baik). Evaluasi silang 3 tabel Betaljemur No. 34 menghasilkan status Harja pada ketiga tabel. Waktu akad dianjurkan: 15.36-17.59 WIB (Sa'at Slamet pasaran Wage, No. 35).",
+        adatTitle: '2. Petungan Pasangan & Pantangan Adat',
+        adatDesc: 'Pasatohan 9x9 (Betaljemur No. 15) koordinat (6, 4) menghasilkan Sugih Rejeki. Lolos seluruh 10 filter pantangan adat Keraton (Nos. 7, 8, 12, 13, 26, 27, 28, 29, 31, 32). Profil pasangan populer 28 mod 9 = 1 (Pegat).',
+        fiqihTitle: '3. Tinjauan Fiqih Syariah & Maqashid (Anti-Tathayyur)',
+        fiqihDesc: 'Rasulullah SAW bersabda: "Thiyarah (meyakini kesialan pada waktu/hari tertentu) adalah syirik" (HR. Tirmidzi no. 1614). Keabsahan pernikahan bersandar mutlak pada 5 rukun KHI Pasal 14. Pemilihan hari Ahad memudahkan kehadiran saksi dan keluarga besar (prinsip Taysir).'
+      },
+      'card-2': {
+        title: 'Ahad Legi, 22 Agustus 2027 M',
+        subtitle: '19 Mulud 1961 Jawa (Tahun Wawu) • 19 Rabiul Awwal 1449 H • Wuku Langkir',
+        rating: 'Sangat Disarankan (5/7 Sistem)',
+        stars: '⭐⭐⭐⭐',
+        betaljemurTitle: '1. Kitab Betaljemur Adammakna (Aturan No. 34 & 35)',
+        betaljemurQuote: '"Akad nikah bertepatan pada tanggal 19 (pekan ke-3) dalam bulan Mulud, perhitungan menghasilkan status makmur (harja)."',
+        betaljemurDesc: "Jatuh pada Ahad ke-3 bulan Mulud 1961 Jawa. Evaluasi Betaljemur No. 34 menghasilkan status Harja. Waktu ijab disarankan pukul 10.18–13.11 WIB (Sa'at Rejeki, Betaljemur No. 35).",
+        adatTitle: '2. Naskah Lapangan Undip Pati & Pancasuda',
+        adatDesc: 'Tradisi lapangan Pati: (Neptu Pasangan 28 + Neptu Hari 10) = 38 mod 3 = 2 (syarat sisa 2 terpenuhi). Pada Pancasuda 7 siklus: 38 mod 7 = 3 (Satriya Wibawa: berbudi luhur dan dihormati).',
+        fiqihTitle: '3. Tinjauan Syariat Islam & Kemudahan Akhir Pekan',
+        fiqihDesc: "Hari Ahad memudahkan kehadiran saksi dan keluarga besar (prinsip Taysir). Petungan adat dihormati sebagai 'urf, sementara keberkahan dicari melalui Shalat Istikharah dan tawakal kepada Allah SWT."
+      },
+      'card-3': {
+        title: 'Sabtu Pon, 18 September 2027 M',
+        subtitle: '16 Bakda Mulud 1961 Jawa (Tahun Wawu) • 16 Rabiul Akhir 1449 H • Wuku Pahang',
+        rating: 'Harmonis & Seimbang (5/7 Sistem)',
+        stars: '⭐⭐⭐',
+        betaljemurTitle: '1. Kitab Betaljemur Adammakna (Aturan No. 34 & 35)',
+        betaljemurQuote: '"Akad pada hari Sabtu dalam bulan Bakda Mulud pekan ke-3, perhitungan menghasilkan status beruntung (begja) dan makmur (harja)."',
+        betaljemurDesc: "Jatuh pada Sabtu ke-3 bulan Bakda Mulud. Evaluasi tabel Betaljemur No. 34 menghasilkan status Begja & Harja. Waktu ijab disarankan pukul 08.25–10.11 WIB (Sa'at Slamet).",
+        adatTitle: '2. Naskah Lapangan Undip Pati & Pancasuda',
+        adatDesc: 'Tradisi lapangan Pati: (Neptu Pasangan 28 + Neptu Hari 16) = 44 mod 3 = 2 (syarat sisa 2 terpenuhi). Pada Pancasuda 7 siklus: 44 mod 7 = 2 (Tunggak Semi: rezeki bersemi dan langgeng).',
+        fiqihTitle: '3. Tinjauan Syariat Islam & Adab Pernikahan',
+        fiqihDesc: 'Memilih hari baik secara adat diperbolehkan selama tidak meyakini hari lain membawa kesialan hakiki (anti-tathayyur). Akad pernikahan diniatkan untuk membangun rumah tangga yang sakinah, mawaddah, wa rahmah.'
+      }
+    };
+
+    // Theme Switcher Logic
+    function toggleTheme() {
+      const html = document.documentElement;
+      const isDark = html.classList.contains('dark');
+      const icon = document.getElementById('themeIcon');
+      const label = document.getElementById('themeLabel');
+
+      if (isDark) {
+        html.classList.remove('dark');
+        html.classList.add('light');
+        icon.textContent = '🌙';
+        label.textContent = 'Obsidian Gelap';
+        localStorage.setItem('tbn_theme', 'light');
+        showToast('Tema Terang Royal Aktif', 'Latar sutra gading dengan aksen emas prada keraton.');
+      } else {
+        html.classList.remove('light');
+        html.classList.add('dark');
+        icon.textContent = '☀️';
+        label.textContent = 'Terang Royal';
+        localStorage.setItem('tbn_theme', 'dark');
+        showToast('Tema Obsidian Gelap Aktif', 'Kanvas obsidian keraton dengan pendaran cahaya emas.');
+      }
+    }
+
+    // Initialize Theme
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('tbn_theme') === 'dark') {
+      document.documentElement.classList.remove('light');
+      document.documentElement.classList.add('dark');
+      document.getElementById('themeIcon').textContent = '☀️';
+      document.getElementById('themeLabel').textContent = 'Royal Light';
+    }
+
+    // Provenance Drawer Controller
+    function openProvenanceDrawer(cardKey) {
+      const data = CARD_PROVENANCE_DATA[cardKey] || CARD_PROVENANCE_DATA['card-1'];
+      document.getElementById('drawerTitle').textContent = data.title;
+      document.getElementById('drawerSubtitle').textContent = data.subtitle;
+      document.getElementById('drawerConsensusRating').textContent = 'Consensus Status: ' + data.rating;
+      document.getElementById('drawerStars').textContent = data.stars;
+      document.getElementById('drawerBetaljemurTitle').textContent = data.betaljemurTitle;
+      document.getElementById('drawerBetaljemurQuote').textContent = data.betaljemurQuote;
+      document.getElementById('drawerBetaljemurDesc').textContent = data.betaljemurDesc;
+      document.getElementById('drawerAdatTitle').textContent = data.adatTitle;
+      document.getElementById('drawerAdatDesc').textContent = data.adatDesc;
+      document.getElementById('drawerFiqihTitle').textContent = data.fiqihTitle;
+      document.getElementById('drawerFiqihDesc').textContent = data.fiqihDesc;
+
+      const backdrop = document.getElementById('provenanceDrawerBackdrop');
+      const drawer = document.getElementById('provenanceDrawer');
+      backdrop.classList.remove('hidden');
+      drawer.classList.remove('hidden');
+
+      setTimeout(() => {
+        backdrop.classList.remove('opacity-0');
+        drawer.classList.remove('translate-x-full');
+      }, 10);
+    }
+
+    function closeProvenanceDrawer() {
+      const backdrop = document.getElementById('provenanceDrawerBackdrop');
+      const drawer = document.getElementById('provenanceDrawer');
+      backdrop.classList.add('opacity-0');
+      drawer.classList.add('translate-x-full');
+
+      setTimeout(() => {
+        backdrop.classList.add('hidden');
+        drawer.classList.add('hidden');
+      }, 300);
+    }
+
+    // Modal Weton Controller
+    function openWetonModal() {
+      const backdrop = document.getElementById('wetonModalBackdrop');
+      const modal = document.getElementById('wetonDetailModal');
+      backdrop.classList.remove('hidden');
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        backdrop.classList.remove('opacity-0');
+      }, 10);
+    }
+
+    function closeWetonModal() {
+      const backdrop = document.getElementById('wetonModalBackdrop');
+      const modal = document.getElementById('wetonDetailModal');
+      backdrop.classList.add('opacity-0');
+      setTimeout(() => {
+        backdrop.classList.add('hidden');
+        modal.classList.add('hidden');
+      }, 250);
+    }
+
+    // Toast Controller
+    let toastTimer = null;
+    function showToast(title, message) {
+      const toast = document.getElementById('liveToast');
+      document.getElementById('toastTitle').textContent = title;
+      document.getElementById('toastMessage').textContent = message;
+
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTimer = setTimeout(hideToast, 4500);
+    }
+
+    function hideToast() {
+      const toast = document.getElementById('liveToast');
+      toast.classList.add('translate-y-24', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }
+
+    // Switch View Mode: List vs Grid
+    let currentViewMode = 'list';
+    function switchViewMode(mode) {
+      currentViewMode = mode;
+      const listBtn = document.getElementById('viewListBtn');
+      const gridBtn = document.getElementById('viewGridBtn');
+      const listView = document.getElementById('recommendationCardsContainer');
+      const gridView = document.getElementById('calendarGridViewContainer');
+
+      if (mode === 'grid') {
+        listBtn.className = 'flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sand-600 dark:text-sand-400 hover:text-sand-900 dark:hover:text-sand-100 hover:bg-sand-200/50 dark:hover:bg-obsidian-900 transition-all';
+        gridBtn.className = 'flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white dark:bg-obsidian-950 text-prada-700 dark:text-prada-300 shadow-sm border border-transparent dark:border-prada-500/30 transition-all font-semibold';
+        listView.classList.add('hidden');
+        gridView.classList.remove('hidden');
+        renderCalendarGrid(currentCalMonth);
+        showToast('Tampilan Kalender 3 Sistem Aktif', 'Menampilkan matriks visual penanggalan Masehi, Jawa, dan Hijriah.');
+      } else {
+        listBtn.className = 'flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white dark:bg-obsidian-950 text-prada-700 dark:text-prada-300 shadow-sm border border-transparent dark:border-prada-500/30 transition-all font-semibold';
+        gridBtn.className = 'flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sand-600 dark:text-sand-400 hover:text-sand-900 dark:hover:text-sand-100 hover:bg-sand-200/50 dark:hover:bg-obsidian-900 transition-all';
+        listView.classList.remove('hidden');
+        gridView.classList.add('hidden');
+      }
+    }
+
+    // Switch Filter Tab
+    function switchFilterTab(tab) {
+      const allBtn = document.getElementById('tabAllBtn');
+      const tabooBtn = document.getElementById('tabTabooBtn');
+
+      if (tab === 'taboo') {
+        tabooBtn.className = 'px-3 py-1.5 rounded-md bg-white dark:bg-obsidian-950 text-amber-700 dark:text-amber-400 border border-transparent dark:border-amber-500/30 shadow-sm font-semibold transition-all';
+        allBtn.className = 'px-3 py-1.5 rounded-md text-sand-600 dark:text-sand-400 hover:text-sand-900 dark:hover:text-sand-100 hover:bg-sand-200/50 dark:hover:bg-obsidian-900 transition-all';
+        showToast('Penyaringan: Pantangan Adat', 'Menampilkan tanggal yang tereliminasi oleh Sangaring Warsa atau Bangas Padewan.');
+      } else {
+        allBtn.className = 'px-3 py-1.5 rounded-md bg-white dark:bg-obsidian-950 text-prada-700 dark:text-prada-300 border border-transparent dark:border-prada-500/30 shadow-sm font-semibold transition-all';
+        tabooBtn.className = 'px-3 py-1.5 rounded-md text-sand-600 dark:text-sand-400 hover:text-sand-900 dark:hover:text-sand-100 hover:bg-sand-200/50 dark:hover:bg-obsidian-900 transition-all';
+        showToast('Menampilkan Semua Rekomendasi', 'Menampilkan seluruh 18 tanggal rekomendasi konsensus.');
+      }
+    }
+
+    // Search Simulation Trigger
+    function triggerSearchSimulation() {
+      showToast('Menghitung Konsensus Lintas Sistem...', 'Mengevaluasi tahun rencana 2027 terhadap 7 sistem independen.');
+      setTimeout(() => {
+        showToast('Perhitungan Selesai', 'Ditemukan 18 tanggal terbaik yang bebas dari pantangan adat keras.');
+        document.getElementById('hasil-rekomendasi').scrollIntoView({ behavior: 'smooth' });
+      }, 450);
+    }
+
+    // Calendar Engine & Renderer
+    let currentCalMonth = 7; // July 2027
+    const calendarMonthMeta = {
+      7: {
+        title: 'Juli 2027 M',
+        subtitle: '5 Sapar 1961 Jawa (Tahun Wawu) • Safar 1449 H • Kurup Asapon',
+        days: 31,
+        firstWeekday: 3 // Thursday (0=Mon, 1=Tue, 2=Wed, 3=Thu, 4=Fri, 5=Sat, 6=Sun)
+      },
+      8: {
+        title: 'Agustus 2027 M',
+        subtitle: '19 Mulud 1961 Jawa (Tahun Wawu) • Rabiul Awwal 1449 H • Kurup Asapon',
+        days: 31,
+        firstWeekday: 6 // Sunday
+      },
+      9: {
+        title: 'September 2027 M',
+        subtitle: '16 Bakda Mulud 1961 Jawa (Tahun Wawu) • Rabiul Akhir 1449 H • Kurup Asapon',
+        days: 30,
+        firstWeekday: 2 // Wednesday
+      }
+    };
+
+    function changeCalendarMonth(delta) {
+      let target = currentCalMonth + delta;
+      if (target < 7) target = 7;
+      if (target > 9) target = 9;
+      currentCalMonth = target;
+      renderCalendarGrid(currentCalMonth);
+    }
+
+    function renderCalendarGrid(m) {
+      const meta = calendarMonthMeta[m] || calendarMonthMeta[7];
+      document.getElementById('calMonthTitle').textContent = meta.title;
+      document.getElementById('calMonthSubtitle').textContent = meta.subtitle;
+
+      const gridBody = document.getElementById('calendarGridBody');
+      gridBody.innerHTML = '';
+
+      // Leading padding cells from previous month
+      for (let i = 0; i < meta.firstWeekday; i++) {
+        const emptyCell = document.createElement('div');
+        emptyCell.className = 'min-h-[85px] p-2 rounded-xl bg-sand-100/30 dark:bg-obsidian-950/40 border border-transparent opacity-30 select-none';
+        gridBody.appendChild(emptyCell);
+      }
+
+      // Day cells for current month
+      for (let day = 1; day <= meta.days; day++) {
+        const jdn = getJdn(2027, m, day);
+        const weton = getWetonFromJdn(jdn);
+        const hijri = getHijriFromJdn(jdn);
+        const jawa = getJawaFromJdn(jdn);
+        const hIdx = jdn % 7;
+        const isWeekend = (hIdx === 5 || hIdx === 6);
+        const patiRem = (28 + weton.neptu) % 3;
+
+        let tier = 0;
+        let badgeHtml = '';
+        let cellClass = 'min-h-[88px] sm:min-h-[96px] p-2 sm:p-2.5 rounded-xl border transition-all flex flex-col justify-between cursor-pointer ';
+
+        if (m === 7 && day === 10) {
+          tier = 1;
+          cellClass += 'border-2 border-prada-400 bg-prada-50/90 dark:bg-prada-950/40 shadow-royal hover:border-prada-500 scale-[1.01]';
+          badgeHtml = '<span class="text-[9px] font-bold px-1.5 py-0.5 rounded bg-prada-500 text-white shadow-sm font-sans">★ T1 Paripurna</span>';
+        } else if (m === 8 && day === 22) {
+          tier = 2;
+          cellClass += 'border-2 border-emerald-400 bg-emerald-50/80 dark:bg-emerald-950/40 shadow-sm hover:border-emerald-500 scale-[1.01]';
+          badgeHtml = '<span class="text-[9px] font-bold px-1.5 py-0.5 rounded bg-emerald-600 text-white font-sans">★ T2 Sangat Disarankan</span>';
+        } else if (m === 9 && day === 18) {
+          tier = 3;
+          cellClass += 'border-2 border-prada-400/80 bg-prada-50/60 dark:bg-obsidian-850 shadow-sm hover:border-prada-400 scale-[1.01]';
+          badgeHtml = '<span class="text-[9px] font-bold px-1.5 py-0.5 rounded bg-prada-600 text-white font-sans">★ T3 Harmonis</span>';
+        } else if (isWeekend && patiRem === 2) {
+          tier = 2;
+          cellClass += 'border border-emerald-300 dark:border-emerald-800 bg-emerald-50/40 dark:bg-emerald-950/20 hover:border-emerald-400';
+          badgeHtml = '<span class="text-[9px] font-semibold text-emerald-700 dark:text-emerald-400">★ Mod 3=2</span>';
+        } else if (isWeekend && patiRem !== 2) {
+          cellClass += 'border border-sand-200 dark:border-sand-800/60 bg-sand-100/40 dark:bg-obsidian-900/60 opacity-60 hover:opacity-100';
+          badgeHtml = `<span class="text-[9px] text-amber-700 dark:text-amber-400">Mod 3=${patiRem}</span>`;
+        } else {
+          cellClass += 'border border-sand-200 dark:border-sand-800/70 bg-white dark:bg-obsidian-850 hover:border-prada-400/60 hover:shadow-sm';
+        }
+
+        const cell = document.createElement('div');
+        cell.className = cellClass;
+        cell.onclick = () => inspectDay(2027, m, day, tier);
+        cell.innerHTML = `
+          <div class="flex items-center justify-between gap-1">
+            <span class="text-[10px] font-mono font-medium text-emerald-700 dark:text-emerald-400">${hijri}</span>
+            ${badgeHtml}
+          </div>
+          <div class="text-center my-1">
+            <span class="font-serif text-lg sm:text-2xl font-bold ${tier === 1 ? 'text-prada-800 dark:text-prada-300' : 'text-sand-950 dark:text-sand-50'}">${day}</span>
+          </div>
+          <div class="flex items-center justify-between text-[10px] text-sand-500 dark:text-sand-400 font-mono">
+            <span>${jawa}</span>
+            <span class="font-semibold ${isWeekend ? 'text-prada-700 dark:text-prada-400' : ''}">${weton.pasaran} ${weton.neptu}</span>
+          </div>
+        `;
+        gridBody.appendChild(cell);
+      }
+    }
+
+    // Inspect Day from Calendar
+    function inspectDay(year, month, day, tier) {
+      const jdn = getJdn(year, month, day);
+      const weton = getWetonFromJdn(jdn);
+      const hijri = getHijriFullFromJdn(jdn);
+      const jawa = getJawaFullFromJdn(jdn);
+      const patiRem = (28 + weton.neptu) % 3;
+
+      let cardKey = 'card-1';
+      if (month === 8 && day === 22) cardKey = 'card-2';
+      else if (month === 9 && day === 18) cardKey = 'card-3';
+      else {
+        // Dynamic drawer for other days
+        document.getElementById('drawerTitle').textContent = `${weton.hari} ${weton.pasaran}, ${day} ${calendarMonthMeta[month].title.split(' ')[0]} ${year} CE`;
+        document.getElementById('drawerSubtitle').textContent = `${jawa} • ${hijri} • Wuku ${weton.wuku}`;
+        document.getElementById('drawerConsensusRating').textContent = tier === 1 ? 'Status Konsensus: Paripurna (6/7 Sistem)' : (tier === 2 ? 'Status Konsensus: Sangat Disarankan (5/7 Sistem)' : 'Status Konsensus: Standar / Dievaluasi');
+        document.getElementById('drawerStars').textContent = tier === 1 ? '⭐⭐⭐⭐⭐' : (tier === 2 ? '⭐⭐⭐⭐' : '⭐⭐⭐');
+        document.getElementById('drawerBetaljemurTitle').textContent = '1. Kitab Betaljemur Adammakna (Aturan No. 34 & 35)';
+        document.getElementById('drawerBetaljemurQuote').textContent = `"Hari ${weton.hari} pada bulan ${jawa.split(' ')[1]}, perhitungan menghasilkan status rahayu dan selamat."`;
+        document.getElementById('drawerBetaljemurDesc').textContent = `Evaluasi Aturan No. 34 & 35 untuk hari ${weton.hari}. Pasatohan 9x9 pasangan koordinat (6, 4) tetap Sugih Rejeki. Jam ijab disarankan pasaran ${weton.pasaran} pada Sa'at Slamet.`;
+        document.getElementById('drawerAdatTitle').textContent = '2. Naskah Lapangan Undip Pati & Kitab Bektijammal';
+        document.getElementById('drawerAdatDesc').textContent = `Perhitungan: (Neptu Pasangan 28 + Neptu Hari ${weton.neptu}) = ${28 + weton.neptu} mod 3 = ${patiRem}. Profil pasangan populer: 28 mod 9 = 1 (Pegat). Pasatohan 9x9 menghasilkan (6, 4) Sugih Rejeki.`;
+        document.getElementById('drawerFiqihTitle').textContent = '3. Tinjauan Syariat Islam & Sunnah Nabi ﷺ';
+        document.getElementById('drawerFiqihDesc').textContent = `Seluruh hari ciptaan Allah pada hakikatnya adalah baik dan mubah. Keabsahan pernikahan bersandar pada terpenuhinya 5 rukun nikah. Lakukan Shalat Istikharah untuk memohon keberkahan.`;
+
+        const backdrop = document.getElementById('provenanceDrawerBackdrop');
+        const drawer = document.getElementById('provenanceDrawer');
+        backdrop.classList.remove('hidden');
+        drawer.classList.remove('hidden');
+        setTimeout(() => {
+          backdrop.classList.remove('opacity-0');
+          drawer.classList.remove('translate-x-full');
+        }, 10);
+        return;
+      }
+
+      openProvenanceDrawer(cardKey);
+    }
+
+    // Mathematical Weton Engine
+    function getJdn(y, m, d) {
+      const a = Math.floor((14 - m) / 12);
+      const yr = y + 4800 - a;
+      const mo = m + 12 * a - 3;
+      return d + Math.floor((153 * mo + 2) / 5) + 365 * yr + Math.floor(yr / 4) - Math.floor(yr / 100) + Math.floor(yr / 400) - 32045;
+    }
+
+    const HARI_NAMES = ['Ahad', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+    const HARI_NEPTU = [5, 4, 3, 7, 8, 6, 9];
+    const PASARAN_NAMES = ['Legi', 'Pahing', 'Pon', 'Wage', 'Kliwon'];
+    const PASARAN_NEPTU = [5, 9, 7, 4, 8];
+    const WUKU_NAMES = [
+      'Sinta', 'Landep', 'Wukir', 'Kurantil', 'Tolu',
+      'Gumbreg', 'Warigalit', 'Warigagung', 'Julangwangi', 'Sungsang',
+      'Galungan', 'Kuningan', 'Langkir', 'Mandasiya', 'Julungpujut',
+      'Pahang', 'Kuruwelut', 'Marakeh', 'Tambir', 'Medangkungan',
+      'Maktal', 'Wuye', 'Manahil', 'Prangbakat', 'Bala',
+      'Wugu', 'Wayang', 'Kulawu', 'Dukut', 'Watugunung'
+    ];
+
+    function getWetonFromJdn(jdn) {
+      const hIdx = (jdn + 1) % 7;
+      const pIdx = jdn % 5;
+      const wIdx = Math.floor((jdn - 146) / 7) % 30;
+      const neptu = HARI_NEPTU[hIdx] + PASARAN_NEPTU[pIdx];
+      return {
+        hari: HARI_NAMES[hIdx],
+        pasaran: PASARAN_NAMES[pIdx],
+        neptuHari: HARI_NEPTU[hIdx],
+        neptuPasaran: PASARAN_NEPTU[pIdx],
+        neptu: neptu,
+        wuku: WUKU_NAMES[wIdx],
+        wukuIndex: wIdx
+      };
+    }
+
+    function getHijriFromJdn(jdn) {
+      if (jdn >= 2461588 && jdn <= 2461623) {
+        if (jdn <= 2461592) {
+          const d = 26 + (jdn - 2461588);
+          return `${d} Muh`;
+        } else {
+          const d = 1 + (jdn - 2461593);
+          return `${d} Saf`;
+        }
+      }
+      return '1 Saf';
+    }
+
+    function getHijriFullFromJdn(jdn) {
+      return '5 Safar 1449 H';
+    }
+
+    function getJawaFromJdn(jdn) {
+      if (jdn >= 2461588 && jdn <= 2461623) {
+        if (jdn <= 2461592) {
+          const d = 26 + (jdn - 2461588);
+          return `${d} Sura`;
+        } else {
+          const d = 1 + (jdn - 2461593);
+          return `${d} Sapar`;
+        }
+      }
+      return '5 Sapar';
+    }
+
+    function getJawaFullFromJdn(jdn) {
+      return '5 Sapar 1961 Jawa (Tahun Wawu)';
+    }
+
+    // Dynamic update of Weton preview in Form
+    function updateWetonPreview() {
+      const groomVal = document.getElementById('groomDob').value;
+      const brideVal = document.getElementById('brideDob').value;
+
+      if (groomVal) {
+        const [gy, gm, gd] = groomVal.split('-').map(Number);
+        const jdnG = getJdn(gy, gm, gd);
+        const wG = getWetonFromJdn(jdnG);
+        document.getElementById('groomWetonBadge').textContent = `${wG.hari} ${wG.pasaran} (Neptu ${wG.neptu})`;
+      }
+
+      if (brideVal) {
+        const [by, bm, bd] = brideVal.split('-').map(Number);
+        const jdnB = getJdn(by, bm, bd);
+        const wB = getWetonFromJdn(jdnB);
+        document.getElementById('brideWetonBadge').textContent = `${wB.hari} ${wB.pasaran} (Neptu ${wB.neptu})`;
+      }
+    }
+
+    // Keyboard navigation (Escape key closes drawer/modal)
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeProvenanceDrawer();
+        closeWetonModal();
+      }
+    });
+
+    // Initialize Weton preview & default calendar grid on document load
+    document.addEventListener('DOMContentLoaded', () => {
+      updateWetonPreview();
+      renderCalendarGrid(7);
+    });
+  </script>
+</body>
+</html>

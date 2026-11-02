@@ -1,0 +1,50 @@
+{
+  "Dulkangidah": {
+    "dayIndex": 1,
+    "pasaranIndex": 4
+  },
+  "Jumadilawal": {
+    "dayIndex": 1,
+    "pasaranIndex": 4
+  },
+  "Besar": {
+    "dayIndex": 2,
+    "pasaranIndex": 0
+  },
+  "Jumadilakir": {
+    "dayIndex": 2,
+    "pasaranIndex": 0
+  },
+  "Sura": {
+    "dayIndex": 3,
+    "pasaranIndex": 1
+  },
+  "Rejeb": {
+    "dayIndex": 3,
+    "pasaranIndex": 1
+  },
+  "Sapar": {
+    "dayIndex": 4,
+    "pasaranIndex": 2
+  },
+  "Ruwah": {
+    "dayIndex": 4,
+    "pasaranIndex": 2
+  },
+  "Mulud": {
+    "dayIndex": 5,
+    "pasaranIndex": 3
+  },
+  "Pasa": {
+    "dayIndex": 5,
+    "pasaranIndex": 3
+  },
+  "Bakdamulud": {
+    "dayIndex": 6,
+    "pasaranIndex": 4
+  },
+  "Sawal": {
+    "dayIndex": 6,
+    "pasaranIndex": 4
+  }
+}

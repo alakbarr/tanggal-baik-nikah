@@ -1,0 +1,62 @@
+{
+  "Sura": {
+    "quality": "ala",
+    "noteJv": "cilaka gedhé, aja diterak",
+    "noteId": "berisiko celaka besar, hendaknya dihindari"
+  },
+  "Sapar": {
+    "quality": "sedheng",
+    "noteJv": "kekurangan, kena diterak",
+    "noteId": "berpotensi kekurangan, namun dapat dilalui"
+  },
+  "Mulud": {
+    "quality": "ala",
+    "noteJv": "mati salah siji, aja diterak",
+    "noteId": "berisiko duka atau perpisahan, hendaknya dihindari"
+  },
+  "Bakdamulud": {
+    "quality": "sedheng",
+    "noteJv": "diomong ala, kena diterak",
+    "noteId": "berisiko gunjingan, namun dapat dilalui"
+  },
+  "Jumadilawal": {
+    "quality": "sedheng",
+    "noteJv": "kerep kélangan, kena diterak",
+    "noteId": "berpotensi sering kehilangan, namun dapat dilalui"
+  },
+  "Jumadilakir": {
+    "quality": "becik",
+    "noteJv": "sugih mas salaka",
+    "noteId": "berkelimpahan rezeki dan berkah"
+  },
+  "Rejeb": {
+    "quality": "becik",
+    "noteJv": "sugih anak lan slamet",
+    "noteId": "dikaruniai banyak keturunan dan keselamatan"
+  },
+  "Ruwah": {
+    "quality": "becik",
+    "noteJv": "rahayu ing sakabèhé",
+    "noteId": "rahayu, selamat dan sejahtera dalam segala urusan"
+  },
+  "Pasa": {
+    "quality": "ala",
+    "noteJv": "cilaka gedhé, aja diterak",
+    "noteId": "berisiko cobaan besar, hendaknya dihindari"
+  },
+  "Sawal": {
+    "quality": "sedheng",
+    "noteJv": "kekurangan, sugih utang, kena diterak",
+    "noteId": "berpotensi kesulitan ekonomi, namun dapat dilalui"
+  },
+  "Dulkangidah": {
+    "quality": "ala",
+    "noteJv": "gering, kerep pasulayan, aja diterak",
+    "noteId": "rentan sakit dan perselisihan, hendaknya dihindari"
+  },
+  "Besar": {
+    "quality": "becik",
+    "noteJv": "sugih, nemu suka harja",
+    "noteId": "berkelimpahan rezeki, kebahagiaan, dan kemakmuran"
+  }
+}

@@ -1,0 +1,49 @@
+﻿<noinclude><pagequality level="4" user="Nerissa Lyra" /></noinclude>{{c|'''No. 7. Kunarpaning warsa, (tahun)'''}}
+{{gap}}Ora keno kanggo mantu lan sapadhane. Pitungé ajeg tiba saben tanggal 29 utawa 30 sasi Besar
+{|class="wikitable"
+|- style="text-align: center;"
+| Tahun || Ana ing dina
+|-
+| Alip || Setu Paing
+|-
+| Ehé || Kemis Paing
+|-
+| Jimawal || Senèn Legi
+|-
+| Jé || Jumuah Legi 
+|-
+| Dal || Rebo Kliwon
+|-
+| Bé || Akad Wagé
+|-
+| Wawu || Kemis Pon
+|-
+| Jimakir || Slasa Pon
+|}
+<br> 
+{{rule|width=4em}}
+<br>
+{{c|'''No. 8. Sangaring warsa (tahun)'''}}
+{{gap}}Ora keno kanggo mantu lan sapadhane. Pitungé ajeg tiba tanggaping warsa let 3 dina, (saben sasi Suro tanggal 3).
+{|class="wikitable"
+|- style="text-align: center;"
+| Tahun || Ana ing dina
+|-
+| Alip || Jumuah Legi
+|-
+| Ehé || Slasa Kliwon
+|-
+| Jimawal || Akad Kliwon
+|-
+| Jé  ||Kemis Wagé
+|-
+| Dal || Senèn Pon
+|-
+| Bé || Setu Legi
+|-
+| Wawu || Rebo Paing
+|-
+| Jimakir || Akad Legi
+|}
+<br>
+{{rule|width=4em}}<noinclude>{{rh|||9}}</noinclude>

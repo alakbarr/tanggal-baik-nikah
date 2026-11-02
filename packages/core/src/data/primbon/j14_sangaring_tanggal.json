@@ -1,0 +1,134 @@
+{
+  "Sura": {
+    "dates": [
+      11,
+      14,
+      17,
+      27
+    ],
+    "taliwangkeWeton": "Rabu Pahing",
+    "dayIndex": 3,
+    "pasaranIndex": 1
+  },
+  "Sapar": {
+    "dates": [
+      1,
+      12,
+      20,
+      22
+    ],
+    "taliwangkeWeton": "Kamis Pon",
+    "dayIndex": 4,
+    "pasaranIndex": 2
+  },
+  "Mulud": {
+    "dates": [
+      10,
+      13,
+      15,
+      23
+    ],
+    "taliwangkeWeton": "Jumat Wage",
+    "dayIndex": 5,
+    "pasaranIndex": 3
+  },
+  "Bakdamulud": {
+    "dates": [
+      10,
+      15,
+      20,
+      25
+    ],
+    "taliwangkeWeton": "Sabtu Kliwon",
+    "dayIndex": 6,
+    "pasaranIndex": 4
+  },
+  "Jumadilawal": {
+    "dates": [
+      10,
+      11,
+      16,
+      26
+    ],
+    "taliwangkeWeton": "Senin Kliwon",
+    "dayIndex": 1,
+    "pasaranIndex": 4
+  },
+  "Jumadilakir": {
+    "dates": [
+      3,
+      11,
+      14,
+      21
+    ],
+    "taliwangkeWeton": "Selasa Legi",
+    "dayIndex": 2,
+    "pasaranIndex": 0
+  },
+  "Rejeb": {
+    "dates": [
+      2,
+      11,
+      12,
+      22
+    ],
+    "taliwangkeWeton": "Rabu Pahing",
+    "dayIndex": 3,
+    "pasaranIndex": 1
+  },
+  "Ruwah": {
+    "dates": [
+      14,
+      19,
+      24,
+      28
+    ],
+    "taliwangkeWeton": "Kamis Pon",
+    "dayIndex": 4,
+    "pasaranIndex": 2
+  },
+  "Pasa": {
+    "dates": [
+      10,
+      15,
+      20,
+      25
+    ],
+    "taliwangkeWeton": "Jumat Wage",
+    "dayIndex": 5,
+    "pasaranIndex": 3
+  },
+  "Sawal": {
+    "dates": [
+      2,
+      17,
+      20,
+      27
+    ],
+    "taliwangkeWeton": "Sabtu Kliwon",
+    "dayIndex": 6,
+    "pasaranIndex": 4
+  },
+  "Dulkangidah": {
+    "dates": [
+      6,
+      11,
+      12,
+      21
+    ],
+    "taliwangkeWeton": "Senin Kliwon",
+    "dayIndex": 1,
+    "pasaranIndex": 4
+  },
+  "Besar": {
+    "dates": [
+      1,
+      13,
+      20,
+      23
+    ],
+    "taliwangkeWeton": "Selasa Legi",
+    "dayIndex": 2,
+    "pasaranIndex": 0
+  }
+}

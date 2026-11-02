@@ -1,0 +1,569 @@
+{
+  "1,1": {
+    "groomMod9": 1,
+    "brideMod9": 1,
+    "meaningJv": "becik kinasihan",
+    "verdict": "pass",
+    "meaningId": "baik dan saling menyayangi"
+  },
+  "1,2": {
+    "groomMod9": 1,
+    "brideMod9": 2,
+    "meaningJv": "becik",
+    "verdict": "pass",
+    "meaningId": "baik dan harmonis"
+  },
+  "1,3": {
+    "groomMod9": 1,
+    "brideMod9": 3,
+    "meaningJv": "kuat, adoh rijekiné",
+    "verdict": "pass",
+    "meaningId": "kuat fisik namun rezeki berjarak"
+  },
+  "1,4": {
+    "groomMod9": 1,
+    "brideMod9": 4,
+    "meaningJv": "akèh bihahiné",
+    "verdict": "info",
+    "meaningId": "banyak marabahaya dan rintangan"
+  },
+  "1,5": {
+    "groomMod9": 1,
+    "brideMod9": 5,
+    "meaningJv": "pegat",
+    "verdict": "fail",
+    "meaningId": "berisiko berpisah"
+  },
+  "1,6": {
+    "groomMod9": 1,
+    "brideMod9": 6,
+    "meaningJv": "adoh sandhang pangané",
+    "verdict": "pass",
+    "meaningId": "sulit sandang pangan"
+  },
+  "1,7": {
+    "groomMod9": 1,
+    "brideMod9": 7,
+    "meaningJv": "sugih satru",
+    "verdict": "fail",
+    "meaningId": "banyak musuh atau perselisihan"
+  },
+  "1,8": {
+    "groomMod9": 1,
+    "brideMod9": 8,
+    "meaningJv": "kasurang - surang",
+    "verdict": "fail",
+    "meaningId": "menghadapi kesulitan atau terlunta-lunta"
+  },
+  "1,9": {
+    "groomMod9": 1,
+    "brideMod9": 9,
+    "meaningJv": "dadi pangauban",
+    "verdict": "info",
+    "meaningId": "menjadi pelindung dan tempat bernaung"
+  },
+  "2,1": {
+    "groomMod9": 2,
+    "brideMod9": 1,
+    "meaningJv": "becik",
+    "verdict": "pass",
+    "meaningId": "baik dan harmonis"
+  },
+  "2,2": {
+    "groomMod9": 2,
+    "brideMod9": 2,
+    "meaningJv": "slamet, akèh rijekiné",
+    "verdict": "pass",
+    "meaningId": "selamat dan berlimpah rezeki"
+  },
+  "2,3": {
+    "groomMod9": 2,
+    "brideMod9": 3,
+    "meaningJv": "gelis mati siji",
+    "verdict": "fail",
+    "meaningId": "berisiko cepat kehilangan pasangan"
+  },
+  "2,4": {
+    "groomMod9": 2,
+    "brideMod9": 4,
+    "meaningJv": "akèh godané",
+    "verdict": "fail",
+    "meaningId": "banyak godaan dan cobaan"
+  },
+  "2,5": {
+    "groomMod9": 2,
+    "brideMod9": 5,
+    "meaningJv": "akèh bilainé",
+    "verdict": "fail",
+    "meaningId": "banyak marabahaya dan rintangan"
+  },
+  "2,6": {
+    "groomMod9": 2,
+    "brideMod9": 6,
+    "meaningJv": "gelis sugih",
+    "verdict": "pass",
+    "meaningId": "cepat mapan dan berkecukupan"
+  },
+  "2,7": {
+    "groomMod9": 2,
+    "brideMod9": 7,
+    "meaningJv": "anaké akèh mati",
+    "verdict": "fail",
+    "meaningId": "rentan kehilangan anak"
+  },
+  "2,8": {
+    "groomMod9": 2,
+    "brideMod9": 8,
+    "meaningJv": "cepak rijekiné",
+    "verdict": "pass",
+    "meaningId": "mudah dan lancar rezekinya"
+  },
+  "2,9": {
+    "groomMod9": 2,
+    "brideMod9": 9,
+    "meaningJv": "akèh rijekiné",
+    "verdict": "pass",
+    "meaningId": "berlimpah rezeki"
+  },
+  "3,1": {
+    "groomMod9": 3,
+    "brideMod9": 1,
+    "meaningJv": "kuat, adoh rijekiné",
+    "verdict": "pass",
+    "meaningId": "kuat fisik namun rezeki berjarak"
+  },
+  "3,2": {
+    "groomMod9": 3,
+    "brideMod9": 2,
+    "meaningJv": "gelis mati siji",
+    "verdict": "fail",
+    "meaningId": "berisiko cepat kehilangan pasangan"
+  },
+  "3,3": {
+    "groomMod9": 3,
+    "brideMod9": 3,
+    "meaningJv": "mlarat",
+    "verdict": "fail",
+    "meaningId": "rentan kesulitan ekonomi"
+  },
+  "3,4": {
+    "groomMod9": 3,
+    "brideMod9": 4,
+    "meaningJv": "akèh bilainé",
+    "verdict": "fail",
+    "meaningId": "banyak marabahaya dan rintangan"
+  },
+  "3,5": {
+    "groomMod9": 3,
+    "brideMod9": 5,
+    "meaningJv": "gelis pegat",
+    "verdict": "fail",
+    "meaningId": "berisiko cepat berpisah"
+  },
+  "3,6": {
+    "groomMod9": 3,
+    "brideMod9": 6,
+    "meaningJv": "olèh nugraha",
+    "verdict": "pass",
+    "meaningId": "mendapat anugerah dan berkah"
+  },
+  "3,7": {
+    "groomMod9": 3,
+    "brideMod9": 7,
+    "meaningJv": "akèh bilahiné",
+    "verdict": "fail",
+    "meaningId": "banyak marabahaya dan rintangan"
+  },
+  "3,8": {
+    "groomMod9": 3,
+    "brideMod9": 8,
+    "meaningJv": "gelis mati siji",
+    "verdict": "fail",
+    "meaningId": "berisiko cepat kehilangan pasangan"
+  },
+  "3,9": {
+    "groomMod9": 3,
+    "brideMod9": 9,
+    "meaningJv": "sugih rejeki",
+    "verdict": "pass",
+    "meaningId": "kaya rezeki"
+  },
+  "4,1": {
+    "groomMod9": 4,
+    "brideMod9": 1,
+    "meaningJv": "akèh bihahiné",
+    "verdict": "info",
+    "meaningId": "banyak marabahaya dan rintangan"
+  },
+  "4,2": {
+    "groomMod9": 4,
+    "brideMod9": 2,
+    "meaningJv": "akèh godané",
+    "verdict": "fail",
+    "meaningId": "banyak godaan dan cobaan"
+  },
+  "4,3": {
+    "groomMod9": 4,
+    "brideMod9": 3,
+    "meaningJv": "akèh bilainé",
+    "verdict": "fail",
+    "meaningId": "banyak marabahaya dan rintangan"
+  },
+  "4,4": {
+    "groomMod9": 4,
+    "brideMod9": 4,
+    "meaningJv": "kerep lara",
+    "verdict": "fail",
+    "meaningId": "rentan sakit"
+  },
+  "4,5": {
+    "groomMod9": 4,
+    "brideMod9": 5,
+    "meaningJv": "akèh rencanané",
+    "verdict": "fail",
+    "meaningId": "banyak cobaan dan godaan"
+  },
+  "4,6": {
+    "groomMod9": 4,
+    "brideMod9": 6,
+    "meaningJv": "sugih rejeki",
+    "verdict": "pass",
+    "meaningId": "kaya rezeki"
+  },
+  "4,7": {
+    "groomMod9": 4,
+    "brideMod9": 7,
+    "meaningJv": "mlarat",
+    "verdict": "fail",
+    "meaningId": "rentan kesulitan ekonomi"
+  },
+  "4,8": {
+    "groomMod9": 4,
+    "brideMod9": 8,
+    "meaningJv": "akèh pangkalané",
+    "verdict": "fail",
+    "meaningId": "banyak rintangan hidup"
+  },
+  "4,9": {
+    "groomMod9": 4,
+    "brideMod9": 9,
+    "meaningJv": "kalah siji",
+    "verdict": "fail",
+    "meaningId": "salah satu pasangan mengalah"
+  },
+  "5,1": {
+    "groomMod9": 5,
+    "brideMod9": 1,
+    "meaningJv": "pegat",
+    "verdict": "fail",
+    "meaningId": "berisiko berpisah"
+  },
+  "5,2": {
+    "groomMod9": 5,
+    "brideMod9": 2,
+    "meaningJv": "akèh bilainé",
+    "verdict": "fail",
+    "meaningId": "banyak marabahaya dan rintangan"
+  },
+  "5,3": {
+    "groomMod9": 5,
+    "brideMod9": 3,
+    "meaningJv": "gelis pegat",
+    "verdict": "fail",
+    "meaningId": "berisiko cepat berpisah"
+  },
+  "5,4": {
+    "groomMod9": 5,
+    "brideMod9": 4,
+    "meaningJv": "akèh rencanané",
+    "verdict": "fail",
+    "meaningId": "banyak cobaan dan godaan"
+  },
+  "5,5": {
+    "groomMod9": 5,
+    "brideMod9": 5,
+    "meaningJv": "tulus begjané",
+    "verdict": "pass",
+    "meaningId": "keberuntungan yang langgeng"
+  },
+  "5,6": {
+    "groomMod9": 5,
+    "brideMod9": 6,
+    "meaningJv": "cepak rijekiné",
+    "verdict": "pass",
+    "meaningId": "mudah dan lancar rezekinya"
+  },
+  "5,7": {
+    "groomMod9": 5,
+    "brideMod9": 7,
+    "meaningJv": "tulus sandhang pangané",
+    "verdict": "pass",
+    "meaningId": "sandang pangan berkecukupan langgeng"
+  },
+  "5,8": {
+    "groomMod9": 5,
+    "brideMod9": 8,
+    "meaningJv": "akèh sambékalané",
+    "verdict": "fail",
+    "meaningId": "banyak marabahaya dan rintangan"
+  },
+  "5,9": {
+    "groomMod9": 5,
+    "brideMod9": 9,
+    "meaningJv": "cepak sandhang pangané",
+    "verdict": "pass",
+    "meaningId": "mudah sandang pangan"
+  },
+  "6,1": {
+    "groomMod9": 6,
+    "brideMod9": 1,
+    "meaningJv": "adoh sandhang pangané",
+    "verdict": "pass",
+    "meaningId": "sulit sandang pangan"
+  },
+  "6,2": {
+    "groomMod9": 6,
+    "brideMod9": 2,
+    "meaningJv": "gelis sugih",
+    "verdict": "pass",
+    "meaningId": "cepat mapan dan berkecukupan"
+  },
+  "6,3": {
+    "groomMod9": 6,
+    "brideMod9": 3,
+    "meaningJv": "olèh nugraha",
+    "verdict": "pass",
+    "meaningId": "mendapat anugerah dan berkah"
+  },
+  "6,4": {
+    "groomMod9": 6,
+    "brideMod9": 4,
+    "meaningJv": "sugih rejeki",
+    "verdict": "pass",
+    "meaningId": "kaya rezeki"
+  },
+  "6,5": {
+    "groomMod9": 6,
+    "brideMod9": 5,
+    "meaningJv": "cepak rijekiné",
+    "verdict": "pass",
+    "meaningId": "mudah dan lancar rezekinya"
+  },
+  "6,6": {
+    "groomMod9": 6,
+    "brideMod9": 6,
+    "meaningJv": "gedhé bilahiné",
+    "verdict": "fail",
+    "meaningId": "besar risiko marabahaya"
+  },
+  "6,7": {
+    "groomMod9": 6,
+    "brideMod9": 7,
+    "meaningJv": "rukun",
+    "verdict": "pass",
+    "meaningId": "rukun dan damai"
+  },
+  "6,8": {
+    "groomMod9": 6,
+    "brideMod9": 8,
+    "meaningJv": "sugih satru",
+    "verdict": "fail",
+    "meaningId": "banyak musuh atau perselisihan"
+  },
+  "6,9": {
+    "groomMod9": 6,
+    "brideMod9": 9,
+    "meaningJv": "kasurang - surang",
+    "verdict": "fail",
+    "meaningId": "menghadapi kesulitan atau terlunta-lunta"
+  },
+  "7,1": {
+    "groomMod9": 7,
+    "brideMod9": 1,
+    "meaningJv": "sugih satru",
+    "verdict": "fail",
+    "meaningId": "banyak musuh atau perselisihan"
+  },
+  "7,2": {
+    "groomMod9": 7,
+    "brideMod9": 2,
+    "meaningJv": "anaké akèh mati",
+    "verdict": "fail",
+    "meaningId": "rentan kehilangan anak"
+  },
+  "7,3": {
+    "groomMod9": 7,
+    "brideMod9": 3,
+    "meaningJv": "akèh bilahiné",
+    "verdict": "fail",
+    "meaningId": "banyak marabahaya dan rintangan"
+  },
+  "7,4": {
+    "groomMod9": 7,
+    "brideMod9": 4,
+    "meaningJv": "mlarat",
+    "verdict": "fail",
+    "meaningId": "rentan kesulitan ekonomi"
+  },
+  "7,5": {
+    "groomMod9": 7,
+    "brideMod9": 5,
+    "meaningJv": "tulus sandhang pangané",
+    "verdict": "pass",
+    "meaningId": "sandang pangan berkecukupan langgeng"
+  },
+  "7,6": {
+    "groomMod9": 7,
+    "brideMod9": 6,
+    "meaningJv": "rukun",
+    "verdict": "pass",
+    "meaningId": "rukun dan damai"
+  },
+  "7,7": {
+    "groomMod9": 7,
+    "brideMod9": 7,
+    "meaningJv": "ingikum maring rabiné",
+    "verdict": "info",
+    "meaningId": "sangat mengasihi dan tunduk pada istri"
+  },
+  "7,8": {
+    "groomMod9": 7,
+    "brideMod9": 8,
+    "meaningJv": "nemu bilahi saka awaké dhéwé",
+    "verdict": "fail",
+    "meaningId": "menemui marabahaya akibat diri sendiri"
+  },
+  "7,9": {
+    "groomMod9": 7,
+    "brideMod9": 9,
+    "meaningJv": "tulus palakramané",
+    "verdict": "fail",
+    "meaningId": "pernikahan langgeng dan bahagia"
+  },
+  "8,1": {
+    "groomMod9": 8,
+    "brideMod9": 1,
+    "meaningJv": "kasurang - surang",
+    "verdict": "fail",
+    "meaningId": "menghadapi kesulitan atau terlunta-lunta"
+  },
+  "8,2": {
+    "groomMod9": 8,
+    "brideMod9": 2,
+    "meaningJv": "cepak rijekiné",
+    "verdict": "pass",
+    "meaningId": "mudah dan lancar rezekinya"
+  },
+  "8,3": {
+    "groomMod9": 8,
+    "brideMod9": 3,
+    "meaningJv": "gelis mati siji",
+    "verdict": "fail",
+    "meaningId": "berisiko cepat kehilangan pasangan"
+  },
+  "8,4": {
+    "groomMod9": 8,
+    "brideMod9": 4,
+    "meaningJv": "akèh pangkalané",
+    "verdict": "fail",
+    "meaningId": "banyak rintangan hidup"
+  },
+  "8,5": {
+    "groomMod9": 8,
+    "brideMod9": 5,
+    "meaningJv": "akèh sambékalané",
+    "verdict": "fail",
+    "meaningId": "banyak marabahaya dan rintangan"
+  },
+  "8,6": {
+    "groomMod9": 8,
+    "brideMod9": 6,
+    "meaningJv": "sugih satru",
+    "verdict": "fail",
+    "meaningId": "banyak musuh atau perselisihan"
+  },
+  "8,7": {
+    "groomMod9": 8,
+    "brideMod9": 7,
+    "meaningJv": "nemu bilahi saka awaké dhéwé",
+    "verdict": "fail",
+    "meaningId": "menemui marabahaya akibat diri sendiri"
+  },
+  "8,8": {
+    "groomMod9": 8,
+    "brideMod9": 8,
+    "meaningJv": "kinasihan déning wong",
+    "verdict": "pass",
+    "meaningId": "disayangi oleh lingkungan sekitar"
+  },
+  "8,9": {
+    "groomMod9": 8,
+    "brideMod9": 9,
+    "meaningJv": "kapotan, iku sedheng",
+    "verdict": "info",
+    "meaningId": "cukup dan berkecukupan sedang"
+  },
+  "9,1": {
+    "groomMod9": 9,
+    "brideMod9": 1,
+    "meaningJv": "dadi pangauban",
+    "verdict": "info",
+    "meaningId": "menjadi pelindung dan tempat bernaung"
+  },
+  "9,2": {
+    "groomMod9": 9,
+    "brideMod9": 2,
+    "meaningJv": "akèh rijekiné",
+    "verdict": "pass",
+    "meaningId": "berlimpah rezeki"
+  },
+  "9,3": {
+    "groomMod9": 9,
+    "brideMod9": 3,
+    "meaningJv": "sugih rejeki",
+    "verdict": "pass",
+    "meaningId": "kaya rezeki"
+  },
+  "9,4": {
+    "groomMod9": 9,
+    "brideMod9": 4,
+    "meaningJv": "kalah siji",
+    "verdict": "fail",
+    "meaningId": "salah satu pasangan mengalah"
+  },
+  "9,5": {
+    "groomMod9": 9,
+    "brideMod9": 5,
+    "meaningJv": "cepak sandhang pangané",
+    "verdict": "pass",
+    "meaningId": "mudah sandang pangan"
+  },
+  "9,6": {
+    "groomMod9": 9,
+    "brideMod9": 6,
+    "meaningJv": "kasurang - surang",
+    "verdict": "fail",
+    "meaningId": "menghadapi kesulitan atau terlunta-lunta"
+  },
+  "9,7": {
+    "groomMod9": 9,
+    "brideMod9": 7,
+    "meaningJv": "tulus palakramané",
+    "verdict": "fail",
+    "meaningId": "pernikahan langgeng dan bahagia"
+  },
+  "9,8": {
+    "groomMod9": 9,
+    "brideMod9": 8,
+    "meaningJv": "kapotan, iku sedheng",
+    "verdict": "info",
+    "meaningId": "cukup dan berkecukupan sedang"
+  },
+  "9,9": {
+    "groomMod9": 9,
+    "brideMod9": 9,
+    "meaningJv": "giras rijekiné",
+    "verdict": "fail",
+    "meaningId": "rezeki lincah dan cepat berganti"
+  }
+}

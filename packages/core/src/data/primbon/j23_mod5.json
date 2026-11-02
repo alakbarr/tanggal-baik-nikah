@@ -1,0 +1,32 @@
+{
+  "1": {
+    "name": "Sri",
+    "meaningJv": "murah rejeki",
+    "verdict": "pass",
+    "meaningId": "murah rezeki dan berkah"
+  },
+  "2": {
+    "name": "Lungguh",
+    "meaningJv": "antuk pangkat kalungguhan",
+    "verdict": "pass",
+    "meaningId": "memperoleh kehormatan dan kedudukan"
+  },
+  "3": {
+    "name": "Gedhong",
+    "meaningJv": "sugih bandha",
+    "verdict": "pass",
+    "meaningId": "berkecukupan harta benda"
+  },
+  "4": {
+    "name": "Lara",
+    "meaningJv": "nemu lelara",
+    "verdict": "fail",
+    "meaningId": "rentan menghadapi penyakit atau cobaan raga"
+  },
+  "0": {
+    "name": "Pati",
+    "meaningJv": "nemu pati salah siji",
+    "verdict": "fail",
+    "meaningId": "berisiko duka atau perpisahan"
+  }
+}

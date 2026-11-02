@@ -1,0 +1,102 @@
+﻿<noinclude><pagequality level="4" user="Nerissa Lyra" /></noinclude>{{c|'''No. : 24. Petung salaki rabi'''}}
+
+Wetoné pangantèn lanang wadon, neptuné dina lan pasaran kagunggung, diwuwuhi neptuné sasi, taun lan tanggalé, gunggunge kabagé 9 turah pira. Yèn turah : 1, 4, 7, tiba wali, ala. Turah 2, 5, 8, tiba panghulu sedheng. Turah 3, 6, 9, tiba pangantèn, iku becik.
+
+Pangétungé mangkéné : upama wetoné :
+{{multicol}}
+pangantèn lanang 
+<br>
+<br>
+<br>
+<br>
+pangantèn wadon
+<br>
+<br>
+<br>
+<br>
+<br>
+{{multicol-break}}
+dina <br>
+pasaran <br>
+sasi <br>
+tanggal <br>
+taun<br>
+dina <br>
+pasaran <br>
+sasi <br>
+tanggal <br>
+taun<br>
+Gunggung 
+{{multicol-break}}
+Rebo<br>
+Kliwon <br>
+Suro<br>
+.........<br>
+Allip<br>
+Jumuah<br>
+Pon <br>
+Sapar <br>
+.......<br>
+Wawu<br>
+<br>
+{{multicol-break}}
+neptu<br>
+"<br>
+"<br>
+"<br>
+"<br>
+"<br>
+"<br>
+"<br>
+"<br>
+"<br>
+<br>
+{{multicol-break}}
+7<br>
+8<br>
+7<br>
+20<br>
+1<br>
+6<br>
+7<br>
+2<br>
+14<br>
+<u>6</u><br>
+78
+{{multicol-end}}
+
+78 kabagé 9 = turah 6, tiba pangantèn becik.
+
+{{rule|width=4em}}
+
+
+{{c|'''No. 25. Pétung salaki rabi'''}}
+
+Wetoné pangantèn lanang wadon, neptuné dina lan pasaran kagunggung, diwuwuhi neptuné sasi, tahun lan tanggalé, nanging gunggungé mung kabagé 3, turah pira. Yèn turah 1 tiba begja, beclk. Turah 2 tiba lara, ala. Turah 3 tiba pati, luwih ala.
+
+Déné pangétungé padha baé kaya kasebut ing nduwur iku (No. 24). Bédané pétungan iki dibagé 3. Yèn ing dhuwur iku kabagé 9.
+
+{{rule|width=4em}}
+
+
+{{c|'''No. 26; Dina ala'''<br>
+ora kena kanggo mantu lan sapadhané.}}
+
+{| class="wikitable"
+!Ing wulan
+!Dina ala
+|-
+|Jumadilakir, Rejeb; Ruwah
+|Jumuah
+|-
+|Pasa, Sawal, Dulkangidah
+|Setu, Akad
+|-
+|Besar, sura, Sapar
+|Senèn, Slasa
+|-
+|Mulud, Rabingulakir, Jumadilawal.
+|Rebo, Kemis.
+|}
+
+{{rule|width=4em}}<noinclude>{{rh|18}}</noinclude>

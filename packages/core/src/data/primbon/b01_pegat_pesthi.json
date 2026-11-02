@@ -1,0 +1,186 @@
+{
+  "14": {
+    "sum": 14,
+    "remainderMod9": 5,
+    "category": "Tinari",
+    "descriptionJv": "Asil tinari ngemu teges gampang golèk rejeki lan kaparingan sandhang pangan kang lumintu.",
+    "verdict": "pass",
+    "descriptionId": "Hasil Tinari bermakna dimudahkan dalam mencari rezeki serta senantiasa berkecukupan sandang pangan."
+  },
+  "15": {
+    "sum": 15,
+    "remainderMod9": 6,
+    "category": "Padu",
+    "descriptionJv": "Asil padu ngemu teges kerep padudon babagan cilik, nanging ora nganti nuwuhaké pisahan.",
+    "verdict": "info",
+    "descriptionId": "Hasil Padu bermakna sering timbul perbedaan pendapat atau perselisihan kecil, namun tidak sampai berujung perceraian."
+  },
+  "16": {
+    "sum": 16,
+    "remainderMod9": 7,
+    "category": "Sujanan",
+    "descriptionJv": "Asil sujanan ngemu teges kerep ngadhepi rasa was-sumelang utawa pasulayan ing babagan kasetyan.",
+    "verdict": "info",
+    "descriptionId": "Hasil Sujanan bermakna sering menghadapi ujian kecurigaan atau cobaan kesetiaan dalam hubungan."
+  },
+  "17": {
+    "sum": 17,
+    "remainderMod9": 8,
+    "category": "Pesthi",
+    "descriptionJv": "Asil pesthi ngemu teges tentrem, ayem, rukun nganti tuwa tanpa rubéda kang gedhé.",
+    "verdict": "pass",
+    "descriptionId": "Hasil Pesthi bermakna tenteram, damai, dan rukun hingga hari tua tanpa rintangan besar."
+  },
+  "18": {
+    "sum": 18,
+    "remainderMod9": 0,
+    "category": "Pegat",
+    "descriptionJv": "Asil pegat ngemu teges kerep nemoni masalah, bisa awujud pasulayan, masalah ékonomi, utawa pisah.",
+    "verdict": "info",
+    "descriptionId": "Hasil Pegat bermakna sering menghadapi ujian berat, baik berupa perselisihan, kendala ekonomi, maupun risiko perpisahan."
+  },
+  "19": {
+    "sum": 19,
+    "remainderMod9": 1,
+    "category": "Pegat",
+    "descriptionJv": "Asil pegat ngemu teges kerep nemoni masalah, bisa awujud pasulayan, masalah ékonomi, utawa pisah.",
+    "verdict": "info",
+    "descriptionId": "Hasil Pegat bermakna sering menghadapi ujian berat, baik berupa perselisihan, kendala ekonomi, maupun risiko perpisahan."
+  },
+  "20": {
+    "sum": 20,
+    "remainderMod9": 2,
+    "category": "Ratu",
+    "descriptionJv": "Asil ratu ngemu teges kajèn-keringan, diajèni déning tangga teparo lan kinurmatan.",
+    "verdict": "pass",
+    "descriptionId": "Hasil Ratu bermakna rumah tangga dihormati, disegani, dan rukun berwibawa di lingkungan sekitar."
+  },
+  "21": {
+    "sum": 21,
+    "remainderMod9": 3,
+    "category": "Jodoh",
+    "descriptionJv": "Asil jodoh ngemu teges cocog lan runtut, bisa nampa kaluwihan lan kakuranganing pasangan.",
+    "verdict": "pass",
+    "descriptionId": "Hasil Jodoh bermakna cocok dan serasi, saling menerima kelebihan serta kekurangan pasangan."
+  },
+  "22": {
+    "sum": 22,
+    "remainderMod9": 4,
+    "category": "Topo",
+    "descriptionJv": "Asil topo ngemu teges wiwitané ngalami keprihatinan nanging pungkasané nemu kamulyan lan kabungahan.",
+    "verdict": "info",
+    "descriptionId": "Hasil Topo bermakna menjalani keprihatinan atau perjuangan keras di awal, namun kelak berbahagia dan berkecukupan."
+  },
+  "23": {
+    "sum": 23,
+    "remainderMod9": 5,
+    "category": "Tinari",
+    "descriptionJv": "Asil tinari ngemu teges gampang golèk rejeki lan kaparingan sandhang pangan kang lumintu.",
+    "verdict": "pass",
+    "descriptionId": "Hasil Tinari bermakna dimudahkan dalam mencari rezeki serta senantiasa berkecukupan sandang pangan."
+  },
+  "24": {
+    "sum": 24,
+    "remainderMod9": 6,
+    "category": "Padu",
+    "descriptionJv": "Asil padu ngemu teges kerep padudon babagan cilik, nanging ora nganti nuwuhaké pisahan.",
+    "verdict": "info",
+    "descriptionId": "Hasil Padu bermakna sering timbul perbedaan pendapat atau perselisihan kecil, namun tidak sampai berujung perceraian."
+  },
+  "25": {
+    "sum": 25,
+    "remainderMod9": 7,
+    "category": "Sujanan",
+    "descriptionJv": "Asil sujanan ngemu teges kerep ngadhepi rasa was-sumelang utawa pasulayan ing babagan kasetyan.",
+    "verdict": "info",
+    "descriptionId": "Hasil Sujanan bermakna sering menghadapi ujian kecurigaan atau cobaan kesetiaan dalam hubungan."
+  },
+  "26": {
+    "sum": 26,
+    "remainderMod9": 8,
+    "category": "Pesthi",
+    "descriptionJv": "Asil pesthi ngemu teges tentrem, ayem, rukun nganti tuwa tanpa rubéda kang gedhé.",
+    "verdict": "pass",
+    "descriptionId": "Hasil Pesthi bermakna tenteram, damai, dan rukun hingga hari tua tanpa rintangan besar."
+  },
+  "27": {
+    "sum": 27,
+    "remainderMod9": 0,
+    "category": "Pegat",
+    "descriptionJv": "Asil pegat ngemu teges kerep nemoni masalah, bisa awujud pasulayan, masalah ékonomi, utawa pisah.",
+    "verdict": "info",
+    "descriptionId": "Hasil Pegat bermakna sering menghadapi ujian berat, baik berupa perselisihan, kendala ekonomi, maupun risiko perpisahan."
+  },
+  "28": {
+    "sum": 28,
+    "remainderMod9": 1,
+    "category": "Pegat",
+    "descriptionJv": "Asil pegat ngemu teges kerep nemoni masalah, bisa awujud pasulayan, masalah ékonomi, utawa pisah.",
+    "verdict": "info",
+    "descriptionId": "Hasil Pegat bermakna sering menghadapi ujian berat, baik berupa perselisihan, kendala ekonomi, maupun risiko perpisahan."
+  },
+  "29": {
+    "sum": 29,
+    "remainderMod9": 2,
+    "category": "Ratu",
+    "descriptionJv": "Asil ratu ngemu teges kajèn-keringan, diajèni déning tangga teparo lan kinurmatan.",
+    "verdict": "pass",
+    "descriptionId": "Hasil Ratu bermakna rumah tangga dihormati, disegani, dan rukun berwibawa di lingkungan sekitar."
+  },
+  "30": {
+    "sum": 30,
+    "remainderMod9": 3,
+    "category": "Jodoh",
+    "descriptionJv": "Asil jodoh ngemu teges cocog lan runtut, bisa nampa kaluwihan lan kakuranganing pasangan.",
+    "verdict": "pass",
+    "descriptionId": "Hasil Jodoh bermakna cocok dan serasi, saling menerima kelebihan serta kekurangan pasangan."
+  },
+  "31": {
+    "sum": 31,
+    "remainderMod9": 4,
+    "category": "Topo",
+    "descriptionJv": "Asil topo ngemu teges wiwitané ngalami keprihatinan nanging pungkasané nemu kamulyan lan kabungahan.",
+    "verdict": "info",
+    "descriptionId": "Hasil Topo bermakna menjalani keprihatinan atau perjuangan keras di awal, namun kelak berbahagia dan berkecukupan."
+  },
+  "32": {
+    "sum": 32,
+    "remainderMod9": 5,
+    "category": "Tinari",
+    "descriptionJv": "Asil tinari ngemu teges gampang golèk rejeki lan kaparingan sandhang pangan kang lumintu.",
+    "verdict": "pass",
+    "descriptionId": "Hasil Tinari bermakna dimudahkan dalam mencari rezeki serta senantiasa berkecukupan sandang pangan."
+  },
+  "33": {
+    "sum": 33,
+    "remainderMod9": 6,
+    "category": "Padu",
+    "descriptionJv": "Asil padu ngemu teges kerep padudon babagan cilik, nanging ora nganti nuwuhaké pisahan.",
+    "verdict": "info",
+    "descriptionId": "Hasil Padu bermakna sering timbul perbedaan pendapat atau perselisihan kecil, namun tidak sampai berujung perceraian."
+  },
+  "34": {
+    "sum": 34,
+    "remainderMod9": 7,
+    "category": "Sujanan",
+    "descriptionJv": "Asil sujanan ngemu teges kerep ngadhepi rasa was-sumelang utawa pasulayan ing babagan kasetyan.",
+    "verdict": "info",
+    "descriptionId": "Hasil Sujanan bermakna sering menghadapi ujian kecurigaan atau cobaan kesetiaan dalam hubungan."
+  },
+  "35": {
+    "sum": 35,
+    "remainderMod9": 8,
+    "category": "Pesthi",
+    "descriptionJv": "Asil pesthi ngemu teges tentrem, ayem, rukun nganti tuwa tanpa rubéda kang gedhé.",
+    "verdict": "pass",
+    "descriptionId": "Hasil Pesthi bermakna tenteram, damai, dan rukun hingga hari tua tanpa rintangan besar."
+  },
+  "36": {
+    "sum": 36,
+    "remainderMod9": 0,
+    "category": "Pegat",
+    "descriptionJv": "Asil pegat ngemu teges kerep nemoni masalah, bisa awujud pasulayan, masalah ékonomi, utawa pisah.",
+    "verdict": "info",
+    "descriptionId": "Hasil Pegat bermakna sering menghadapi ujian berat, baik berupa perselisihan, kendala ekonomi, maupun risiko perpisahan."
+  }
+}

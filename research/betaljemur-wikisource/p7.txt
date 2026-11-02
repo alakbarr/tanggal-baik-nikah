@@ -1,0 +1,12 @@
+﻿<noinclude><pagequality level="4" user="Nerissa Lyra" /></noinclude>{{c|'''KITAB PRIMBON'''}}
+{{c|<big><big>'''BETALJEMUR ADAMMAKNA'''</big></big>}}
+{{c|'''No. 1 Lungguhé dina lan Pasaran'''}}
+
+{| class="wikitable"
+|-
+! {{c|Dina lan Pasaran}} !! {{c|Rupané}} !! {{c|Panggonané}} !! {{c|Kutané}} !! {{c|Banyuné}} !! {{c|Kayuné}} !! {{c|Manuké}} !! {{c|Aksarané}} !! {{c|Kang mengkoni}}
+|-
+| Akad<br>Senèn<br>Selasa<br>Rebo<br>Kemis<br>Jumuah<br>Sabtu || Klawu<br>Kuning<br>Biru<br>Dadu<br>Abang<br>Ireng<br>Putih || Lor wétan<br>Lor kulon<br>Kidul kulon<br>Kulon<br>Kidul wétan<br>Lor<br>Kidul || Abang<br>Mas<br>Slaka<br>Wesi<br>Tembaga<br>Waja<br>Rejasa || Segara<br>Wédang<br>Biru amis<br>Udan<br>Galuga<br>mangsi<br>Leri || Wringin<br>Kunir<br>Tangan<br>Nagasari<br>Secang<br>Areng<br>Widara || Tuhu<br>Kuniran<br>Bubut<br>Ulung<br>Kutut<br>Bethét<br>Wangan || Kitab 10<br>Kitab 4<br>Kitab 20<br>Kitab 10<br>Kitab 30<br>Alip<br>Kitab 51 || Adam<br>Brahim<br>Isa<br>Musa<br>Idris<br>Muhammad<br>Sis
+|-
+| Kliwon<br>Legi<br>Pahing<br>Pon<br>Wagé || Klawu<br>Putih<br>Abang<br>Kuning<br>Ireng || Tengah<br>Wétan<br>Kidul<br>Kulon<br>Lor || Majupat<br>Slaka<br>Tembaga<br>Mas<br>Wesi || Madu<br>Santen<br>Getih<br>Sarkara<br>Nila || Gurda<br>Putih<br>Inggas<br>Kemuning<br>Tlasih || Gogik<br>Kuntul<br>Engkuk<br>Podhang<br>Gagak || {{c|{{jawa|ꦠꦸꦮ}}}}{{jawa|ꦲ​ꦤ​ꦕ​ꦫ​ꦏ}}<br>{{jawa|​ꦢ​ꦠ​ꦱ​ꦮ​ꦭ}}<br>{{jawa|​ꦥ​ꦝ​ꦗ​ꦪ​ꦚ}}<br>{{jawa|​ꦩ​ꦒ​ꦧ​ꦛ​ꦔ}} || Guru<br>Narada<br>Brama<br>Kamajaya<br>Wisnu
+|}<noinclude></noinclude>

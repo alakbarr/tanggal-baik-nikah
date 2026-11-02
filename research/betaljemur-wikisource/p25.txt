@@ -1,0 +1,35 @@
+﻿<noinclude><pagequality level="4" user="Dewinta88" /></noinclude>{{c|'''No. 35. Sangat (Sa‘at) ijabing penganten'''}}
+{{c|miturut tanggal Jan pasarane}}
+
+{| class="wikitable"
+|-
+! rowspan=2|Tanggal !! colspan=5|J A M 
+|-
+! 6 - 8.23 !! 8.25 - 10.11 !! 10.18 - 1.11 !! 1.12 - 3.35 !! 3.36 - 5.59 
+|-
+| 1. 6. 11. 16. 21. 26 || Akhmad || Jabarail || Ibrahim || Yusup || Ngijrail 
+|-
+| 2. 7. 12. 17. 22. 27 || Jabarail || Ibrahim || Yusup || Ngijrail || Akhmad 
+|-
+| 3. 8. 13. 18. 23. 28 || Ibrahim || Yusup || Ngijrail || Akhmad || Jabarail
+|-
+| 4. 9. 14. 19. 24. 29 || Yusup || Ngijrail || Akhmad || Jabarail || Ibrahim
+|-
+| 5. 10. 15. 20. 25. 30 || Ngijrail || Akhmad || Jabarail || Ibrahim || Yusup
+|-
+| <ol>Legi</ol> || Pitutur || Rejeki || Slamet || Pangkalan || Pacekwesi
+|-
+| <ol>Paing</ol> || Rejeki || Slamet || Pangkalan || Pacekwesi || Pitutur
+|-
+| <ol>Pon</ol> || Slamet || Pangkalan || Pacekwesi || Pitutur || Rejeki
+|-
+| <ol>Wagé</ol> || Pangkalan || Pacekwesi || Pitutur || Rejeki || Slamet
+|-
+| <ol>Kliwon</ol> || Pacekwesi || Pitutur || Rejeki || Slamet || Pangkalan
+|}
+
+{{gap}}Katrangan : Tanggal 1 = 6,11, 16, 21, 26, tanggal 2 = 7, 12, 17, 22, 27, sapituruté. Saupama tanggal 1, 6, 11, 16, 21, utawa 26 tiba Rebo Pon, banjur nyumurupana uruting angka tanggal tku karo uruting pasaran Pon, godhagan ngarep dhéwé ketemu Akhmad Salmet, ngarepé Jabarail Pangkalan, ngarepé manéh Ibrahim Pacekwesi, uga ngarepé manéh Yusup Pitutur, ngarep dhéwé Ngijrail Rejeki. Saupama ngijabaké pangantén ing dina Rebo Pon tanggal 1, 6, 11, 16, 21 utawa 26, kudu nganggo sangat jam 6 - 8.23 tiba Akhmad Slamet, iku becik, utawa Jam 3.36 - 5.59 tiba Ngijrail Rejeki, iku sedheng. Yén priyayi lumrahé nganggo sa'at Slamet. Yén sudagar nganggo sa'at Rejeki.
+
+{{rule|6em}}
+
+24<noinclude></noinclude>

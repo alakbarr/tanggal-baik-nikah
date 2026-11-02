@@ -1,0 +1,113 @@
+﻿<noinclude><pagequality level="4" user="Kriita" /></noinclude>{{c|'''No. 14. Sangaring tanggal'''}}
+{{c|Pryoga disirik samubarang: gawé kang perlu}}
+{| class="wikitable"
+|-
+! S a s i !! colspan=4|Tanggal !! Dina taliwangké !! Kadadéyané
+|-
+| Sura || 17 || 27 || 11 || 14 || Rebo paing || Luwih gedhé rubédane
+|-
+| Sapar || 12 || 22 || 1 || 20 || Kemis pon || sinung lara kesandung
+|-
+| Mulud || 13 || 23 || 10 || 15 || Jum'ah wagé || Sinung lara weteng
+|-
+| Bakdamulud || 15 || 25 || 10 || 20 || Saptu kliwon || Larané lunga teka
+|-
+| Jumadilawal || 16 || 26 || 10 || 11 || Senén kliwon || Sinung lara bebalung
+|-
+| Jumadilakir || 11 || 21 || 3 || 14 || Selasa legi || Sinung lara owah
+|-
+| Rejeb || 2 || 22 || 11 || 12 || Rebo paing || Sinung klebon wisa
+|-
+| Ruwah || 14 || 24 || 19 || 28 || Kemis pon || Kena wisané dhéwé
+|-
+| Pasa || 15 || 25 || 10 || 20 || Jum'ah wagé || Sinung lara mata
+|-
+| Sawal || 17 || 27 || 2 || 20 || saptu kliwon || Gung kena perkara
+|-
+| Dulkangidah || 11 || 21 || 6 || 12 || Senèn kliwon || Sinung gring kapit
+|-
+| Besar || 13 || 23 || 1 || 20 || Selasa legi || Gung kasusuahan
+|}
+
+{{rule|6em}}
+
+{{c|'''No. 15. Pétung Pasatohan salaki rabi'''}}
+{{gap}}Wetoné pangantèn lanang lan wadon, neptuné dina lan pasaran digunggung, banjur kabagé 9, lanang turah pira, wadon turah pira :
+{|
+|+ '''Yen turah :'''
+|-
+| 1 || lan || 1. || becik kinasihan
+|-
+| 1 || {{c|"}} || 2. || becik
+|-
+| 1 || {{c|"}} || 3. || kuat, adoh rijekiné
+|-
+| 1 || {{c|"}} || 4. || akèh bihahiné
+|-
+| 1 || {{c|"}} || 5. || pegat
+|-
+| 1 || {{c|"}} || 6. || adoh sandhang pangané
+|-
+| 1 || {{c|"}} || 7. || sugih satru
+|-
+| 1 || {{c|"}} || 8. || kasurang - surang
+|-
+| 1 || {{c|"}} || 9. || dadi pangauban 
+|-
+| 2 || {{c|"}} || 2. || slamet, akèh rijekiné
+|-
+| 2 || {{c|"}} || 3. || gelis mati siji
+|-
+| 2 || {{c|"}} || 4. || akèh godané
+|-
+| 2 || {{c|"}} || 5. || akèh bilainé
+|-
+| 2 || {{c|"}} || 6. || gelis sugih
+|-
+| 2 || {{c|"}} || 7. || anaké akèh mati
+|-
+| 2 || {{c|"}} || 8. || cepak rijekiné
+|-
+| 2 || {{c|"}} || 9. || akèh rijekiné 
+|-
+| 3 || {{c|"}} || 3. || mlarat
+|-
+| 3 || {{c|"}} || 4. || akèh bilainé
+|}
+
+{|
+|-
+| 3 || lan || 5. || gelis pegat
+|-
+| 3 || {{c|"}} || 6. || olèh nugraha
+|-
+| 3 || {{c|"}} || 7. || akèh bilahiné
+|-
+| 3 || {{c|"}} || 8. || gelis mati siji
+|-
+| 3 || {{c|"}} || 9. || sugih rejeki
+|-
+| 4 || {{c|"}} || 4. || kerep lara
+|-
+| 4 || {{c|"}} || 5. || akèh rencanané
+|-
+| 4 || {{c|"}} || 6. || sugih rejeki
+|-
+| 4 || {{c|"}} || 7. || mlarat
+|-
+| 4 || {{c|"}} || 8. || akèh pangkalané
+|-
+| 4 || {{c|"}} || 9. || kalah siji
+|-
+| 5 || {{c|"}} || 5. || tulus begjané
+|-
+| 5 || {{c|"}} || 6. || cepak rijekiné
+|-
+| 5 || {{c|"}} || 7. || tulus sandhang pangané
+|-
+| 5 || {{c|"}} || 8. || akèh sambékalané
+|-
+| 5 || {{c|"}} || 9. || cepak sandhang pangané
+|-
+| 6 || {{c|"}} || 6 || gedhé bilahiné
+|}<noinclude>{{rh|12}}</noinclude>

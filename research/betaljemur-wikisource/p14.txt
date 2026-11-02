@@ -1,0 +1,113 @@
+﻿<noinclude><pagequality level="4" user="Dessyil" /></noinclude>{| 
+|-
+| 6 || lan || 7. || rukun
+|-
+| 6 || {{c|"}} || 8. || sugih satru
+|-
+| 6 || {{c|"}} || 9. || kasurang - surang
+|-
+| 7 || {{c|"}} || 7. || ingikum maring rabiné
+|}
+
+{| 
+|-
+| 7 || lan || 8. || nemu bilahi saka awaké dhéwé
+|-
+| 7 || {{c|"}} || 9. || tulus palakramané
+|-
+| 8 || {{c|"}} || 8. || kinasihan déning wong
+|-
+| 9 || {{c|"}} || 9. || akeh bilahiné
+|-
+| 9 || {{c|"}} || 9. || giras rijekiné
+|}
+
+{{rule|align=left|6em}}
+
+{{gap}}Katrangan : Saupama wetoné pangantèn lanang Jumuah Kliwon neptuné 6 + 8 = 14 kabagé 9, turah 5. Wetoné pengantèn wadon Jumah Paing, neptuné 6 + 9 = 15, kabagé 9, turah 6. Dadi 5 + 6 tiba cepak rijekiné, iku becik.
+
+{{rule|6em}}
+
+{{c|'''No. 16. Pétung salaki rabi'''}}
+
+{{gap}}Wetoné pangantén lanang wadon, neptuné dina lan pasaran digurggung, banjur kabage 4, turah pira.<br>
+{{gap}}Yen turah :
+
+#Gentho, larang anak
+#Gembili, sugih anak
+#Sri, sugih rijeki
+#Punggel, mati siji
+
+{{rule|align=left|6em}}
+
+{{gap}}Katrangan : Saupama wetoné pangantèn lanang Jumuah Pon, neptuné 6 lan 7 = 13. Pangantèn wadon Kemis Paing neptuné 8 lan 9 = 17. Gungung 13 lan 17 = 30, kabagé 4 turah 2, tiba gembili, sugih anak, iku becik.
+
+{{c|'''No. 17. Pétung salaki rabi'''}}
+
+{{gap}}Wetoné panganten lanang wadon :
+
+{|
+|-
+| Akad || lan || Akad, kerep lara
+|-
+| {{c|"}} || {{c|"}} || Senèn, sugih lara
+|-
+| {{c|"}} || {{c|"}} || Selasa, melarat
+|-
+| {{c|"}} || {{c|"}} || Rebo, juwana
+|-
+| {{c|"}} || {{c|"}} || Kemis, padu
+|-
+| {{c|"}} || {{c|"}} || Jumuah, yuwana
+|-
+| {{c|"}} || {{c|"}} || Saptu, mlarat
+|-
+| Senèn || lan || Senèn, ala
+|-
+| {{c|"}} || {{c|"}} || Selasa, yuwana
+|-
+| {{c|"}} || {{c|"}} || Rebo, anaké wadon
+|-
+| {{c|"}} || {{c|"}} || Kemis, disini wong
+|-
+| {{c|"}} || {{c|"}} || Jumuah, yuwana
+|-
+| {{c|"}} || {{c|"}} || Saptu, berkat
+|}
+
+{| 
+|-
+| Selasa || lan || Selas, ala
+|-
+| {{c|"}} || {{c|"}} || Rebo, sugih
+|-
+| {{c|"}} || {{c|"}} || Kemis, sugih
+|-
+| {{c|"}} || {{c|"}} || Jumuah, pegat
+|-
+| {{c|"}} || {{c|"}} || Saptu, kerep padu
+|-
+| Rebo || lan || Rebo, ala
+|-
+| {{c|"}} || {{c|"}} || Kemis, yuwana
+|-
+| {{c|"}} || {{c|"}} || Jumuah, yuwana
+|-
+| {{c|"}} || {{c|"}} || Saptu, becik
+|-
+| Kemis || lan || Kemis, yuwana
+|-
+| {{c|"}} || {{c|"}} || Jumuah, yuwana
+|-
+| {{c|"}} || {{c|"}} || Saptu, pegat
+|-
+| Jum. || lan || Jumuah, mlarat
+|-
+| {{c|"}} || {{c|"}} || Saptu, cilaka
+|-
+| Saptu || lan || Saptu, ala
+|}
+
+{{rule|6em}}
+
+{{right|13}}<noinclude></noinclude>

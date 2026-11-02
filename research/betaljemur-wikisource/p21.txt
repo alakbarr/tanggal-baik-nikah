@@ -1,0 +1,75 @@
+﻿<noinclude><pagequality level="4" user="Ris00l may00" /></noinclude><div style='text-align: justify;'>
+{{c|'''No. 30. Sangaring tanggal'''<br>Ora kéna kanggo mantu lan sapadhané}}
+{|class="wikitable"
+|- style="text-align: center;"
+|Sasi||Tanggal||Sasi||Tanggal
+|-
+|Sura||18||Rejeb||18
+|-
+|Sapar||10||Ruwah||26
+|-
+|Mulud||8||Pasa||24
+|-
+|Rabingulakir||28||Sawal||2
+|-
+|Jumadilawal||28||Dulkangidah||28
+|-
+|Jumadilakir||18||Besar||-
+|}
+<br>
+{{rule|width=4em}}
+<br>
+{{c|'''No. 31. Bangas padéwan'''<br>Ora kena kanggo mantu lan sapapadhané. Yèn tinerak ampuh banget, bakal nemu kesusahan.}}
+{|class="wikitable"
+|- style="text-align: center;"
+|Sasi
+|colspan=2|Tanggal
+|Sasi
+|colspan=2|Tanggal
+|-
+|Sura
+|11
+| -
+|Rejeb
+|13
+|27
+|-
+|Sapar
+|20
+| -
+|Ruwah
+|4
+|28
+|-
+|Mulud
+|1
+|15
+|Pasa *)
+|7
+|20
+|-
+|Rabingulakir
+|10
+|20
+|Sawal
+|10
+| -
+|-
+|Jumadilawal
+|10
+|11
+|Dulkangidah
+|2
+|22
+|-
+|Jumadilakir
+|10
+|14
+|Besar
+|6
+|20
+|}
+{{rule|width=4em|align=left}}
+<small>{{gap}}*) Sawenèh Primbon liya nyebutaké yèn bangas ing sasi Pasa tiba tanggal 9 lan 20. Awit saka iku Primbon iki tanggal 7, 9 lan 20 daktetepaké dadi dina bangas.</small>
+<br>
+{{rule|width=4em}}<noinclude>{{rh|20}}</noinclude>

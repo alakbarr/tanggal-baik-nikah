@@ -1,0 +1,51 @@
+﻿<noinclude><pagequality level="4" user="Fardhanzlf" /></noinclude><div style='text-align: justify;'>
+{{c|'''No. Neptu dina pasaran, sasi lan tahun'''}}
+{|class="wikitable"
+|- 
+| Ahad || neptu || 5 || Kliwon || neptu || 8
+|-
+| Senèn || " || 4 || Legi || " || 5
+|-
+| Selasa || " || 3 || Pahing || " || 9
+|-
+| Rebo || " || 7 || Pon || " || 7
+|-
+| Kemis || " || 8 || Wagé || " || 4
+|-
+| Jumuah || " || 6 || || ||
+|-
+| Setu || " || 9 || || || 
+|}
+{|class="wikitable"
+|- 
+| Sura || Neptu || 7 || Rejeb || Neptu || 2
+|-
+| Sapar || " || 2 || Ruwah || " || 4
+|-
+| Rabingulawal || " || 3 || Pasa || " || 5
+|-
+| Rabingulakir || " || 5 || Sawal || " || 7
+|-
+| Jumadilawal || " || 6 || Dulkaidah || " || 1
+|-
+|Jumadilakir || " || 1 || Besar || " || 3
+|}
+{|class="wikitable"
+|- 
+| Alip || neptu || 1 || Dal || neptu || 4
+|-
+| Ehé || " || 5 || Bé || " || 2
+|-
+| Jimawal || " || 3 || Wawu || " || 6
+|-
+| Jé || " || 7 || Jimakir || " || 3
+|}
+{{rule|width=4em}}
+{{c|'''No. 3. Dina ala.'''}}
+{{gap}}Ora kena kanggo lelungan lan liya-liyané<br>
+{{gap}}1. Akad Paing 2. Setu Pon 3. Jumuah Wagé 4. Selasa Kliwon 5 Senèn Legi 6. Kemis Wagé
+{{rule|width=5em}}
+{{c|'''No. 4. Dina ala banget'''}}
+{{gap}}Ora kena kanggo lelungan lan liya-liyané<br>
+{{gap}}1. Rebo Legi 2. Akad Paing 3. Kemis Pon 4. Selasa Wagé 5. Setu Kliwon
+{{rule|width=5em}}<noinclude>{{rh|||7}}</noinclude>

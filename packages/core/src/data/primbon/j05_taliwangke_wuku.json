@@ -1,0 +1,32 @@
+[
+  {
+    "wuku": "Wuye",
+    "dayIndex": 1,
+    "pasaranIndex": 4
+  },
+  {
+    "wuku": "Wayang",
+    "dayIndex": 2,
+    "pasaranIndex": 0
+  },
+  {
+    "wuku": "Landep",
+    "dayIndex": 3,
+    "pasaranIndex": 1
+  },
+  {
+    "wuku": "Warigalit",
+    "dayIndex": 4,
+    "pasaranIndex": 2
+  },
+  {
+    "wuku": "Kuningan",
+    "dayIndex": 5,
+    "pasaranIndex": 3
+  },
+  {
+    "wuku": "Kuruwelut",
+    "dayIndex": 6,
+    "pasaranIndex": 4
+  }
+]

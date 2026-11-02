@@ -1,0 +1,26 @@
+{
+  "1": {
+    "name": "Gendheng",
+    "meaningJv": "nemu sugih, nanging kerep lara",
+    "verdict": "info",
+    "meaningId": "berlimpah rezeki, namun rentan sakit"
+  },
+  "2": {
+    "name": "Gembili",
+    "meaningJv": "sugih anak lan sugih rejeki",
+    "verdict": "pass",
+    "meaningId": "dikaruniai banyak keturunan dan rezeki melimpah"
+  },
+  "3": {
+    "name": "Sri",
+    "meaningJv": "rahayu lan kajèn-keringan",
+    "verdict": "pass",
+    "meaningId": "selamat, sejahtera, dan dihormati"
+  },
+  "0": {
+    "name": "Punggel",
+    "meaningJv": "mati salah siji",
+    "verdict": "fail",
+    "meaningId": "berisiko kehilangan salah satu pasangan"
+  }
+}

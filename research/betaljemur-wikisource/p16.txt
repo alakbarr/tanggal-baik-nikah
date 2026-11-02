@@ -1,0 +1,41 @@
+﻿<noinclude><pagequality level="4" user="Dessyil" /></noinclude>{|
+|-
+| <ol>Yèn turah</ol> || 4. || Sanggar waringin, dadi pangahuban.
+|-
+| <ol>{{c|"}}</ol> || 5. || Pedaringan kebak, sugih.
+|-
+| <ol>{{c|"}}</ol> || 6. || Satriya lelaku, becik yèn laku dagang.
+|-
+| <ol>{{c|"}}</ol> || 7. || Pandhita mukti, ayem tentrem slamet
+|}
+
+{{gap}}Neptune aksara : {{jawa|ꦲ}}​ 6, {{jawa|ꦤ}} ​3, {{jawa|ꦕ}} 3, {{jawa|ꦫ}} 3, {{jawa|ꦏ}} 3, {{jawa|​ꦢ}} 5, {{jawa|​ꦠ}} 3, {{jawa|​ꦱ}} 3, {{jawa|​ꦮ}} 6, {{jawa|​ꦭ}} ​5, {{jawa|ꦥ}} 1, {{jawa|​ꦝ}} 4, {{jawa|​ꦗ}} 3, {{jawa|​ꦪ}} 8, {{jawa|​ꦩ}} 5, {{jawa|​ꦒ}} 1, {{jawa|​ꦧ}} 1, {{jawa|​ꦛ}} 4, {{jawa|​ꦔ}} 2.
+
+{{rule|align=left|6em}}
+
+{{gap}}Katrangan : upama jenenge panganten lanang {{jawa|ꦱꦸꦫꦤ}} neptuné {{jawa|​ꦱ}} 3, {{jawa|ꦤ}} 3 = 6, wadon : {{jawa|ꦩꦂꦠꦶꦪꦃ}} neptuné {{jawa|ꦩ}} 5, {{jawa|​ꦪ}} 8 = 13, Lanang wadon neptuné 6 lan 13 = 19, kabagé 7, turah 5, tiba padaringan kebak
+
+{{rule|6em}}
+
+{{c|'''No. 20. Petung salaki rabi.'''}}
+
+{{gap}}Miturut aksara Jenengé pangantén lanang wadon, mung kajupuk aksaranaé kang ngarep dhéwé. Neptuné aksara kagunggung kabagé 5,
+turah pira.
+{|
+|-
+| Yèn turah || 1. || Sri, slamet lumintu rijekiné.
+|-
+| <ol>{{c|"}}</ol> || 2. || Lungguh, duwé pangkat.
+|-
+| <ol>{{c|"}}</ol> || 3. || Gedhong, sugih
+|-
+| <ol>{{c|"}}</ol> || 4. || Lara, kangélan.
+|-
+| <ol>{{c|"}}</ol> || 5. || Pati, sangsara utawa karep kepatén.
+|}
+
+{{gap}}neptuné aksara : {{jawa|ꦲ}}​ 1, {{jawa|ꦤ}} ​2, {{jawa|ꦕ}} 3, {{jawa|ꦫ}} 4, {{jawa|ꦏ}} 5, {{jawa|​ꦢ}} 6, {{jawa|​ꦠ}} 7, {{jawa|​ꦱ}} 8, {{jawa|​ꦮ}} 9, {{jawa|​ꦭ}} ​10, {{jawa|ꦥ}} 11, {{jawa|​ꦝ}} 12, {{jawa|​ꦗ}} 13, {{jawa|​ꦪ}} 14, {{jawa|ꦚ}} 15, {{jawa|​ꦩ}} 16, {{jawa|​ꦒ}} 17, {{jawa|​ꦧ}} 18, {{jawa|​ꦛ}} 19, {{jawa|​ꦔ}} 20.
+
+{{rule|align=left|6em}}
+
+{{gap}}Katrangan : upama jenenge panganten lanang {{jawa|ꦩꦂꦏꦶꦗꦤ꧀}} neptuné {{jawa|ꦩ}} 16 wadon {{jawa|ꦢꦶꦤꦃ}} neptuné {{jawa|ꦢ}} 6, lanang lan wadon neptuné 16 lan 6 = 22, kabagé 5, turah 2, tiba Lungguh duwé pangkat.<noinclude>{{right|15}}</noinclude>

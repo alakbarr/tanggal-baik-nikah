@@ -1,0 +1,120 @@
+﻿<noinclude><pagequality level="4" user="Dessyil" /></noinclude>{{c|'''No. 18. Petung salaki rabi'''}}
+
+{{gap}}Aksara jenengé pangantén lanang wadon mung kajupuk aksarne kagarep dhewé lan mburi dhéwé, neptuné aksara kagunggung, kabagé 9, lanang turah pira, wadon turah pira. Yen turah :
+
+{|
+|-
+| 1 || lan || 1. || becik
+|-
+| 1 || {{c|"}} || 2. || becik
+|-
+| 1 || {{c|"}} || 3. || tukaran
+|-
+| 1 || {{c|"}} || 4. || pegat
+|-
+| 1 || {{c|"}} || 5. || pegat
+|-
+| 1 || {{c|"}} || 6. || pegat
+|-
+| 1 || {{c|"}} || 7. || dadi satru
+|-
+| 1 || {{c|"}} || 8. || pati
+|-
+| 1 || {{c|"}} || 9. || dadi pengulu
+|-
+| 2 || {{c|"}} || 2. || becik
+|-
+| 2 || {{c|"}} || 3. || pati
+|-
+| 2 || {{c|"}} || 4. || becik
+|-
+| 2 || {{c|"}} || 5. || pegat
+|-
+| 2 || {{c|"}} || 6. || ala
+|-
+| 2 || {{c|"}} || 7. || kerep pegat nanging balèn
+|-
+| 2 || {{c|"}} || 8. || awet ora pegat
+|-
+| 2 || {{c|"}} || 9. || becik
+|-
+| 3 || {{c|"}} || 3. || tikel
+|-
+| 3 || {{c|"}} || 4. || ora dadi
+|-
+| 3 || {{c|"}} || 5. || pegat
+|-
+| 3 || {{c|"}} || 6. || becik
+|-
+| 3 || {{c|"}} || 7. || bilahi
+|-
+| 3 || {{c|"}} || 8. || pegat
+|}
+
+{|
+|-
+| 3 || lan || 9. || becik
+|-
+| 4 || {{c|"}} || 4. || jahat
+|-
+| 4 || {{c|"}} || 5. || pegat
+|-
+| 4 || {{c|"}} || 6. || pegat
+|-
+| 4 || {{c|"}} || 7. || dadi satru
+|-
+| 4 || {{c|"}} || 8. || dadi satru
+|-
+| 4 || {{c|"}} || 9. || diucap ala
+|-
+| 5 || {{c|"}} || 5. || awan apesé
+|-
+| 5 || {{c|"}} || 6. || pegat
+|-
+| 5 || {{c|"}} || 7. || pegat
+|-
+| 5 || {{c|"}} || 8. || pegat
+|-
+| 5 || {{c|"}} || 9. || becik
+|-
+| 6 || {{c|"}} || 6. || ala nanging ora pegat
+|-
+| 6 || {{c|"}} || 7. || becik
+|-
+| 6 || {{c|"}} || 8. || becik
+|-
+| 6 || {{c|"}} || 9. || pegat
+|-
+| 7 || {{c|"}} || 7. || becik
+|-
+| 7 || {{c|"}} || 8. || becik
+|-
+| 7 || {{c|"}} || 9. || kejahatn
+|-
+| 8 || {{c|"}} || 8. || becik
+|-
+| 8 || {{c|"}} || 9. || sugih anak nemu bilahi
+|-
+| 9 || {{c|"}} || 9. || pegat nanging ora pegat
+|}
+
+{{gap}}neptuné aksara : {{jawa|ꦲ}} 1, ​{{jawa|ꦤ}} 3, {{jawa|​ꦕ}} 5, {{jawa|​ꦫ}} 7, {{jawa|​ꦏ}}​ 2, {{jawa|ꦢ​}} 4, {{jawa|ꦠ}} 7, {{jawa|​ꦱ}} 9,​ {{jawa|ꦮ​}} 1, {{jawa|ꦭ}} 1, {{jawa|​ꦥ}} 7, {{jawa|​ꦝ}} , ​{{jawa|ꦗ}} 6, {{jawa|​ꦪ}} 5, {{jawa|​ꦩ}} 4,​ {{jawa|ꦒ}} 2, {{jawa|​ꦧ}} 9,​{{jawa|ꦛ}} 9, {{jawa|​ꦔ}} 10
+
+{{rule|6em}}
+
+{{gap}}Katrangan : saupama jenengé pengantèn lanang {{jawa|ꦱꦸꦤꦂꦪ}} neptuné {{jawa|ꦱ}} 9 {{jawa|ꦪ}} 2 = 11. Pengantèn wadon {{jawa|ꦱꦠꦶꦩꦃ}} neptuné {{jawa|ꦱ}} 9 {{jawa|ꦩ}} 4 = 13, kabagé 9.<br>
+{{gap}}lanang turah 2, wadon turah 4, ketemuné turah 2 lan 4, becik
+
+{{rule|6em}}
+
+{{c|'''No. 19. Pétung salaki rabi.'''}}
+
+{{gap}}Miturut aksara jenengé pangantèn lanang wadon, mung kajupuk aksarané kang ngarep dhéwé lan mburi dhéwé, neptuné aksara kagunggung kabagé 7, turah pira.<br>
+{|
+|-
+| <ol>Yèn turah</ol> || 1. || Tunggak tan semi, akèh mati anaké
+|-
+| <ol>{{c|"}}</ol> || 2. || Pisang punggel, pegat
+|-
+| <ol>{{c|"}}</ol> || 3. || Lumbung gumilang, boros
+|}<noinclude>14</noinclude>

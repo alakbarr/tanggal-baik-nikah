@@ -1,0 +1,112 @@
+﻿<noinclude><pagequality level="4" user="Nur Sifatullah" /></noinclude>{{c|'''No.34. Pamilihing dina ijabing panganten rupa 3'''}}
+{|class="wikitable"
+|- style="text-align: center;"
+| rowspan=2, colspan=2 | Dina
+| colspan=5 | KAPING
+|- style="text-align: center;"
+| 1
+| 2
+| 3
+| 4
+| 5
+|- style="text-align: center;"
+| rowspan=7 | I
+| Jumuah
+| harja
+| satru Allah
+| pati
+| begja
+| olèh anak
+|- style="text-align: center;"
+| Setu
+| tuna luput
+| satru Allah
+| nepsu gedhé
+| harja
+| begja
+|- style="text-align: center;"
+| Akad
+| tuna luput
+| harja
+| pati
+| begja harja
+| dosa gedhé
+|- style="text-align: center;"
+| Senèn
+| satru Allah
+| harja
+| kagèt
+| begja
+| suka gedhé
+|- style="text-align: center;"
+| Selasa
+| tuna luput
+| satru Allah
+| dosa gedhé
+| harja
+| susah gedhé
+|- style="text-align: center;"
+| Rebo
+| tuna luput
+| harja
+| pati
+| suka rena
+| kagèt
+|- style="text-align: center;"
+| Kemis
+| tuna luput
+| satru Allah
+| harja
+| ugungan
+| dosa gedhé
+|- style="text-align: center;"
+| rowspan=7 | II
+| Jumuah
+| harja
+| satru Allah
+| pati
+| kasembadan
+| harja
+|- style="text-align: center;"
+| Setu
+| satru Allah
+| tuna luput
+| susah gedhé
+| begja
+| harja
+|- style="text-align: center;"
+| Akad
+| tuna luput
+| harja
+| satru Allah
+| begja
+| harja
+|- style="text-align: center;"
+| Senèn
+| tuna luput
+| harja 
+| suka gedhé
+| satru Allah
+| nemu suka
+|- style="text-align: center;"
+| Selasa
+| tuna luput
+| suka gedhé
+| kagèt
+| harja
+| karta
+|- style="text-align: center;"
+| Rebo
+| suka gedhé
+| harja 
+| pati
+| harja
+| satru Allah
+|- style="text-align: center;"
+| Kemis
+| tuna luput
+| satru Allah
+| harja
+| olèh sanak
+| jro pati
+|}<noinclude>{{rh|22}}</noinclude>

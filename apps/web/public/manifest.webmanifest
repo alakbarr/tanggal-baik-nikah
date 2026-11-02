@@ -1,0 +1,30 @@
+{
+  "name": "Tanggal Baik Nikah — Petungan Jawa & Sunnah",
+  "short_name": "Tanggal Baik",
+  "description": "Penasihat hisab tanggal akad nikah memadukan tradisi petungan Jawa (Kitab Betaljemur Adammakna) dan Sunnah Nabi ﷺ bebas khurafat.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0B0C0F",
+  "theme_color": "#0B0C0F",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

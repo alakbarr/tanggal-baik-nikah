@@ -1,0 +1,90 @@
+﻿<noinclude><pagequality level="4" user="Kriita" /></noinclude><div style='text-align: justify;'>
+{{c|'''No. 27. Dina sangaring asal'''<br>
+Ora kena kanggo mantu lan sapadhané}}
+{|class="wikitable"
+|- style="text-align: center;"
+| Ing wulan || Dina sangar
+|-
+| Pasa, Sawal, Dulkangidah || Jumuah
+|-
+| Besar, Sura, Sapar || Setu, Akad
+|-
+| Mulud, Rabingulakir, Jumadilawal || Senèn, Slasa
+|-
+| Jumadilakir, Rejeb, Ruwah || Rebo, Kemis
+|}
+{{rule|width=4em}}
+{{c|'''No. 28. Na'asing para Nabi'''<br>
+Ora kena kanggo mantu lan sapadhané}}
+{|class="wikitable"
+|- style="text-align: center;"
+| Sasi || Tgl. || Sababé
+|-
+| Sura || 13 || Nabi Ibrahim kaobong Raja Namrud
+|-
+| Mulud || 3 || Nabi Adam katurunaké ing ndonya 
+|-
+| Rabingulakir || 16 || Nabi yusup kacemplungaké sumur 
+|-
+| Jumadilawal || 5 || Nabi Nuh kinelem
+|-
+| Pasa *) || 21 || Nabi Musa perang lan Raja Firaun
+|-
+| Dulkangidah || 24 || Nabi Yunus diuntal iwak nus
+|-
+| Besar || 25 || Nabi Muhamad lumebu ngguwa
+|}
+{{gap}}<small>*)Sawenèh primbon liya, nyebutaké yèn na'as Nabi ing sasi Pasa tiba tanggal 12. Awit iku ing Primbon iki tanggal 12 lan 21 Pasa dak tetepaké padha dadi na'asing Nabi.</small>
+{{rule|width=4em}}
+{{c|'''No. 29. Na'asing tanggal'''<br>
+Ora keno kanggo mantu lan sapadhané}}
+{|class="wikitable"
+|- style="text-align: center;"
+| Sasi 
+| colspan=2 | Tanggal
+| Sasi
+| colspan=2 | Tanggal
+|-
+| Sura
+| 11
+| 6
+| Rejeb
+| 2
+| 14
+|-
+| Sapar
+| 1
+| 20
+| Ruwah
+| 12
+| 13
+|-
+| Mulud
+| 10
+| 20
+| Pasa
+| 9
+| 20
+|-
+| Rabingulakir
+| 10
+| 20
+| Sawal
+| 10
+| 20
+|-
+| Jumadilawal 
+| 1
+| 11
+| Dulkangidah
+| 9
+| 13
+|-
+| Jumadilakir
+| 10
+| 14
+| Besar
+| 12
+| 10
+|}
+{{rule|width=4em}}<noinclude>{{rh|||19}}</noinclude>

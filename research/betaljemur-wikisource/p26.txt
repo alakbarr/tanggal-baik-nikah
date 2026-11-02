@@ -1,0 +1,42 @@
+﻿<noinclude><pagequality level="4" user="Sabil Khoer Al Munawar" /></noinclude>{| class="wikitable"
+|+ {{c|'''No. 36. Sa'at ijabing pengantén miturut tanggalé'''}}
+|-
+! rowspan=2|Tanggal !! colspan=5|J A M
+|-
+! 6 - 8.23 !! 8.24 - 10.47 !! 10.48 - 1.11 !! 1.12 - 3.35 !! 3.36 - 5.59
+|-
+| 1. 6. 11.<br> 16. 21. 26. || Akhmad<br>Tutur || Jabarail<br>Alangan || Ibrahim<br>Pacak || Yusup<br>Slamet || Ngijrail<br>Rijeki
+|-
+| 2. 7. 12<br>17. 22. 27 || Jabarail<br>Rijeki || Ibrahim<br>Tutur || Yusup<br>Alangan || Nijrail<br>Pacak || Akhmad<br>Slamet
+|-
+| 3. 8. 13.<br>18. 23. 28. || Ibrahim<br>Slamet || Yusup<br>Rijeki || Ngijrail<br>Tutur || Akhmad<br>Alangan || Jabarail<br>Pacak
+|-
+| 4. 9. 14.<br>19. 24. 29. || Yusup<br>Pacak || Ngijrail<br>Slamet || Akhmad<br>Rijeki || Jabarail<br>Tutur || Ibrahim<br>Alangan
+|-
+| 5. 10. 15.<br>20. 25. 30. || Ngijrail<br>Alangan || Akhmad<br>Pacak || Jabarail<br>Slamet || Ibrahim<br>Rijeki || Yusup<br>Tutur
+|}
+
+{{rule|align=left|6em}}
+
+{{gap}}Katrangan : Saupama ngijabaké pangantén kabener tiba tanggal 5, 10, 15, 20, 25, utawa 30, sa‘at kang becik yaiku ing antarané jam 10.47 - 1.11 tiba slamet. Sa'at kang sedheng ana ing antarané jam 1.12 - 3.35 tiba rejeki, iku sedheng. Sa'at liyane iku, ora kena dianggo, sebab ala, yen tinerak ora becik
+kedadéyané
+
+{{rule|6em}}
+
+{| class="wikitable"
+|+ '''No. 37. Sa'at ijabing pengantèn miturut ndadariné'''<br>( wetuné ) lintang suhara
+|-
+| Dina || colspan=3|Awan jam !! colspan=3|Bengi jam || Dina 
+|-
+| Akad || 7 || - || 2 || 12 ||  ||  || Kemis
+|-
+| Senèn || 11 ||  ||  || 9 || - || 4 || Jumuah
+|-
+| Slasa || 8 || - || 3 || 6 || - || 1 || Setu
+|-
+| Rebo || 12 ||  ||  || 10 || - || 5 || 
+|}
+
+{{rule|align=left|6em}}
+
+{{gap}}Katrangan : Sa’at ili durung patlya kelurnrah dianggo. Déné kang wis kelumrah yaiku sa‘at kang kaya kasebut ing No. 35; yaiku sa‘at miturut tanggal lan pasaran. Sarta sa'at kang kasebut No. 36, yaiku sa’at kang inung miturut tanggal. Sa'at 3 rupa iku padha baé, kena milih salah siji endi kang disenengi, miturut kang wis kelumrah dianggo ing siji- sijining papan / padunungané dhéwé-dhéwé<noinclude>{{rh|||25}}</noinclude>
