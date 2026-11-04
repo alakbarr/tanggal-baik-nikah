@@ -18,3 +18,4 @@ export * from './rules/shariah.js';
 export * from './rules/profiles.js';
 export * from './solver/explain.js';
 export * from './solver/solve.js';
+export * from './solver/compare.js';

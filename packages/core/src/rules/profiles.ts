@@ -60,6 +60,16 @@ export const TRADITION_PROFILES: Readonly<Record<TraditionProfileId, TraditionPr
         dina_ala: 'J-26',
       },
     },
+    shariah: {
+      id: 'shariah',
+      filters: [
+        // Tanpa pantangan adat yang menggugurkan hari; hanya batasan syar'i iddah & ihram
+      ],
+      criteria: [
+        'J-34', // Rupa 3 (sebagai konsensus kemaslahatan)
+      ],
+      variantChoices: {},
+    },
     custom: {
       id: 'custom',
       filters: [

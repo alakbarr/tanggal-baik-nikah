@@ -1,4 +1,4 @@
-﻿# Research Dossier — Javanese Wedding Petungan & Islamic Wedding Guidance
+# Research Dossier — Javanese Wedding Petungan & Islamic Wedding Guidance
 
 **Version:** 3.0 (audited and re-verified against transcribed primary text)  
 **Date:** November 2, 2026  
@@ -500,6 +500,7 @@ No text forbids marriage in Muharram/Suro or Safar; the Safar superstition is re
 | J-37 | Sa'at (ndadari) | date | 37 / p. 25 | pending | table incomplete |
 | J-39..41 | Tarub | date | 39–41 / pp. 26–27 | verified | informational |
 | B-01 | 8-category table | couple | popular | secondary (T3) | `mod 9` |
+| B-02 | 7-category table (Bale Kedhawang) | couple | popular | secondary (T3) | `mod 7` |
 | U-01..U-07 | Setiaji | date | PDF pp. 21–24 | verified (T1-L) | Pati profile only; U-06/U-07 informational |
 | S-01, S-02 | iddah, ihram | shariah | — | T0 | user-supplied |
 

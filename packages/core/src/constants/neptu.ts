@@ -113,6 +113,21 @@ export const SASI_JAWA_NAMES: readonly SasiJawa[] = Object.freeze([
   'Besar',
 ]);
 
+export const NEPTU_SASI_JAWA: Readonly<Record<SasiJawa, number>> = Object.freeze({
+  Sura: 7,
+  Sapar: 2,
+  Mulud: 3,
+  Bakdamulud: 5,
+  Jumadilawal: 6,
+  Jumadilakir: 1,
+  Rejeb: 2,
+  Ruwah: 4,
+  Pasa: 5,
+  Sawal: 7,
+  Dulkangidah: 1,
+  Besar: 3,
+});
+
 export const TAHUN_WINDU_NAMES: readonly TahunWindu[] = Object.freeze([
   'Alip',
   'Ehe',
@@ -123,6 +138,17 @@ export const TAHUN_WINDU_NAMES: readonly TahunWindu[] = Object.freeze([
   'Wawu',
   'Jimakir',
 ]);
+
+export const NEPTU_TAHUN_WINDU: Readonly<Record<TahunWindu, number>> = Object.freeze({
+  Alip: 1,
+  Ehe: 5,
+  Jimawal: 3,
+  Je: 7,
+  Dal: 4,
+  Be: 2,
+  Wawu: 6,
+  Jimakir: 3,
+});
 
 export const HIJRI_MONTH_NAMES: readonly string[] = Object.freeze([
   'Muharram',

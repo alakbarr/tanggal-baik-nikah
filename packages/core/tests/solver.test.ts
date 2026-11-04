@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { solve } from '../src/solver/solve.js';
+import { compareTraditions } from '../src/solver/compare.js';
 import {
   explainCriteria,
   explainElimination,
@@ -165,5 +166,33 @@ describe('Phase 4 — Solver Engine', () => {
     // the date eligibility count must be identical
     expect(run1.eligible.length).toBe(run2.eligible.length);
     expect(run1.eliminated.length).toBe(run2.eliminated.length);
+  });
+
+  it('4.8 Couple profile contains complete rules (B-01, B-02, J-15, J-16, J-17, J-22, J-23, J-24, J-25) & cultural taboos', () => {
+    const result = solve(baseOptions);
+    const profile = result.coupleProfile;
+
+    expect(profile.outcomes).toHaveLength(9);
+    const ruleIds = profile.outcomes.map((o) => o.ruleId);
+    expect(ruleIds).toEqual(['B-01', 'B-02', 'J-15', 'J-16', 'J-17', 'J-22', 'J-23', 'J-24', 'J-25']);
+
+    // Check cultural taboos
+    expect(profile.culturalTaboos).toBeDefined();
+    expect(profile.culturalTaboos?.length).toBeGreaterThanOrEqual(3);
+  });
+
+  it('4.9 compareTraditions: runs multi-tradition comparison across 4 profiles', () => {
+    const comparison = compareTraditions(baseOptions);
+
+    expect(comparison.items.length).toBe(104);
+    expect(comparison.summary.totalScanned).toBe(104);
+    expect(comparison.summary.keratonEligibleCount).toBe(21);
+    expect(comparison.summary.shariahEligibleCount).toBe(104); // All weekends valid under Shariah limits
+
+    const sample = comparison.items[0]!;
+    expect(sample.verdicts.keraton).toBeDefined();
+    expect(sample.verdicts.pati).toBeDefined();
+    expect(sample.verdicts.populer).toBeDefined();
+    expect(sample.verdicts.shariah).toBeDefined();
   });
 });

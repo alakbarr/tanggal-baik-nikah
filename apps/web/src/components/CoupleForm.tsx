@@ -161,6 +161,37 @@ export function CoupleForm({
             />
             <span>Lahir setelah maghrib / surup (berganti weton Jawa)</span>
           </label>
+
+          <div>
+            <label
+              htmlFor="groomChildOrder"
+              className="block text-xs font-medium text-sand-700 dark:text-sand-300 mb-1"
+            >
+              Urutan Kelahiran Anak (Opsional)
+            </label>
+            <select
+              id="groomChildOrder"
+              value={formData.groomChildOrder ?? ''}
+              onChange={(e) =>
+                onChange({
+                  ...formData,
+                  groomChildOrder: e.target.value ? Number(e.target.value) : undefined,
+                })
+              }
+              className="w-full px-3 py-2 text-sm rounded bg-white dark:bg-obsidian-950 border border-sand-600 dark:border-sand-600 text-sand-900 dark:text-sand-50 focus:outline-none focus:ring-2 focus:ring-prada-500"
+            >
+              <option value="">Belum ditentukan / Lewati</option>
+              <option value="1">Anak ke-1 (Sulung)</option>
+              <option value="2">Anak ke-2</option>
+              <option value="3">Anak ke-3</option>
+              <option value="4">Anak ke-4</option>
+              <option value="5">Anak ke-5</option>
+              <option value="6">Anak ke-6 atau lebih</option>
+            </select>
+            <span className="text-[10px] text-sand-500 dark:text-sand-400 mt-1 block">
+              Diperlukan untuk memeriksa pantangan adat Jilu (anak ke-1 &amp; anak ke-3).
+            </span>
+          </div>
         </fieldset>
 
         {/* Bride Section */}
@@ -221,6 +252,37 @@ export function CoupleForm({
             />
             <span>Lahir setelah maghrib / surup (berganti weton Jawa)</span>
           </label>
+
+          <div>
+            <label
+              htmlFor="brideChildOrder"
+              className="block text-xs font-medium text-sand-700 dark:text-sand-300 mb-1"
+            >
+              Urutan Kelahiran Anak (Opsional)
+            </label>
+            <select
+              id="brideChildOrder"
+              value={formData.brideChildOrder ?? ''}
+              onChange={(e) =>
+                onChange({
+                  ...formData,
+                  brideChildOrder: e.target.value ? Number(e.target.value) : undefined,
+                })
+              }
+              className="w-full px-3 py-2 text-sm rounded bg-white dark:bg-obsidian-950 border border-sand-600 dark:border-sand-600 text-sand-900 dark:text-sand-50 focus:outline-none focus:ring-2 focus:ring-prada-500"
+            >
+              <option value="">Belum ditentukan / Lewati</option>
+              <option value="1">Anak ke-1 (Sulung)</option>
+              <option value="2">Anak ke-2</option>
+              <option value="3">Anak ke-3</option>
+              <option value="4">Anak ke-4</option>
+              <option value="5">Anak ke-5</option>
+              <option value="6">Anak ke-6 atau lebih</option>
+            </select>
+            <span className="text-[10px] text-sand-500 dark:text-sand-400 mt-1 block">
+              Diperlukan untuk memeriksa pantangan adat Jilu (anak ke-1 &amp; anak ke-3).
+            </span>
+          </div>
         </fieldset>
       </div>
 

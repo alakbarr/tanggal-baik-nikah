@@ -1,18 +1,33 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { solve, type SolverResult, type CandidateResult } from '@tanggal-baik/core';
+import {
+  solve,
+  compareTraditions,
+  type SolverResult,
+  type CandidateResult,
+  type MultiTraditionComparisonResult,
+} from '@tanggal-baik/core';
 import { AntiTathayyurBanner } from '../components/AntiTathayyurBanner';
 import { Navbar } from '../components/Navbar';
 import { CoupleForm } from '../components/CoupleForm';
 import { CoupleProfilePanel } from '../components/CoupleProfilePanel';
 import { ResultsList } from '../components/ResultsList';
 import { MonthGridView } from '../components/MonthGridView';
+import { TraditionComparisonView } from '../components/TraditionComparisonView';
+import { CalculationWalkthroughModal } from '../components/CalculationWalkthroughModal';
 import { ProvenanceDrawer } from '../components/ProvenanceDrawer';
 import { PrintableReport } from '../components/PrintableReport';
 import { ShareCardModal } from '../components/ShareCardModal';
 import { coupleFormSchema, type CoupleFormData } from '../lib/schemas';
-import { LayoutList, Calendar as CalendarIcon, Sparkles, Printer, Share2 } from 'lucide-react';
+import {
+  LayoutList,
+  Calendar as CalendarIcon,
+  Sparkles,
+  Printer,
+  Share2,
+  GitCompare,
+} from 'lucide-react';
 
 const STORAGE_KEY = 'tbn:v1:couple_data';
 
@@ -33,9 +48,11 @@ const DEFAULT_FORM: CoupleFormData = {
 export default function HomePage() {
   const [formData, setFormData] = useState<CoupleFormData>(DEFAULT_FORM);
   const [solverResult, setSolverResult] = useState<SolverResult | null>(null);
-  const [activeView, setActiveView] = useState<'list' | 'calendar'>('list');
+  const [comparisonResult, setComparisonResult] = useState<MultiTraditionComparisonResult | null>(null);
+  const [activeView, setActiveView] = useState<'list' | 'calendar' | 'compare'>('list');
   const [drawerCandidate, setDrawerCandidate] = useState<CandidateResult | null>(null);
   const [shareCandidate, setShareCandidate] = useState<CandidateResult | null>(null);
+  const [isWalkthroughOpen, setIsWalkthroughOpen] = useState(false);
   const [isComputing, setIsComputing] = useState(false);
 
   // Load from localStorage on mount
@@ -85,17 +102,22 @@ export default function HomePage() {
         }
       }
 
-      const res = solve({
+      const groomChildOrder = data.groomChildOrder ? Number(data.groomChildOrder) : undefined;
+      const brideChildOrder = data.brideChildOrder ? Number(data.brideChildOrder) : undefined;
+
+      const solveOptions = {
         couple: {
           groom: {
             name: data.groomName,
             birthDate: { year: groomYear, month: groomMonth, day: groomDay },
             birthAfterSunset: data.groomBirthAfterSunset,
+            ...(groomChildOrder ? { childOrder: groomChildOrder } : {}),
           },
           bride: {
             name: data.brideName,
             birthDate: { year: brideYear, month: brideMonth, day: brideDay },
             birthAfterSunset: data.brideBirthAfterSunset,
+            ...(brideChildOrder ? { childOrder: brideChildOrder } : {}),
           },
           traditionProfile: data.traditionProfile,
           ...(iddahEnd ? { iddahEndDate: iddahEnd } : {}),
@@ -105,9 +127,15 @@ export default function HomePage() {
           end: { year: data.weddingYear, month: 12, day: 31 },
         },
         weekendsOnly: data.weekendsOnly,
-      });
+      };
 
+      const res = solve(solveOptions);
       setSolverResult(res);
+
+      // Also compute 4-tradition comparison
+      const comp = compareTraditions(solveOptions);
+      setComparisonResult(comp);
+
       // Persist to localStorage
       localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
     } catch (err) {
@@ -175,6 +203,7 @@ export default function HomePage() {
               profile={solverResult.coupleProfile}
               groomName={formData.groomName}
               brideName={formData.brideName}
+              onOpenWalkthrough={() => setIsWalkthroughOpen(true)}
             />
 
             {/* View Switcher & Action Controls */}
@@ -241,6 +270,18 @@ export default function HomePage() {
                     <CalendarIcon className="w-3.5 h-3.5" />
                     <span>Kalender 3 Sistem</span>
                   </button>
+                  <button
+                    type="button"
+                    onClick={() => setActiveView('compare')}
+                    className={`flex items-center gap-1.5 px-3 py-1 rounded-md transition-colors ${
+                      activeView === 'compare'
+                        ? 'bg-prada-500 text-obsidian-950 font-semibold shadow-xs'
+                        : 'text-sand-700 dark:text-sand-300 hover:text-sand-950 dark:hover:text-sand-50'
+                    }`}
+                  >
+                    <GitCompare className="w-3.5 h-3.5" />
+                    <span>Komparasi 4 Tradisi</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -251,16 +292,24 @@ export default function HomePage() {
                 eligible={solverResult.eligible}
                 eliminated={solverResult.eliminated}
                 onOpenDrawer={(c) => setDrawerCandidate(c)}
-                onShareCard={(c) => setShareCandidate(c)}
+                {...(setShareCandidate ? { onShareCard: (c) => setShareCandidate(c) } : {})}
               />
-            ) : (
+            ) : activeView === 'calendar' ? (
               <MonthGridView
                 initialYear={formData.weddingYear}
                 initialMonth={1}
                 candidates={allCandidates}
                 onOpenDrawer={(c) => setDrawerCandidate(c)}
               />
-            )}
+            ) : comparisonResult ? (
+              <TraditionComparisonView
+                comparison={comparisonResult}
+                onSelectDate={(jdn) => {
+                  const match = allCandidates.find((c) => c.day.jdn === jdn);
+                  if (match) setDrawerCandidate(match);
+                }}
+              />
+            ) : null}
           </section>
         )}
       </main>
@@ -270,6 +319,17 @@ export default function HomePage() {
         candidate={drawerCandidate}
         onClose={() => setDrawerCandidate(null)}
       />
+
+      {/* Calculation Walkthrough Modal */}
+      {solverResult && (
+        <CalculationWalkthroughModal
+          isOpen={isWalkthroughOpen}
+          onClose={() => setIsWalkthroughOpen(false)}
+          profile={solverResult.coupleProfile}
+          groomName={formData.groomName}
+          brideName={formData.brideName}
+        />
+      )}
 
       {/* Share Card Modal */}
       <ShareCardModal

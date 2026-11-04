@@ -8,7 +8,9 @@ import { DateCard } from '../src/components/DateCard';
 import { ResultsList } from '../src/components/ResultsList';
 import { PrintableReport } from '../src/components/PrintableReport';
 import { ShareCardModal } from '../src/components/ShareCardModal';
-import { solve } from '@tanggal-baik/core';
+import { CalculationWalkthroughModal } from '../src/components/CalculationWalkthroughModal';
+import { TraditionComparisonView } from '../src/components/TraditionComparisonView';
+import { solve, compareTraditions } from '@tanggal-baik/core';
 
 describe('Web UI Components (Nawa Rahayu & Sakinah)', () => {
   afterEach(() => {
@@ -217,5 +219,60 @@ describe('Web UI Components (Nawa Rahayu & Sakinah)', () => {
     const closeBtn = screen.getByRole('button', { name: /^Tutup$/i });
     fireEvent.click(closeBtn);
     expect(onClose).toHaveBeenCalled();
+  });
+
+  it('CalculationWalkthroughModal: renders 6-step walkthrough with anti-tathayyur advice', () => {
+    const res = solve({
+      couple: {
+        groom: { birthDate: { year: 1998, month: 5, day: 28 } },
+        bride: { birthDate: { year: 1999, month: 10, day: 28 } },
+      },
+      range: {
+        start: { year: 2027, month: 1, day: 1 },
+        end: { year: 2027, month: 1, day: 31 },
+      },
+    });
+
+    const onClose = vi.fn();
+
+    render(
+      <CalculationWalkthroughModal
+        isOpen={true}
+        onClose={onClose}
+        profile={res.coupleProfile}
+        groomName="Bagus"
+        brideName="Raras"
+      />
+    );
+
+    expect(screen.getByText(/Alur Perhitungan Tanggal Baik Langkah demi Langkah/i)).toBeDefined();
+    expect(screen.getByRole('button', { name: /1\. Weton Pria/i })).toBeDefined();
+
+    // Click next step
+    const nextBtn = screen.getByRole('button', { name: /Lanjut/i });
+    fireEvent.click(nextBtn);
+    expect(screen.getByText(/Langkah 2: Menghitung Weton Calon Istri/i)).toBeDefined();
+  });
+
+  it('TraditionComparisonView: renders multi-tradition scoreboard and consensus', () => {
+    const comp = compareTraditions({
+      couple: {
+        groom: { birthDate: { year: 1998, month: 5, day: 28 } },
+        bride: { birthDate: { year: 1999, month: 10, day: 28 } },
+      },
+      range: {
+        start: { year: 2027, month: 1, day: 1 },
+        end: { year: 2027, month: 1, day: 31 },
+      },
+      weekendsOnly: true,
+    });
+
+    render(<TraditionComparisonView comparison={comp} />);
+
+    expect(screen.getAllByText(/Keraton/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/Pati/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/Populer/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/Syariah/i).length).toBeGreaterThan(0);
+    expect(screen.getByText(/Disepakati Seluruh Tradisi/i)).toBeDefined();
   });
 });

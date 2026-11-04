@@ -15,6 +15,18 @@ export const RULE_REGISTRY: readonly RuleDefinition[] = Object.freeze([
     dataStatus: 'secondary',
   },
   {
+    id: 'B-02',
+    layer: 'couple',
+    nameJv: 'Petungan 7 Kategori (Bale Kedhawang)',
+    summaryId: 'Petungan neptu pasangan modulo 7 tradisi populer menghasilkan 7 kategori keluarga.',
+    source: {
+      title: 'Tradisi Petungan Populer Jawa',
+      locator: 'Tabel Sisa 7 Bale Kedhawang (Primbon Praktis & Tradisi Masyarakat)',
+      tier: 'T3',
+    },
+    dataStatus: 'secondary',
+  },
+  {
     id: 'J-15',
     layer: 'couple',
     nameJv: 'Pasatohan 9x9 (Neptu mod 9)',
@@ -101,8 +113,8 @@ export const RULE_REGISTRY: readonly RuleDefinition[] = Object.freeze([
   {
     id: 'J-22',
     layer: 'couple',
-    nameJv: 'Petungan Pancasuda Penganten (mod 7)',
-    summaryId: 'Petungan jumlah neptu pengantin ditambah 10 kemudian dibagi 7.',
+    nameJv: 'Petung Salaki Rabi Pancasuda (Wasésasegara..Lebu Katiup Angin)',
+    summaryId: 'Petungan jumlah neptu kedua mempelai dibagi 10 atau 7 menghasilkan 7 kategori watak keluarga naskah Betaljemur No. 22.',
     source: {
       title: 'Kitab Betaljemur Adammakna',
       locator: 'No. 22, p. 17',

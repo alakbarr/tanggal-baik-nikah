@@ -3,6 +3,8 @@ import { getDayPoint } from '../../src/calendar/month-grid.js';
 import { gregorianToJdn } from '../../src/calendar/jdn.js';
 import type { DayPoint } from '../../src/types.js';
 import {
+  evaluateJ05,
+  evaluateJ06,
   evaluateJ07,
   evaluateJ08,
   evaluateJ12,
@@ -16,6 +18,7 @@ import {
   evaluateJ32,
   evaluateJ33,
   evaluateJ34,
+  evaluateJ36,
   monthHasSelasaKliwon,
 } from '../../src/rules/date/index.js';
 
@@ -160,5 +163,35 @@ describe('Date Rules Evaluators (Betaljemur Adammakna)', () => {
       } as unknown as DayPoint;
       expect(evaluateJ34(mockDay).verdict).toBe('pass');
     }
+  });
+
+  it('J-05 and J-06: Wuku taboo days (Taliwangke & Samparwangke)', () => {
+    // J-05: Wuku Wuye, Senin Kliwon is Taliwangke
+    const mockTaliWuku = {
+      weton: { dayIndex: 1, pasaranIndex: 4, neptu: 12 },
+      pawukon: { wuku: 'Wuye' },
+    } as unknown as DayPoint;
+    expect(evaluateJ05(mockTaliWuku).verdict).toBe('fail');
+
+    // J-06: Wuku Warigalit, Senin Kliwon is Samparwangke
+    const mockSampar = {
+      weton: { dayIndex: 1, pasaranIndex: 4, neptu: 12 },
+      pawukon: { wuku: 'Warigalit' },
+    } as unknown as DayPoint;
+    expect(evaluateJ06(mockSampar).verdict).toBe('fail');
+  });
+
+  it('J-36: Sa\'at Tanggal (5 windows with angels & qualities)', () => {
+    // Tanggal 1 mod 5: Akhmad Tutur, Jabarail Alangan, Ibrahim Pacak, Yusup Slamet, Ngijrail Rijeki
+    const mockDate1 = {
+      javanese: { day: 1 },
+    } as unknown as DayPoint;
+    const res1 = evaluateJ36(mockDate1);
+    expect(res1).toHaveLength(5);
+    expect(res1[0]?.angel).toBe('Akhmad');
+    expect(res1[0]?.quality).toBe('Tutur');
+    expect(res1[3]?.angel).toBe('Yusup');
+    expect(res1[3]?.quality).toBe('Slamet');
+    expect(res1[3]?.verdict).toBe('pass');
   });
 });

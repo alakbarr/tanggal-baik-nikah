@@ -3,266 +3,343 @@
     "day1": 0,
     "day2": 0,
     "meaningJv": "kerep lara",
-    "verdict": "fail",
-    "meaningId": "rentan sakit"
+    "meaningId": "rentan tertimpa ujian penyakit",
+    "verdict": "fail"
   },
   "0,1": {
     "day1": 0,
     "day2": 1,
     "meaningJv": "sugih lara",
-    "verdict": "pass",
-    "meaningId": "banyak rezeki namun rentan sakit"
+    "meaningId": "banyak cobaan kesehatan dalam keluarga",
+    "verdict": "fail"
   },
   "1,0": {
-    "day1": 0,
-    "day2": 1,
+    "day1": 1,
+    "day2": 0,
     "meaningJv": "sugih lara",
-    "verdict": "pass",
-    "meaningId": "banyak rezeki namun rentan sakit"
+    "meaningId": "banyak cobaan kesehatan dalam keluarga",
+    "verdict": "fail"
   },
   "0,2": {
     "day1": 0,
     "day2": 2,
-    "meaningJv": "yuwana",
-    "verdict": "pass",
-    "meaningId": "selamat dan tenteram"
+    "meaningJv": "melarat",
+    "meaningId": "menghadapi ujian kesulitan ekonomi",
+    "verdict": "fail"
   },
   "2,0": {
-    "day1": 0,
-    "day2": 2,
-    "meaningJv": "yuwana",
-    "verdict": "pass",
-    "meaningId": "selamat dan tenteram"
+    "day1": 2,
+    "day2": 0,
+    "meaningJv": "melarat",
+    "meaningId": "menghadapi ujian kesulitan ekonomi",
+    "verdict": "fail"
   },
   "0,3": {
     "day1": 0,
     "day2": 3,
-    "meaningJv": "anaké wadon",
-    "verdict": "info",
-    "meaningId": "cenderung dikaruniai anak perempuan"
+    "meaningJv": "yuwana",
+    "meaningId": "selamat, tenteram, dan sentosa",
+    "verdict": "pass"
   },
   "3,0": {
-    "day1": 0,
-    "day2": 3,
-    "meaningJv": "anaké wadon",
-    "verdict": "info",
-    "meaningId": "cenderung dikaruniai anak perempuan"
+    "day1": 3,
+    "day2": 0,
+    "meaningJv": "yuwana",
+    "meaningId": "selamat, tenteram, dan sentosa",
+    "verdict": "pass"
   },
   "0,4": {
     "day1": 0,
     "day2": 4,
-    "meaningJv": "disini wong",
-    "verdict": "info",
-    "meaningId": "sering dipergunjingkan orang"
+    "meaningJv": "padu",
+    "meaningId": "rentan terjadi perselisihan atau adu pendapat",
+    "verdict": "fail"
   },
   "4,0": {
-    "day1": 0,
-    "day2": 4,
-    "meaningJv": "disini wong",
-    "verdict": "info",
-    "meaningId": "sering dipergunjingkan orang"
+    "day1": 4,
+    "day2": 0,
+    "meaningJv": "padu",
+    "meaningId": "rentan terjadi perselisihan atau adu pendapat",
+    "verdict": "fail"
   },
   "0,5": {
     "day1": 0,
     "day2": 5,
     "meaningJv": "yuwana",
-    "verdict": "pass",
-    "meaningId": "selamat dan tenteram"
+    "meaningId": "selamat, damai, dan berkah",
+    "verdict": "pass"
   },
   "5,0": {
-    "day1": 0,
-    "day2": 5,
+    "day1": 5,
+    "day2": 0,
     "meaningJv": "yuwana",
-    "verdict": "pass",
-    "meaningId": "selamat dan tenteram"
+    "meaningId": "selamat, damai, dan berkah",
+    "verdict": "pass"
   },
   "0,6": {
     "day1": 0,
     "day2": 6,
-    "meaningJv": "berkat",
-    "verdict": "pass",
-    "meaningId": "membawa berkah dan kebaikan"
+    "meaningJv": "mlarat",
+    "meaningId": "menghadapi ujian kekurangan materi",
+    "verdict": "fail"
   },
   "6,0": {
-    "day1": 0,
+    "day1": 6,
+    "day2": 0,
+    "meaningJv": "mlarat",
+    "meaningId": "menghadapi ujian kekurangan materi",
+    "verdict": "fail"
+  },
+  "1,1": {
+    "day1": 1,
+    "day2": 1,
+    "meaningJv": "ala",
+    "meaningId": "kurang baik, rentan rintangan rumah tangga",
+    "verdict": "fail"
+  },
+  "1,2": {
+    "day1": 1,
+    "day2": 2,
+    "meaningJv": "yuwana",
+    "meaningId": "selamat, rukun, dan tenteram",
+    "verdict": "pass"
+  },
+  "2,1": {
+    "day1": 2,
+    "day2": 1,
+    "meaningJv": "yuwana",
+    "meaningId": "selamat, rukun, dan tenteram",
+    "verdict": "pass"
+  },
+  "1,3": {
+    "day1": 1,
+    "day2": 3,
+    "meaningJv": "anaké wadon",
+    "meaningId": "banyak dikaruniai keturunan perempuan",
+    "verdict": "info"
+  },
+  "3,1": {
+    "day1": 3,
+    "day2": 1,
+    "meaningJv": "anaké wadon",
+    "meaningId": "banyak dikaruniai keturunan perempuan",
+    "verdict": "info"
+  },
+  "1,4": {
+    "day1": 1,
+    "day2": 4,
+    "meaningJv": "disini wong",
+    "meaningId": "banyak dicela atau dicaci orang sekitar",
+    "verdict": "fail"
+  },
+  "4,1": {
+    "day1": 4,
+    "day2": 1,
+    "meaningJv": "disini wong",
+    "meaningId": "banyak dicela atau dicaci orang sekitar",
+    "verdict": "fail"
+  },
+  "1,5": {
+    "day1": 1,
+    "day2": 5,
+    "meaningJv": "yuwana",
+    "meaningId": "selamat dan sejahtera",
+    "verdict": "pass"
+  },
+  "5,1": {
+    "day1": 5,
+    "day2": 1,
+    "meaningJv": "yuwana",
+    "meaningId": "selamat dan sejahtera",
+    "verdict": "pass"
+  },
+  "1,6": {
+    "day1": 1,
     "day2": 6,
     "meaningJv": "berkat",
-    "verdict": "pass",
-    "meaningId": "membawa berkah dan kebaikan"
+    "meaningId": "penuh berkah, rezeki berlimpah",
+    "verdict": "pass"
+  },
+  "6,1": {
+    "day1": 6,
+    "day2": 1,
+    "meaningJv": "berkat",
+    "meaningId": "penuh berkah, rezeki berlimpah",
+    "verdict": "pass"
   },
   "2,2": {
     "day1": 2,
     "day2": 2,
     "meaningJv": "ala",
-    "verdict": "fail",
-    "meaningId": "kurang baik, banyak rintangan"
+    "meaningId": "kurang baik, rentan perselisihan",
+    "verdict": "fail"
   },
   "2,3": {
     "day1": 2,
     "day2": 3,
     "meaningJv": "sugih",
-    "verdict": "pass",
-    "meaningId": "berlimpah rezeki"
+    "meaningId": "kaya rezeki dan berkecukupan",
+    "verdict": "pass"
   },
   "3,2": {
-    "day1": 2,
-    "day2": 3,
+    "day1": 3,
+    "day2": 2,
     "meaningJv": "sugih",
-    "verdict": "pass",
-    "meaningId": "berlimpah rezeki"
+    "meaningId": "kaya rezeki dan berkecukupan",
+    "verdict": "pass"
   },
   "2,4": {
     "day1": 2,
     "day2": 4,
     "meaningJv": "sugih",
-    "verdict": "pass",
-    "meaningId": "berlimpah rezeki"
+    "meaningId": "kaya rezeki dan berkemakmuran",
+    "verdict": "pass"
   },
   "4,2": {
-    "day1": 2,
-    "day2": 4,
+    "day1": 4,
+    "day2": 2,
     "meaningJv": "sugih",
-    "verdict": "pass",
-    "meaningId": "berlimpah rezeki"
+    "meaningId": "kaya rezeki dan berkemakmuran",
+    "verdict": "pass"
   },
   "2,5": {
     "day1": 2,
     "day2": 5,
     "meaningJv": "pegat",
-    "verdict": "fail",
-    "meaningId": "berisiko berpisah"
+    "meaningId": "rawan perpisahan atau perceraian",
+    "verdict": "fail"
   },
   "5,2": {
-    "day1": 2,
-    "day2": 5,
+    "day1": 5,
+    "day2": 2,
     "meaningJv": "pegat",
-    "verdict": "fail",
-    "meaningId": "berisiko berpisah"
+    "meaningId": "rawan perpisahan atau perceraian",
+    "verdict": "fail"
   },
   "2,6": {
     "day1": 2,
     "day2": 6,
     "meaningJv": "kerep padu",
-    "verdict": "fail",
-    "meaningId": "sering berselisih"
+    "meaningId": "sering terjadi pertengkaran kecil",
+    "verdict": "fail"
   },
   "6,2": {
-    "day1": 2,
-    "day2": 6,
+    "day1": 6,
+    "day2": 2,
     "meaningJv": "kerep padu",
-    "verdict": "fail",
-    "meaningId": "sering berselisih"
+    "meaningId": "sering terjadi pertengkaran kecil",
+    "verdict": "fail"
   },
   "3,3": {
     "day1": 3,
     "day2": 3,
     "meaningJv": "ala",
-    "verdict": "fail",
-    "meaningId": "kurang baik, banyak rintangan"
+    "meaningId": "kurang harmonis dan rentan rintangan",
+    "verdict": "fail"
   },
   "3,4": {
     "day1": 3,
     "day2": 4,
     "meaningJv": "yuwana",
-    "verdict": "pass",
-    "meaningId": "selamat dan tenteram"
+    "meaningId": "selamat, tenteram, dan harmonis",
+    "verdict": "pass"
   },
   "4,3": {
-    "day1": 3,
-    "day2": 4,
+    "day1": 4,
+    "day2": 3,
     "meaningJv": "yuwana",
-    "verdict": "pass",
-    "meaningId": "selamat dan tenteram"
+    "meaningId": "selamat, tenteram, dan harmonis",
+    "verdict": "pass"
   },
   "3,5": {
     "day1": 3,
     "day2": 5,
     "meaningJv": "yuwana",
-    "verdict": "pass",
-    "meaningId": "selamat dan tenteram"
+    "meaningId": "selamat, langgeng, dan tenteram",
+    "verdict": "pass"
   },
   "5,3": {
-    "day1": 3,
-    "day2": 5,
+    "day1": 5,
+    "day2": 3,
     "meaningJv": "yuwana",
-    "verdict": "pass",
-    "meaningId": "selamat dan tenteram"
+    "meaningId": "selamat, langgeng, dan tenteram",
+    "verdict": "pass"
   },
   "3,6": {
     "day1": 3,
     "day2": 6,
     "meaningJv": "becik",
-    "verdict": "pass",
-    "meaningId": "baik dan harmonis"
+    "meaningId": "baik, rukun, dan sejahtera",
+    "verdict": "pass"
   },
   "6,3": {
-    "day1": 3,
-    "day2": 6,
+    "day1": 6,
+    "day2": 3,
     "meaningJv": "becik",
-    "verdict": "pass",
-    "meaningId": "baik dan harmonis"
+    "meaningId": "baik, rukun, dan sejahtera",
+    "verdict": "pass"
   },
   "4,4": {
     "day1": 4,
     "day2": 4,
     "meaningJv": "yuwana",
-    "verdict": "pass",
-    "meaningId": "selamat dan tenteram"
+    "meaningId": "selamat dan penuh kedamaian",
+    "verdict": "pass"
   },
   "4,5": {
     "day1": 4,
     "day2": 5,
     "meaningJv": "yuwana",
-    "verdict": "pass",
-    "meaningId": "selamat dan tenteram"
+    "meaningId": "selamat, tenteram, dan harmonis",
+    "verdict": "pass"
   },
   "5,4": {
-    "day1": 4,
-    "day2": 5,
+    "day1": 5,
+    "day2": 4,
     "meaningJv": "yuwana",
-    "verdict": "pass",
-    "meaningId": "selamat dan tenteram"
+    "meaningId": "selamat, tenteram, dan harmonis",
+    "verdict": "pass"
   },
   "4,6": {
     "day1": 4,
     "day2": 6,
     "meaningJv": "pegat",
-    "verdict": "fail",
-    "meaningId": "berisiko berpisah"
+    "meaningId": "berisiko menghadapi perceraian",
+    "verdict": "fail"
   },
   "6,4": {
-    "day1": 4,
-    "day2": 6,
+    "day1": 6,
+    "day2": 4,
     "meaningJv": "pegat",
-    "verdict": "fail",
-    "meaningId": "berisiko berpisah"
+    "meaningId": "berisiko menghadapi perceraian",
+    "verdict": "fail"
   },
   "5,5": {
     "day1": 5,
     "day2": 5,
     "meaningJv": "mlarat",
-    "verdict": "fail",
-    "meaningId": "rentan kesulitan ekonomi"
+    "meaningId": "menghadapi keprihatinan ekonomi",
+    "verdict": "fail"
   },
   "5,6": {
     "day1": 5,
     "day2": 6,
     "meaningJv": "cilaka",
-    "verdict": "fail",
-    "meaningId": "berisiko celaka"
+    "meaningId": "menghadapi marabahaya atau musibah",
+    "verdict": "fail"
   },
   "6,5": {
-    "day1": 5,
-    "day2": 6,
+    "day1": 6,
+    "day2": 5,
     "meaningJv": "cilaka",
-    "verdict": "fail",
-    "meaningId": "berisiko celaka"
+    "meaningId": "menghadapi marabahaya atau musibah",
+    "verdict": "fail"
   },
   "6,6": {
     "day1": 6,
     "day2": 6,
     "meaningJv": "ala",
-    "verdict": "fail",
-    "meaningId": "kurang baik, banyak rintangan"
+    "meaningId": "kurang baik, banyak cobaan hidup",
+    "verdict": "fail"
   }
 }

@@ -8,13 +8,19 @@ import { RULE_REGISTRY } from '../rules/registry.js';
 import { getTraditionProfile } from '../rules/profiles.js';
 import {
   evaluateB01,
+  evaluateB02,
   evaluateJ15,
   evaluateJ16,
   evaluateJ17,
   evaluateJ22,
   evaluateJ23,
+  evaluateJ24,
+  evaluateJ25,
+  evaluateCulturalTaboos,
 } from '../rules/couple/index.js';
 import {
+  evaluateJ05,
+  evaluateJ06,
   evaluateJ07,
   evaluateJ08,
   evaluateJ11,
@@ -31,6 +37,7 @@ import {
   evaluateJ33,
   evaluateJ34,
   evaluateJ35,
+  evaluateJ36,
 } from '../rules/date/index.js';
 import {
   evaluateU01,
@@ -142,6 +149,16 @@ export function solve(options: SolveOptions): SolverResult {
 
     for (const ruleId of profile.filters) {
       switch (ruleId) {
+        case 'J-05': {
+          const res = evaluateJ05(day);
+          if (res.verdict === 'fail') eliminatedBy.push(res);
+          break;
+        }
+        case 'J-06': {
+          const res = evaluateJ06(day);
+          if (res.verdict === 'fail') eliminatedBy.push(res);
+          break;
+        }
         case 'J-07': {
           const res = evaluateJ07(day);
           if (res.verdict === 'fail') eliminatedBy.push(res);
@@ -305,6 +322,7 @@ export function solve(options: SolveOptions): SolverResult {
 
     // --- Saat execution hours ---
     const saat = evaluateJ35(day);
+    const saatTanggal = evaluateJ36(day);
 
     candidates.push({
       day,
@@ -314,6 +332,7 @@ export function solve(options: SolveOptions): SolverResult {
       outcomes: [...criteriaOutcomes, ...eliminatedBy],
       preferenceMatches,
       saat,
+      saatTanggal,
     });
   }
 
@@ -333,14 +352,27 @@ export function solve(options: SolveOptions): SolverResult {
   });
 
   // 6. Decoupled Couple Profile calculation
+  const groomJav = jdnToJavanese(groomJdn, reckoning);
+  const brideJav = jdnToJavanese(brideJdn, reckoning);
+
   const coupleOutcomes: RuleOutcome[] = [
     evaluateB01(groomWeton.neptu, brideWeton.neptu),
+    evaluateB02(groomWeton.neptu, brideWeton.neptu),
     evaluateJ15(groomWeton.neptu, brideWeton.neptu),
     evaluateJ16(groomWeton.neptu, brideWeton.neptu),
     evaluateJ17(groomWeton.dayIndex, brideWeton.dayIndex),
     evaluateJ22(groomWeton.neptu, brideWeton.neptu),
     evaluateJ23(groomWeton.neptu, brideWeton.neptu),
+    evaluateJ24(groomWeton, groomJav, brideWeton, brideJav),
+    evaluateJ25(groomWeton, groomJav, brideWeton, brideJav),
   ];
+
+  const culturalTaboos = evaluateCulturalTaboos(
+    groomWeton,
+    brideWeton,
+    couple.groom.childOrder,
+    couple.bride.childOrder
+  );
 
   const coupleProfile: CoupleProfileResult = {
     groomWeton,
@@ -349,6 +381,7 @@ export function solve(options: SolveOptions): SolverResult {
     brideNeptu: brideWeton.neptu,
     totalNeptu: coupleTotalNeptu,
     outcomes: coupleOutcomes,
+    culturalTaboos,
     reminderText: getCoupleReminderText(),
   };
 

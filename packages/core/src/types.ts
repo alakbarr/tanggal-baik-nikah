@@ -162,8 +162,26 @@ export interface RuleOutcome {
   readonly explanationId: string; // arithmetic explanation
 }
 
+export interface CulturalTabooAnalysis {
+  readonly id: 'gehing' | 'jilu' | 'lusan' | 'tunggal_weton';
+  readonly name: string;
+  readonly isTriggered: boolean;
+  readonly isApplicable?: boolean;
+  readonly adatView: string;
+  readonly fiqhView: string;
+  readonly advice: string;
+}
+
+export interface SaatTanggalEntry {
+  readonly start: string;
+  readonly end: string;
+  readonly angel: string;
+  readonly quality: string;
+  readonly verdict: 'pass' | 'fail' | 'info';
+}
+
 // ---------------------------------------------------------------- solver
-export type TraditionProfileId = 'keraton' | 'pati' | 'populer' | 'custom';
+export type TraditionProfileId = 'keraton' | 'pati' | 'populer' | 'shariah' | 'custom';
 
 export interface TraditionProfile {
   readonly id: TraditionProfileId;
@@ -186,12 +204,14 @@ export interface CandidateResult {
   readonly outcomes: readonly RuleOutcome[];
   readonly preferenceMatches: readonly ('syawal' | 'jumat' | 'akhir-pekan')[];
   readonly saat: readonly SaatEntry[];
+  readonly saatTanggal?: readonly SaatTanggalEntry[];
 }
 
 export interface PersonProfile {
   readonly name?: string;
   readonly birthDate: GregorianDate;
   readonly birthAfterSunset?: boolean;
+  readonly childOrder?: number;
   readonly fatherBirthWeton?: Weton;
   readonly motherBirthWeton?: Weton;
   readonly deceasedParentsGeblak?: readonly Weton[];
@@ -230,6 +250,7 @@ export interface CoupleProfileResult {
   readonly brideNeptu: number;
   readonly totalNeptu: number;
   readonly outcomes: readonly RuleOutcome[];
+  readonly culturalTaboos?: readonly CulturalTabooAnalysis[];
   readonly reminderText: string;
 }
 

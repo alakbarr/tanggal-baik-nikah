@@ -3,7 +3,8 @@
 import React, { useEffect, useRef } from 'react';
 import type { CandidateResult } from '@tanggal-baik/core';
 import { formatDayPointDescription } from '@tanggal-baik/core';
-import { X, BookOpen, ShieldCheck, Scale, Compass } from 'lucide-react';
+import { X, BookOpen, ShieldCheck, Scale, Compass, ExternalLink, Sparkles } from 'lucide-react';
+import Link from 'next/link';
 
 interface ProvenanceDrawerProps {
   candidate: CandidateResult | null;
@@ -98,25 +99,35 @@ export function ProvenanceDrawer({ candidate, onClose }: ProvenanceDrawerProps) 
           <div className="space-y-6">
             {/* Track 1: Fiqh & Sunnah */}
             <section className="bg-sand-100 dark:bg-obsidian-850 p-4 rounded-xl border border-sand-300 dark:border-sand-800 space-y-3">
-              <div className="flex items-center gap-2 border-b border-sand-200 dark:border-sand-800 pb-2">
-                <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-                <h3 className="font-serif font-bold text-base text-sand-900 dark:text-sand-50">
-                  Jalur 1: Tuntunan Syariah &amp; Sunnah Nabi ﷺ
-                </h3>
+              <div className="flex items-center justify-between border-b border-sand-200 dark:border-sand-800 pb-2">
+                <div className="flex items-center gap-2">
+                  <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                  <h3 className="font-serif font-bold text-base text-sand-900 dark:text-sand-50">
+                    Jalur 1: Tuntunan Syariah &amp; Sunnah Nabi ﷺ
+                  </h3>
+                </div>
+
+                <Link
+                  href="/glossary"
+                  className="inline-flex items-center gap-1 text-[11px] text-emerald-700 dark:text-emerald-400 hover:underline"
+                >
+                  <span>Glosarium Fiqih</span>
+                  <ExternalLink className="w-3 h-3" />
+                </Link>
               </div>
 
               <div className="space-y-3 text-sand-700 dark:text-sand-300 leading-relaxed text-xs">
                 <div>
-                  <p className="font-semibold text-sand-900 dark:text-sand-100">1. Kebebasan Waktu Akad (Anti-Tathayyur)</p>
+                  <p className="font-semibold text-sand-900 dark:text-sand-100">1. Kebebasan Waktu Akad (Anti-Tathayyur / Thiyarah)</p>
                   <p>
-                    Dalam pandangan Islam, seluruh hari diciptakan baik oleh Allah ﷻ. Tidak ada hari yang membawa sial atau kesempitan bawaan. Rasulullah ﷺ bersabda: <em>&ldquo;Bukan golongan kami orang yang beranggapan sial atau dianggapkan sial baginya.&rdquo;</em> (HR. Thabrani, shahih).
+                    Dalam pandangan Islam, seluruh hari diciptakan baik oleh Allah ﷻ. Tidak ada hari yang membawa sial atau kesempitan bawaan. Rasulullah ﷺ bersabda: <em>&ldquo;Bukan golongan kami orang yang beranggapan sial atau dianggapkan sial baginya.&rdquo;</em> (HR. Thabrani, hasan; HR. Tirmidzi no. 1614).
                   </p>
                 </div>
 
                 <div>
                   <p className="font-semibold text-sand-900 dark:text-sand-100">2. Keabsahan 5 Rukun Nikah (KHI Pasal 14)</p>
                   <p>
-                    Perkawinan sah apabila memenuhi: (1) Calon suami, (2) Calon istri, (3) Wali nikah, (4) Dua orang saksi pria, dan (5) Ijab kabul. Pantangan tanggal adat sama sekali tidak membatalkan keabsahan akad.
+                    Perkawinan sah apabila memenuhi: (1) Calon suami, (2) Calon istri, (3) Wali nikah, (4) Dua orang saksi pria yang adil, dan (5) Ijab dan kabul. Mahar wajib diberikan namun bukan rukun akad (KHI Pasal 34 ayat 1). Pantangan tanggal adat sama sekali tidak membatalkan keabsahan pernikahan.
                   </p>
                 </div>
 
@@ -131,11 +142,21 @@ export function ProvenanceDrawer({ candidate, onClose }: ProvenanceDrawerProps) 
 
             {/* Track 2: Javanese Petungan */}
             <section className="bg-sand-100 dark:bg-obsidian-850 p-4 rounded-xl border border-sand-300 dark:border-sand-800 space-y-3">
-              <div className="flex items-center gap-2 border-b border-sand-200 dark:border-sand-800 pb-2">
-                <BookOpen className="w-4 h-4 text-prada-700 dark:text-prada-400" />
-                <h3 className="font-serif font-bold text-base text-sand-900 dark:text-sand-50">
-                  Jalur 2: Kajian Petungan Tradisi Jawa
-                </h3>
+              <div className="flex items-center justify-between border-b border-sand-200 dark:border-sand-800 pb-2">
+                <div className="flex items-center gap-2">
+                  <BookOpen className="w-4 h-4 text-prada-700 dark:text-prada-400" />
+                  <h3 className="font-serif font-bold text-base text-sand-900 dark:text-sand-50">
+                    Jalur 2: Kajian Petungan Tradisi Jawa
+                  </h3>
+                </div>
+
+                <Link
+                  href="/glossary"
+                  className="inline-flex items-center gap-1 text-[11px] text-prada-700 dark:text-prada-400 hover:underline"
+                >
+                  <span>Glosarium Adat</span>
+                  <ExternalLink className="w-3 h-3" />
+                </Link>
               </div>
 
               {/* Evaluated Rules Details */}
@@ -172,11 +193,11 @@ export function ProvenanceDrawer({ candidate, onClose }: ProvenanceDrawerProps) 
                 ))}
               </div>
 
-              {/* Saat Pasaran execution hours */}
-              <div className="mt-4 p-3.5 rounded-lg bg-prada-50/50 dark:bg-prada-950/30 border border-prada-500/20 text-xs space-y-2">
+              {/* Saat Pasaran execution hours (Betaljemur No. 35) */}
+              <div className="mt-4 p-3.5 rounded-lg bg-sand-50 dark:bg-obsidian-950 border border-sand-200 dark:border-sand-800 text-xs space-y-2">
                 <div className="flex items-center gap-1.5 font-semibold text-prada-900 dark:text-prada-300">
                   <Compass className="w-4 h-4" />
-                  <span>Panduan Waktu Ijab (Sa&lsquo;at Pasaran {day.weton.pasaranName})</span>
+                  <span>Panduan Waktu Ijab: Sa&lsquo;at Pasaran ({day.weton.pasaranName}) &bull; Betaljemur No. 35</span>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 text-[11px] text-sand-700 dark:text-sand-300 font-mono">
                   {candidate.saat.map((s) => (
@@ -184,7 +205,7 @@ export function ProvenanceDrawer({ candidate, onClose }: ProvenanceDrawerProps) 
                       key={s.start}
                       className={`px-2 py-1 rounded flex items-center justify-between ${
                         s.labelJv === 'Slamet' || s.labelJv === 'Rejeki'
-                          ? 'bg-emerald-500/15 text-emerald-900 dark:text-emerald-200 font-bold'
+                          ? 'bg-emerald-500/15 text-emerald-900 dark:text-emerald-200 font-bold border border-emerald-500/20'
                           : 'bg-sand-100 dark:bg-obsidian-900 text-sand-600 dark:text-sand-400'
                       }`}
                     >
@@ -194,6 +215,31 @@ export function ProvenanceDrawer({ candidate, onClose }: ProvenanceDrawerProps) 
                   ))}
                 </div>
               </div>
+
+              {/* Saat Tanggal execution hours (Betaljemur No. 36) */}
+              {candidate.saatTanggal && candidate.saatTanggal.length > 0 && (
+                <div className="p-3.5 rounded-lg bg-sand-50 dark:bg-obsidian-950 border border-sand-200 dark:border-sand-800 text-xs space-y-2">
+                  <div className="flex items-center gap-1.5 font-semibold text-prada-900 dark:text-prada-300">
+                    <Sparkles className="w-4 h-4" />
+                    <span>Sa&lsquo;at Tanggal &amp; Malaikat Penjaga (Tanggal {day.javanese.day} Jawa) &bull; Betaljemur No. 36</span>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 text-[11px] text-sand-700 dark:text-sand-300 font-mono">
+                    {candidate.saatTanggal.map((st) => (
+                      <div
+                        key={st.start}
+                        className={`px-2 py-1 rounded flex items-center justify-between ${
+                          st.verdict === 'pass'
+                            ? 'bg-emerald-500/15 text-emerald-900 dark:text-emerald-200 font-bold border border-emerald-500/20'
+                            : 'bg-sand-100 dark:bg-obsidian-900 text-sand-600 dark:text-sand-400'
+                        }`}
+                      >
+                        <span>Pukul {st.start}–{st.end} ({st.angel})</span>
+                        <span>{st.quality}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </section>
           </div>
         </div>

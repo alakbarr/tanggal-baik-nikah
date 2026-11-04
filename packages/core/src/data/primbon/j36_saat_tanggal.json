@@ -1,0 +1,46 @@
+{
+  "windows": [
+    { "start": "06:00", "end": "08:23" },
+    { "start": "08:24", "end": "10:47" },
+    { "start": "10:48", "end": "13:11" },
+    { "start": "13:12", "end": "15:35" },
+    { "start": "15:36", "end": "17:59" }
+  ],
+  "ratings": {
+    "1": [
+      { "angel": "Akhmad", "quality": "Tutur", "verdict": "info" },
+      { "angel": "Jabarail", "quality": "Alangan", "verdict": "fail" },
+      { "angel": "Ibrahim", "quality": "Pacak", "verdict": "fail" },
+      { "angel": "Yusup", "quality": "Slamet", "verdict": "pass" },
+      { "angel": "Ngijrail", "quality": "Rijeki", "verdict": "pass" }
+    ],
+    "2": [
+      { "angel": "Jabarail", "quality": "Rijeki", "verdict": "pass" },
+      { "angel": "Ibrahim", "quality": "Tutur", "verdict": "info" },
+      { "angel": "Yusup", "quality": "Alangan", "verdict": "fail" },
+      { "angel": "Ngijrail", "quality": "Pacak", "verdict": "fail" },
+      { "angel": "Akhmad", "quality": "Slamet", "verdict": "pass" }
+    ],
+    "3": [
+      { "angel": "Ibrahim", "quality": "Slamet", "verdict": "pass" },
+      { "angel": "Yusup", "quality": "Rijeki", "verdict": "pass" },
+      { "angel": "Ngijrail", "quality": "Tutur", "verdict": "info" },
+      { "angel": "Akhmad", "quality": "Alangan", "verdict": "fail" },
+      { "angel": "Jabarail", "quality": "Pacak", "verdict": "fail" }
+    ],
+    "4": [
+      { "angel": "Yusup", "quality": "Pacak", "verdict": "fail" },
+      { "angel": "Ngijrail", "quality": "Slamet", "verdict": "pass" },
+      { "angel": "Akhmad", "quality": "Rijeki", "verdict": "pass" },
+      { "angel": "Jabarail", "quality": "Tutur", "verdict": "info" },
+      { "angel": "Ibrahim", "quality": "Alangan", "verdict": "fail" }
+    ],
+    "0": [
+      { "angel": "Ngijrail", "quality": "Alangan", "verdict": "fail" },
+      { "angel": "Akhmad", "quality": "Pacak", "verdict": "fail" },
+      { "angel": "Jabarail", "quality": "Slamet", "verdict": "pass" },
+      { "angel": "Ibrahim", "quality": "Rijeki", "verdict": "pass" },
+      { "angel": "Yusup", "quality": "Tutur", "verdict": "info" }
+    ]
+  }
+}

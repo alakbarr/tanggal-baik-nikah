@@ -1,44 +1,44 @@
 {
   "1": {
-    "name": "Pisang Pinanggel",
-    "meaningJv": "gethingan, kerep pasulayan",
-    "verdict": "fail",
-    "meaningId": "rentan timbul perselisihan atau saling mengeluh"
+    "name": "Wasésasegara",
+    "meaningJv": "kamot, jembar budiné, sugih pangapura gedhé prabawané",
+    "meaningId": "berbudi luhur, berwibawa besar, pemaaf, berhati lapang, dan dihormati banyak orang",
+    "verdict": "pass"
   },
   "2": {
-    "name": "Tebu Manteb",
-    "meaningJv": "mantep lan mantheng atiné, rahayu",
-    "verdict": "pass",
-    "meaningId": "mantap hatinya, rukun, dan sejahtera"
+    "name": "Tunggaksemi",
+    "meaningJv": "cepak rijekiné",
+    "meaningId": "rezeki selalu mengalir lancar dan senantiasa bersemi kembali",
+    "verdict": "pass"
   },
   "3": {
-    "name": "Gedhang Ditumpangi",
-    "meaningJv": "nemu susah lan rubéda",
-    "verdict": "fail",
-    "meaningId": "menghadapi cobaan dan kesulitan hidup"
+    "name": "Satriya Wibawa",
+    "meaningJv": "olèh kamulyan lan kaluhuran",
+    "meaningId": "memperoleh kemuliaan, kehormatan, keluhuran derajat, dan disegani",
+    "verdict": "pass"
   },
   "4": {
-    "name": "Rondha Keli",
-    "meaningJv": "kerep ngalami kapitunan",
-    "verdict": "fail",
-    "meaningId": "sering mengalami kerugian"
+    "name": "Sumursinaba",
+    "meaningJv": "dadi pangungsening kapinteran",
+    "meaningId": "menjadi rujukan kebijaksanaan, berwawasan luas, dan tempat bertanya orang lain",
+    "verdict": "pass"
   },
   "5": {
-    "name": "Semut Ngusung Gula",
-    "meaningJv": "nemu rejeki lumintu lan karukunan",
-    "verdict": "pass",
-    "meaningId": "rezeki mengalir lancar dan hidup rukun"
+    "name": "Satriyawirang",
+    "meaningJv": "nandhang dukacita, kawirangan; panulak ngetokaké getih",
+    "meaningId": "rentan menghadapi ujian celaan atau dukacita; ikhtiar adat berupa sedekah hewan (mengalirkan darah)",
+    "verdict": "info"
   },
   "6": {
-    "name": "Tunggak Gugur",
-    "meaningJv": "nemu cilaka",
-    "verdict": "fail",
-    "meaningId": "memperoleh kemuliaan dan kesejahteraan"
+    "name": "Bumikapetak",
+    "meaningJv": "petengan aten, nanging taberi ing gawe, kuat nandhang lara lapa, resikan; panulak mendhem lemah",
+    "meaningId": "rajin ulet bekerja, tahan prihatin namun tertutup; ikhtiar adat berupa menanam tanah/tanaman",
+    "verdict": "info"
   },
-  "0": {
-    "name": "Bale Kedhawang",
-    "meaningJv": "nemu kamulyan lan karaharjan",
-    "verdict": "pass",
-    "meaningId": "selamat, tenteram, dan sejahtera"
+  "7": {
+    "name": "Lebu Katiup Angin",
+    "meaningJv": "nandang papa cintraka, kabeh karepé ora dadi, kerep ngalih omah; panulak ngabul-abul lemah",
+    "meaningId": "sering menghadapi ujian cita-cita atau sering berpindah; ikhtiar adat berupa menyebarkan tanah/sedekah",
+    "verdict": "fail"
   }
 }

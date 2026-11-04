@@ -1,3 +1,5 @@
+import j05Data from '../../data/primbon/j05_taliwangke_wuku.json' with { type: 'json' };
+import j06Data from '../../data/primbon/j06_samparwangke_wuku.json' with { type: 'json' };
 import j11Data from '../../data/primbon/j11_pati_uriping_sasi.json' with { type: 'json' };
 import j13Data from '../../data/primbon/j13_larangan_sasi.json' with { type: 'json' };
 import j14Data from '../../data/primbon/j14_sangaring_tanggal.json' with { type: 'json' };
@@ -11,8 +13,9 @@ import j32Data from '../../data/primbon/j32_taliwangke_sasi.json' with { type: '
 import j33Data from '../../data/primbon/j33_ala_beciking_sasi.json' with { type: 'json' };
 import j34Data from '../../data/primbon/j34_rupa_tiga.json' with { type: 'json' };
 import j35Data from '../../data/primbon/j35_saat_pasaran.json' with { type: 'json' };
+import j36Data from '../../data/primbon/j36_saat_tanggal.json' with { type: 'json' };
 import { SASI_JAWA_NAMES } from '../../constants/neptu.js';
-import type { DayPoint, RuleOutcome, SaatEntry, SasiJawa } from '../../types.js';
+import type { DayPoint, RuleOutcome, SaatEntry, SaatTanggalEntry, SasiJawa } from '../../types.js';
 import { jdnToJavanese } from '../../calendar/javanese.js';
 import { getWetonFromJdn } from '../../calendar/weton.js';
 
@@ -63,7 +66,26 @@ const j33Table = j33Data as unknown as Record<string, J33Entry>;
 const j34List = j34Data as unknown as readonly J34Entry[];
 const j35Table = j35Data as unknown as J35Data;
 
-// In-memory cache for monthHasSelasaKliwon to avoid repeated 30-day scans per date
+interface WukuTabooEntry {
+  readonly wuku: string;
+  readonly dayIndex: number;
+  readonly pasaranIndex: number;
+}
+
+interface J36RatingItem {
+  readonly angel: string;
+  readonly quality: string;
+  readonly verdict: 'pass' | 'fail' | 'info';
+}
+
+interface J36Data {
+  readonly windows: readonly { readonly start: string; readonly end: string }[];
+  readonly ratings: Readonly<Record<string, readonly J36RatingItem[]>>;
+}
+
+const j05List = j05Data as unknown as readonly WukuTabooEntry[];
+const j06List = j06Data as unknown as readonly WukuTabooEntry[];
+const j36Table = j36Data as unknown as J36Data;
 const selasaKliwonCache = new Map<string, boolean>();
 
 /**
@@ -436,4 +458,70 @@ export function evaluateJ35(day: DayPoint): readonly SaatEntry[] {
     end: w.end,
     labelJv: ratings[idx] ?? 'Slamet',
   }));
+}
+
+/**
+ * J-05: Dina Taliwangké Wuku (Betaljemur No. 5, p. 8)
+ * 6 pantangan wuku: Somayé (Wuyé), Anggarayang (Wayang), Bodanep (Landep),
+ * Warigamis (Warigalit), Sukraingan (Kuningan), Tumpaklote (Kuruwelut).
+ */
+export function evaluateJ05(day: DayPoint): RuleOutcome {
+  const match = j05List.find(
+    (e) =>
+      e.wuku === day.pawukon.wuku &&
+      e.dayIndex === day.weton.dayIndex &&
+      e.pasaranIndex === day.weton.pasaranIndex
+  );
+
+  return {
+    ruleId: 'J-05',
+    verdict: match ? 'fail' : 'pass',
+    labelJv: match ? `Taliwangké Wuku (${match.wuku})` : 'Bebas Taliwangké Wuku',
+    explanationId: match
+      ? `Hari pasaran ini merupakan dina taliwangké pada wuku ${match.wuku} (Betaljemur No. 5).`
+      : `Bebas dari taliwangké wuku 30.`,
+  };
+}
+
+/**
+ * J-06: Samparwangké Wuku (Betaljemur No. 6, p. 8)
+ * 5 pantangan hari Senin: Warigalit (Kliwon), Bala (Legi), Langkir (Pahing), Sinta (Pon), Tambir (Wage).
+ */
+export function evaluateJ06(day: DayPoint): RuleOutcome {
+  const match = j06List.find(
+    (e) =>
+      e.wuku === day.pawukon.wuku &&
+      e.dayIndex === day.weton.dayIndex &&
+      e.pasaranIndex === day.weton.pasaranIndex
+  );
+
+  return {
+    ruleId: 'J-06',
+    verdict: match ? 'fail' : 'pass',
+    labelJv: match ? `Samparwangké (${match.wuku})` : 'Bebas Samparwangké',
+    explanationId: match
+      ? `Hari Senin ini merupakan samparwangké pada wuku ${match.wuku} (Betaljemur No. 6).`
+      : 'Bebas dari samparwangké wuku.',
+  };
+}
+
+
+
+/**
+ * J-36: Sa'at Tanggal (Betaljemur No. 36, p. 25)
+ * 5 kelompok tanggal Jawa mod 5 dengan naungan Malaikat/Nabi dan kualitas waktu.
+ */
+export function evaluateJ36(day: DayPoint): readonly SaatTanggalEntry[] {
+  const r = String(day.javanese.day % 5);
+  const items = j36Table.ratings[r] ?? j36Table.ratings['1'] ?? [];
+  return j36Table.windows.map((w, idx) => {
+    const item = items[idx] ?? { angel: 'Akhmad', quality: 'Slamet', verdict: 'pass' as const };
+    return {
+      start: w.start,
+      end: w.end,
+      angel: item.angel,
+      quality: item.quality,
+      verdict: item.verdict,
+    };
+  });
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import type { CandidateResult } from '@tanggal-baik/core';
 import { HIJRI_MONTH_NAMES } from '@tanggal-baik/core';
-import { Clock, BookOpen, Check, Moon, Share2 } from 'lucide-react';
+import { Clock, BookOpen, Check, Moon, Share2, Compass } from 'lucide-react';
 
 interface DateCardProps {
   candidate: CandidateResult;
@@ -40,10 +40,14 @@ export function DateCard({
   const hijriMonthName = hijri ? HIJRI_MONTH_NAMES[hijri.month - 1] : '';
   const hijriStr = hijri ? `${hijri.day} ${hijriMonthName} ${hijri.year} H` : '';
 
-  // Recommended saat: find any window labeled 'Slamet' or 'Rejeki' or take the first positive
+  // Recommended saat pasaran: find any window labeled 'Slamet' or 'Rejeki'
   const goodSaat =
     candidate.saat.filter((s) => s.labelJv === 'Slamet' || s.labelJv === 'Rejeki') || [];
   const primarySaat = goodSaat[0] ?? candidate.saat[0];
+
+  // Recommended saat tanggal (J-36)
+  const goodSaatTanggal = candidate.saatTanggal?.filter((s) => s.verdict === 'pass') ?? [];
+  const primarySaatTanggal = goodSaatTanggal[0] ?? candidate.saatTanggal?.[0];
 
   return (
     <article
@@ -123,11 +127,22 @@ export function DateCard({
 
       {/* Execution Hours (Sa'at Ijab) & Footer */}
       <div className="pt-3 border-t border-sand-200 dark:border-sand-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
-        <div className="flex items-center gap-2 text-sand-700 dark:text-sand-300">
-          <Clock className="w-4 h-4 text-prada-600 dark:text-prada-400 shrink-0" />
-          <span>
-            <strong>Waktu Ijab Disarankan:</strong> Pukul {primarySaat ? `${primarySaat.start}–${primarySaat.end} WIB (${primarySaat.labelJv})` : 'Pagi Hari'}
-          </span>
+        <div className="flex flex-col sm:flex-row sm:items-center gap-x-4 gap-y-1 text-sand-700 dark:text-sand-300">
+          <div className="flex items-center gap-1.5">
+            <Clock className="w-4 h-4 text-prada-600 dark:text-prada-400 shrink-0" />
+            <span>
+              <strong>Sa&lsquo;at Pasaran:</strong> Pukul {primarySaat ? `${primarySaat.start}–${primarySaat.end} WIB (${primarySaat.labelJv})` : 'Pagi Hari'}
+            </span>
+          </div>
+
+          {primarySaatTanggal && (
+            <div className="flex items-center gap-1.5 text-sand-600 dark:text-sand-400">
+              <Compass className="w-3.5 h-3.5 text-sand-400 shrink-0" />
+              <span>
+                <strong>Sa&lsquo;at Tanggal:</strong> {primarySaatTanggal.start}–{primarySaatTanggal.end} ({primarySaatTanggal.quality})
+              </span>
+            </div>
+          )}
         </div>
 
         <div className="flex items-center gap-3">
